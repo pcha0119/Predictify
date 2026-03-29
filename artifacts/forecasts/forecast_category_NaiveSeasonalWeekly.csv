@@ -1,0 +1,1480 @@
+date,forecast,ci_lower,ci_upper,grain,group_key,horizon,model_name
+2026-03-11,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,FLOUR,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,FLOUR,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,FLOUR,30,NaiveSeasonalWeekly
+2026-02-04,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-05,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-06,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-07,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-08,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-09,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-10,,,,category,FRUITS/VEG,7,NaiveSeasonalWeekly
+2026-02-04,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-05,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-06,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-07,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-08,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-09,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-10,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-11,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-12,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-13,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-14,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-15,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-16,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-17,,,,category,FRUITS/VEG,14,NaiveSeasonalWeekly
+2026-02-04,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-05,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-06,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-07,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-08,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-09,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-10,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-11,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-12,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-13,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-14,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-15,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-16,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-17,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-18,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-19,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-20,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-21,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-22,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-23,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-24,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-25,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-26,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-27,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-02-28,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-01,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-02,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-03,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-04,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-05,,,,category,FRUITS/VEG,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,OIL/GHEE,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,OIL/GHEE,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,OIL/GHEE,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,RM CONFECTIONERY,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,RM CONFECTIONERY,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,RM CONFECTIONERY,30,NaiveSeasonalWeekly
+2026-02-04,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-05,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-06,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-07,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-08,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-09,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-10,,,,category,RM DRY FRUITS,7,NaiveSeasonalWeekly
+2026-02-04,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-05,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-06,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-07,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-08,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-09,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-10,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-11,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-12,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-13,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-14,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-15,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-16,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-17,,,,category,RM DRY FRUITS,14,NaiveSeasonalWeekly
+2026-02-04,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-05,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-06,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-07,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-08,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-09,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-10,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-11,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-12,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-13,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-14,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-15,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-16,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-17,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-18,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-19,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-20,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-21,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-22,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-23,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-24,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-25,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-26,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-27,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-02-28,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-01,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-02,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-03,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-04,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-05,,,,category,RM DRY FRUITS,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,SPICES,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,SPICES,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,SPICES,30,NaiveSeasonalWeekly
+2026-03-11,45241.75,36193.4,54290.1,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-12,45029.22,36023.376000000004,54035.064,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-13,43726.415,34981.132000000005,52471.698,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-14,63867.0475,51093.638000000006,76640.457,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-15,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-16,95025.07,76020.05600000001,114030.084,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-17,69146.33,55317.064000000006,82975.596,category,BAKERY,7,NaiveSeasonalWeekly
+2026-03-11,45241.75,36193.4,54290.1,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-12,45029.22,36023.376000000004,54035.064,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-13,43726.415,34981.132000000005,52471.698,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-14,63867.0475,51093.638000000006,76640.457,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-15,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-16,95025.07,76020.05600000001,114030.084,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-17,69146.33,55317.064000000006,82975.596,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-18,45241.75,36193.4,54290.1,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-19,45029.22,36023.376000000004,54035.064,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-20,43726.415,34981.132000000005,52471.698,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-21,63867.0475,51093.638000000006,76640.457,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-22,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-23,95025.07,76020.05600000001,114030.084,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-24,69146.33,55317.064000000006,82975.596,category,BAKERY,14,NaiveSeasonalWeekly
+2026-03-11,45241.75,36193.4,54290.1,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-12,45029.22,36023.376000000004,54035.064,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-13,43726.415,34981.132000000005,52471.698,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-14,63867.0475,51093.638000000006,76640.457,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-15,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-16,95025.07,76020.05600000001,114030.084,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-17,69146.33,55317.064000000006,82975.596,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-18,45241.75,36193.4,54290.1,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-19,45029.22,36023.376000000004,54035.064,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-20,43726.415,34981.132000000005,52471.698,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-21,63867.0475,51093.638000000006,76640.457,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-22,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-23,95025.07,76020.05600000001,114030.084,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-24,69146.33,55317.064000000006,82975.596,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-25,45241.75,36193.4,54290.1,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-26,45029.22,36023.376000000004,54035.064,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-27,43726.415,34981.132000000005,52471.698,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-28,63867.0475,51093.638000000006,76640.457,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-29,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-30,95025.07,76020.05600000001,114030.084,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-31,69146.33,55317.064000000006,82975.596,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-01,45241.75,36193.4,54290.1,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-02,45029.22,36023.376000000004,54035.064,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-03,43726.415,34981.132000000005,52471.698,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-04,63867.0475,51093.638000000006,76640.457,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-05,118784.98999999999,95027.992,142541.98799999998,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-06,95025.07,76020.05600000001,114030.084,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-07,69146.33,55317.064000000006,82975.596,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-08,45241.75,36193.4,54290.1,category,BAKERY,30,NaiveSeasonalWeekly
+2026-04-09,45029.22,36023.376000000004,54035.064,category,BAKERY,30,NaiveSeasonalWeekly
+2026-03-11,126174.385,100939.508,151409.262,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-12,93414.625,74731.7,112097.55,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-13,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-14,117166.765,93733.41200000001,140600.118,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-15,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-16,189736.345,151789.076,227683.614,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-17,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,7,NaiveSeasonalWeekly
+2026-03-11,126174.385,100939.508,151409.262,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-12,93414.625,74731.7,112097.55,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-13,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-14,117166.765,93733.41200000001,140600.118,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-15,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-16,189736.345,151789.076,227683.614,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-17,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-18,126174.385,100939.508,151409.262,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-19,93414.625,74731.7,112097.55,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-20,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-21,117166.765,93733.41200000001,140600.118,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-22,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-23,189736.345,151789.076,227683.614,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-24,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,14,NaiveSeasonalWeekly
+2026-03-11,126174.385,100939.508,151409.262,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-12,93414.625,74731.7,112097.55,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-13,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-14,117166.765,93733.41200000001,140600.118,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-15,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-16,189736.345,151789.076,227683.614,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-17,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-18,126174.385,100939.508,151409.262,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-19,93414.625,74731.7,112097.55,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-20,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-21,117166.765,93733.41200000001,140600.118,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-22,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-23,189736.345,151789.076,227683.614,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-24,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-25,126174.385,100939.508,151409.262,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-26,93414.625,74731.7,112097.55,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-27,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-28,117166.765,93733.41200000001,140600.118,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-29,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-30,189736.345,151789.076,227683.614,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-31,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-01,126174.385,100939.508,151409.262,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-02,93414.625,74731.7,112097.55,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-03,99062.41,79249.92800000001,118874.89199999999,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-04,117166.765,93733.41200000001,140600.118,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-05,229696.34000000003,183757.07200000004,275635.608,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-06,189736.345,151789.076,227683.614,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-07,148793.332,119034.66560000001,178551.99839999998,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-08,126174.385,100939.508,151409.262,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-04-09,93414.625,74731.7,112097.55,category,NAMKEEN,30,NaiveSeasonalWeekly
+2026-03-11,148.305,118.644,177.966,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-12,1377.115,1101.692,1652.538,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-13,1152.97,922.3760000000001,1383.564,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-14,1501.06,1200.848,1801.272,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-15,529.665,423.73199999999997,635.598,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-16,500.0,400.0,600.0,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-17,311.86,249.48800000000003,374.232,category,SERVICES,7,NaiveSeasonalWeekly
+2026-03-11,148.305,118.644,177.966,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-12,1377.115,1101.692,1652.538,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-13,1152.97,922.3760000000001,1383.564,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-14,1501.06,1200.848,1801.272,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-15,529.665,423.73199999999997,635.598,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-16,500.0,400.0,600.0,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-17,311.86,249.48800000000003,374.232,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-18,148.305,118.644,177.966,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-19,1377.115,1101.692,1652.538,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-20,1152.97,922.3760000000001,1383.564,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-21,1501.06,1200.848,1801.272,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-22,529.665,423.73199999999997,635.598,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-23,500.0,400.0,600.0,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-24,311.86,249.48800000000003,374.232,category,SERVICES,14,NaiveSeasonalWeekly
+2026-03-11,148.305,118.644,177.966,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-12,1377.115,1101.692,1652.538,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-13,1152.97,922.3760000000001,1383.564,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-14,1501.06,1200.848,1801.272,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-15,529.665,423.73199999999997,635.598,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-16,500.0,400.0,600.0,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-17,311.86,249.48800000000003,374.232,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-18,148.305,118.644,177.966,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-19,1377.115,1101.692,1652.538,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-20,1152.97,922.3760000000001,1383.564,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-21,1501.06,1200.848,1801.272,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-22,529.665,423.73199999999997,635.598,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-23,500.0,400.0,600.0,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-24,311.86,249.48800000000003,374.232,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-25,148.305,118.644,177.966,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-26,1377.115,1101.692,1652.538,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-27,1152.97,922.3760000000001,1383.564,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-28,1501.06,1200.848,1801.272,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-29,529.665,423.73199999999997,635.598,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-30,500.0,400.0,600.0,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-31,311.86,249.48800000000003,374.232,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-01,148.305,118.644,177.966,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-02,1377.115,1101.692,1652.538,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-03,1152.97,922.3760000000001,1383.564,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-04,1501.06,1200.848,1801.272,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-05,529.665,423.73199999999997,635.598,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-06,500.0,400.0,600.0,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-07,311.86,249.48800000000003,374.232,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-08,148.305,118.644,177.966,category,SERVICES,30,NaiveSeasonalWeekly
+2026-04-09,1377.115,1101.692,1652.538,category,SERVICES,30,NaiveSeasonalWeekly
+2026-03-11,620793.8725,496635.09800000006,744952.647,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-12,462119.08,369695.264,554542.896,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-13,459937.2225,367949.778,551924.6669999999,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-14,587171.7025,469737.362,704606.043,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-15,991872.6575,793498.126,1190247.189,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-16,910861.8225,728689.4580000001,1093034.187,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-17,668780.614,535024.4911999999,802536.7368,category,SWEET,7,NaiveSeasonalWeekly
+2026-03-11,620793.8725,496635.09800000006,744952.647,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-12,462119.08,369695.264,554542.896,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-13,459937.2225,367949.778,551924.6669999999,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-14,587171.7025,469737.362,704606.043,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-15,991872.6575,793498.126,1190247.189,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-16,910861.8225,728689.4580000001,1093034.187,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-17,668780.614,535024.4911999999,802536.7368,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-18,620793.8725,496635.09800000006,744952.647,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-19,462119.08,369695.264,554542.896,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-20,459937.2225,367949.778,551924.6669999999,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-21,587171.7025,469737.362,704606.043,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-22,991872.6575,793498.126,1190247.189,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-23,910861.8225,728689.4580000001,1093034.187,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-24,668780.614,535024.4911999999,802536.7368,category,SWEET,14,NaiveSeasonalWeekly
+2026-03-11,620793.8725,496635.09800000006,744952.647,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-12,462119.08,369695.264,554542.896,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-13,459937.2225,367949.778,551924.6669999999,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-14,587171.7025,469737.362,704606.043,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-15,991872.6575,793498.126,1190247.189,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-16,910861.8225,728689.4580000001,1093034.187,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-17,668780.614,535024.4911999999,802536.7368,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-18,620793.8725,496635.09800000006,744952.647,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-19,462119.08,369695.264,554542.896,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-20,459937.2225,367949.778,551924.6669999999,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-21,587171.7025,469737.362,704606.043,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-22,991872.6575,793498.126,1190247.189,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-23,910861.8225,728689.4580000001,1093034.187,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-24,668780.614,535024.4911999999,802536.7368,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-25,620793.8725,496635.09800000006,744952.647,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-26,462119.08,369695.264,554542.896,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-27,459937.2225,367949.778,551924.6669999999,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-28,587171.7025,469737.362,704606.043,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-29,991872.6575,793498.126,1190247.189,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-30,910861.8225,728689.4580000001,1093034.187,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-31,668780.614,535024.4911999999,802536.7368,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-01,620793.8725,496635.09800000006,744952.647,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-02,462119.08,369695.264,554542.896,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-03,459937.2225,367949.778,551924.6669999999,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-04,587171.7025,469737.362,704606.043,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-05,991872.6575,793498.126,1190247.189,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-06,910861.8225,728689.4580000001,1093034.187,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-07,668780.614,535024.4911999999,802536.7368,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-08,620793.8725,496635.09800000006,744952.647,category,SWEET,30,NaiveSeasonalWeekly
+2026-04-09,462119.08,369695.264,554542.896,category,SWEET,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,MILK PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,MILK PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,MILK PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-11,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-12,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-13,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-14,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-15,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-16,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-17,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,7,NaiveSeasonalWeekly
+2026-03-11,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-12,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-13,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-14,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-15,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-16,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-17,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-18,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-19,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-20,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-21,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-22,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-23,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-24,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,14,NaiveSeasonalWeekly
+2026-03-11,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-12,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-13,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-14,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-15,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-16,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-17,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-18,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-19,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-20,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-21,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-22,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-23,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-24,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-25,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-26,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-27,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-28,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-29,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-30,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-31,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-01,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-02,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-03,2698.4133333333334,2158.730666666667,3238.096,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-04,8355.573333333334,6684.458666666667,10026.688,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-05,9328.106666666667,7462.485333333334,11193.728,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-06,8476.186666666666,6780.949333333334,10171.423999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-07,5777.78,4622.224,6933.335999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-08,9605.97,7684.776,11527.163999999999,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-04-09,4888.253333333333,3910.6026666666667,5865.9039999999995,category,SEMIFINGOODS,30,NaiveSeasonalWeekly
+2026-03-11,12476.14,9980.912,14971.367999999999,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-12,6095.18,4876.144,7314.216,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-13,4729.5,3783.6000000000004,5675.4,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-14,15371.38,12297.104,18445.656,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-15,9736.119999999999,7788.896,11683.344,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-16,9739.01,7791.2080000000005,11686.812,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-17,8457.1,6765.68,10148.52,category,GOURMET,7,NaiveSeasonalWeekly
+2026-03-11,12476.14,9980.912,14971.367999999999,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-12,6095.18,4876.144,7314.216,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-13,4729.5,3783.6000000000004,5675.4,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-14,15371.38,12297.104,18445.656,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-15,9736.119999999999,7788.896,11683.344,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-16,9739.01,7791.2080000000005,11686.812,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-17,8457.1,6765.68,10148.52,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-18,12476.14,9980.912,14971.367999999999,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-19,6095.18,4876.144,7314.216,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-20,4729.5,3783.6000000000004,5675.4,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-21,15371.38,12297.104,18445.656,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-22,9736.119999999999,7788.896,11683.344,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-23,9739.01,7791.2080000000005,11686.812,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-24,8457.1,6765.68,10148.52,category,GOURMET,14,NaiveSeasonalWeekly
+2026-03-11,12476.14,9980.912,14971.367999999999,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-12,6095.18,4876.144,7314.216,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-13,4729.5,3783.6000000000004,5675.4,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-14,15371.38,12297.104,18445.656,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-15,9736.119999999999,7788.896,11683.344,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-16,9739.01,7791.2080000000005,11686.812,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-17,8457.1,6765.68,10148.52,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-18,12476.14,9980.912,14971.367999999999,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-19,6095.18,4876.144,7314.216,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-20,4729.5,3783.6000000000004,5675.4,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-21,15371.38,12297.104,18445.656,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-22,9736.119999999999,7788.896,11683.344,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-23,9739.01,7791.2080000000005,11686.812,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-24,8457.1,6765.68,10148.52,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-25,12476.14,9980.912,14971.367999999999,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-26,6095.18,4876.144,7314.216,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-27,4729.5,3783.6000000000004,5675.4,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-28,15371.38,12297.104,18445.656,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-29,9736.119999999999,7788.896,11683.344,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-30,9739.01,7791.2080000000005,11686.812,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-31,8457.1,6765.68,10148.52,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-01,12476.14,9980.912,14971.367999999999,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-02,6095.18,4876.144,7314.216,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-03,4729.5,3783.6000000000004,5675.4,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-04,15371.38,12297.104,18445.656,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-05,9736.119999999999,7788.896,11683.344,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-06,9739.01,7791.2080000000005,11686.812,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-07,8457.1,6765.68,10148.52,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-08,12476.14,9980.912,14971.367999999999,category,GOURMET,30,NaiveSeasonalWeekly
+2026-04-09,6095.18,4876.144,7314.216,category,GOURMET,30,NaiveSeasonalWeekly
+2026-03-11,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-12,139225.44,111380.35200000001,167070.528,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-13,151030.08,120824.064,181236.096,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-14,180330.48,144264.38400000002,216396.576,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-15,147770.57,118216.456,177324.684,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-16,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-17,112603.05,90082.44,135123.66,category,BISTICKS,7,NaiveSeasonalWeekly
+2026-03-11,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-12,139225.44,111380.35200000001,167070.528,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-13,151030.08,120824.064,181236.096,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-14,180330.48,144264.38400000002,216396.576,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-15,147770.57,118216.456,177324.684,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-16,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-17,112603.05,90082.44,135123.66,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-18,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-19,139225.44,111380.35200000001,167070.528,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-20,151030.08,120824.064,181236.096,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-21,180330.48,144264.38400000002,216396.576,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-22,147770.57,118216.456,177324.684,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-23,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-24,112603.05,90082.44,135123.66,category,BISTICKS,14,NaiveSeasonalWeekly
+2026-03-11,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-12,139225.44,111380.35200000001,167070.528,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-13,151030.08,120824.064,181236.096,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-14,180330.48,144264.38400000002,216396.576,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-15,147770.57,118216.456,177324.684,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-16,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-17,112603.05,90082.44,135123.66,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-18,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-19,139225.44,111380.35200000001,167070.528,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-20,151030.08,120824.064,181236.096,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-21,180330.48,144264.38400000002,216396.576,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-22,147770.57,118216.456,177324.684,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-23,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-24,112603.05,90082.44,135123.66,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-25,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-26,139225.44,111380.35200000001,167070.528,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-27,151030.08,120824.064,181236.096,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-28,180330.48,144264.38400000002,216396.576,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-29,147770.57,118216.456,177324.684,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-30,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-31,112603.05,90082.44,135123.66,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-01,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-02,139225.44,111380.35200000001,167070.528,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-03,151030.08,120824.064,181236.096,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-04,180330.48,144264.38400000002,216396.576,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-05,147770.57,118216.456,177324.684,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-06,136098.02000000002,108878.41600000003,163317.624,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-07,112603.05,90082.44,135123.66,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-08,119104.45999999999,95283.568,142925.35199999998,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-04-09,139225.44,111380.35200000001,167070.528,category,BISTICKS,30,NaiveSeasonalWeekly
+2026-03-11,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-12,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-13,17398.04,13918.432,20877.648,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-14,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-15,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-16,30439.54,24351.632,36527.448,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-17,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,7,NaiveSeasonalWeekly
+2026-03-11,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-12,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-13,17398.04,13918.432,20877.648,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-14,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-15,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-16,30439.54,24351.632,36527.448,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-17,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-18,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-19,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-20,17398.04,13918.432,20877.648,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-21,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-22,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-23,30439.54,24351.632,36527.448,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-24,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,14,NaiveSeasonalWeekly
+2026-03-11,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-12,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-13,17398.04,13918.432,20877.648,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-14,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-15,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-16,30439.54,24351.632,36527.448,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-17,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-18,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-19,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-20,17398.04,13918.432,20877.648,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-21,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-22,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-23,30439.54,24351.632,36527.448,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-24,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-25,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-26,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-27,17398.04,13918.432,20877.648,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-28,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-29,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-30,30439.54,24351.632,36527.448,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-31,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-01,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-02,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-03,17398.04,13918.432,20877.648,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-04,33444.840000000004,26755.872000000003,40133.808000000005,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-05,37671.88,30137.504,45206.255999999994,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-06,30439.54,24351.632,36527.448,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-07,25783.480000000003,20626.784000000003,30940.176000000003,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-08,42397.2,33917.76,50876.63999999999,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-04-09,34808.16,27846.528000000006,41769.792,category,TRADING GOODS,30,NaiveSeasonalWeekly
+2026-03-11,109419.48,87535.584,131303.376,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-12,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-13,93382.18,74705.74399999999,112058.616,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-14,98088.55,78470.84000000001,117706.26,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-15,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-16,81266.475,65013.18000000001,97519.77,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-17,82318.63,65854.90400000001,98782.356,category,SNACKS,7,NaiveSeasonalWeekly
+2026-03-11,109419.48,87535.584,131303.376,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-12,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-13,93382.18,74705.74399999999,112058.616,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-14,98088.55,78470.84000000001,117706.26,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-15,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-16,81266.475,65013.18000000001,97519.77,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-17,82318.63,65854.90400000001,98782.356,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-18,109419.48,87535.584,131303.376,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-19,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-20,93382.18,74705.74399999999,112058.616,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-21,98088.55,78470.84000000001,117706.26,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-22,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-23,81266.475,65013.18000000001,97519.77,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-24,82318.63,65854.90400000001,98782.356,category,SNACKS,14,NaiveSeasonalWeekly
+2026-03-11,109419.48,87535.584,131303.376,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-12,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-13,93382.18,74705.74399999999,112058.616,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-14,98088.55,78470.84000000001,117706.26,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-15,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-16,81266.475,65013.18000000001,97519.77,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-17,82318.63,65854.90400000001,98782.356,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-18,109419.48,87535.584,131303.376,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-19,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-20,93382.18,74705.74399999999,112058.616,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-21,98088.55,78470.84000000001,117706.26,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-22,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-23,81266.475,65013.18000000001,97519.77,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-24,82318.63,65854.90400000001,98782.356,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-25,109419.48,87535.584,131303.376,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-26,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-27,93382.18,74705.74399999999,112058.616,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-28,98088.55,78470.84000000001,117706.26,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-29,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-30,81266.475,65013.18000000001,97519.77,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-31,82318.63,65854.90400000001,98782.356,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-01,109419.48,87535.584,131303.376,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-02,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-03,93382.18,74705.74399999999,112058.616,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-04,98088.55,78470.84000000001,117706.26,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-05,100073.11,80058.48800000001,120087.73199999999,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-06,81266.475,65013.18000000001,97519.77,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-07,82318.63,65854.90400000001,98782.356,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-08,109419.48,87535.584,131303.376,category,SNACKS,30,NaiveSeasonalWeekly
+2026-04-09,80969.21,64775.36800000001,97163.05200000001,category,SNACKS,30,NaiveSeasonalWeekly
+2026-03-11,4638.08,3710.464,5565.696,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-12,5304.76,4243.808,6365.712,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-13,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-14,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-15,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-16,4612.83,3690.264,5535.396,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-17,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,7,NaiveSeasonalWeekly
+2026-03-11,4638.08,3710.464,5565.696,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-12,5304.76,4243.808,6365.712,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-13,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-14,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-15,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-16,4612.83,3690.264,5535.396,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-17,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-18,4638.08,3710.464,5565.696,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-19,5304.76,4243.808,6365.712,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-20,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-21,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-22,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-23,4612.83,3690.264,5535.396,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-24,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,14,NaiveSeasonalWeekly
+2026-03-11,4638.08,3710.464,5565.696,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-12,5304.76,4243.808,6365.712,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-13,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-14,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-15,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-16,4612.83,3690.264,5535.396,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-17,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-18,4638.08,3710.464,5565.696,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-19,5304.76,4243.808,6365.712,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-20,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-21,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-22,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-23,4612.83,3690.264,5535.396,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-24,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-25,4638.08,3710.464,5565.696,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-26,5304.76,4243.808,6365.712,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-27,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-28,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-29,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-30,4612.83,3690.264,5535.396,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-31,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-01,4638.08,3710.464,5565.696,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-02,5304.76,4243.808,6365.712,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-03,5609.4800000000005,4487.584000000001,6731.376,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-04,52685.659999999996,42148.528,63222.791999999994,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-05,10532.8,8426.24,12639.359999999999,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-06,4612.83,3690.264,5535.396,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-07,5052.34,4041.8720000000003,6062.808,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-08,4638.08,3710.464,5565.696,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-04-09,5304.76,4243.808,6365.712,category,JAGGERY COATED,30,NaiveSeasonalWeekly
+2026-03-11,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-12,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-13,112829.1,90263.28000000001,135394.92,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-14,173163.32,138530.65600000002,207795.984,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-15,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-16,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-17,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,7,NaiveSeasonalWeekly
+2026-03-11,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-12,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-13,112829.1,90263.28000000001,135394.92,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-14,173163.32,138530.65600000002,207795.984,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-15,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-16,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-17,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-18,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-19,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-20,112829.1,90263.28000000001,135394.92,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-21,173163.32,138530.65600000002,207795.984,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-22,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-23,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-24,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,14,NaiveSeasonalWeekly
+2026-03-11,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-12,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-13,112829.1,90263.28000000001,135394.92,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-14,173163.32,138530.65600000002,207795.984,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-15,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-16,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-17,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-18,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-19,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-20,112829.1,90263.28000000001,135394.92,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-21,173163.32,138530.65600000002,207795.984,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-22,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-23,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-24,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-25,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-26,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-27,112829.1,90263.28000000001,135394.92,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-28,173163.32,138530.65600000002,207795.984,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-29,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-30,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-31,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-01,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-02,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-03,112829.1,90263.28000000001,135394.92,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-04,173163.32,138530.65600000002,207795.984,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-05,192813.40000000002,154250.72000000003,231376.08000000002,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-06,99826.45000000001,79861.16000000002,119791.74,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-07,106093.17000000001,84874.53600000002,127311.804,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-08,111308.90000000001,89047.12000000001,133570.68,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-04-09,101606.12000000001,81284.89600000001,121927.34400000001,category,ICE CREAM,30,NaiveSeasonalWeekly
+2026-03-11,235786.15,188628.92,282943.38,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-12,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-13,229789.7,183831.76,275747.64,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-14,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-15,262117.01,209693.608,314540.412,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-16,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-17,172284.345,137827.476,206741.214,category,DRY FRUIT,7,NaiveSeasonalWeekly
+2026-03-11,235786.15,188628.92,282943.38,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-12,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-13,229789.7,183831.76,275747.64,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-14,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-15,262117.01,209693.608,314540.412,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-16,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-17,172284.345,137827.476,206741.214,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-18,235786.15,188628.92,282943.38,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-19,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-20,229789.7,183831.76,275747.64,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-21,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-22,262117.01,209693.608,314540.412,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-23,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-24,172284.345,137827.476,206741.214,category,DRY FRUIT,14,NaiveSeasonalWeekly
+2026-03-11,235786.15,188628.92,282943.38,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-12,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-13,229789.7,183831.76,275747.64,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-14,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-15,262117.01,209693.608,314540.412,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-16,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-17,172284.345,137827.476,206741.214,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-18,235786.15,188628.92,282943.38,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-19,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-20,229789.7,183831.76,275747.64,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-21,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-22,262117.01,209693.608,314540.412,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-23,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-24,172284.345,137827.476,206741.214,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-25,235786.15,188628.92,282943.38,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-26,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-27,229789.7,183831.76,275747.64,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-28,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-29,262117.01,209693.608,314540.412,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-30,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-31,172284.345,137827.476,206741.214,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-01,235786.15,188628.92,282943.38,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-02,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-03,229789.7,183831.76,275747.64,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-04,338650.67,270920.536,406380.80399999995,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-05,262117.01,209693.608,314540.412,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-06,224004.64,179203.71200000003,268805.568,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-07,172284.345,137827.476,206741.214,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-08,235786.15,188628.92,282943.38,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-04-09,203359.36000000002,162687.488,244031.23200000002,category,DRY FRUIT,30,NaiveSeasonalWeekly
+2026-03-11,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-12,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-13,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-14,185340.94,148272.752,222409.128,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-15,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-16,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-17,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,7,NaiveSeasonalWeekly
+2026-03-11,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-12,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-13,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-14,185340.94,148272.752,222409.128,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-15,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-16,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-17,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-18,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-19,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-20,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-21,185340.94,148272.752,222409.128,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-22,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-23,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-24,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,14,NaiveSeasonalWeekly
+2026-03-11,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-12,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-13,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-14,185340.94,148272.752,222409.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-15,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-16,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-17,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-18,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-19,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-20,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-21,185340.94,148272.752,222409.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-22,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-23,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-24,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-25,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-26,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-27,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-28,185340.94,148272.752,222409.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-29,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-30,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-31,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-01,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-02,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-03,102936.23999999999,82348.992,123523.48799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-04,185340.94,148272.752,222409.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-05,172024.69999999998,137619.75999999998,206429.63999999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-06,110490.94,88392.75200000001,132589.128,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-07,120127.59,96102.072,144153.10799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-08,216929.44,173543.55200000003,260315.32799999998,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-04-09,333666.62,266933.29600000003,400399.94399999996,category,GIFT HAMPER,30,NaiveSeasonalWeekly
+2026-03-11,118801.72,95041.376,142562.06399999998,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-12,119584.75,95667.8,143501.69999999998,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-13,134553.06,107642.448,161463.672,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-14,161156.82,128925.456,193388.184,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-15,124938.5,99950.8,149926.19999999998,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-16,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-17,87746.85,70197.48000000001,105296.22,category,BAKLAVA,7,NaiveSeasonalWeekly
+2026-03-11,118801.72,95041.376,142562.06399999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-12,119584.75,95667.8,143501.69999999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-13,134553.06,107642.448,161463.672,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-14,161156.82,128925.456,193388.184,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-15,124938.5,99950.8,149926.19999999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-16,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-17,87746.85,70197.48000000001,105296.22,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-18,118801.72,95041.376,142562.06399999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-19,119584.75,95667.8,143501.69999999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-20,134553.06,107642.448,161463.672,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-21,161156.82,128925.456,193388.184,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-22,124938.5,99950.8,149926.19999999998,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-23,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-24,87746.85,70197.48000000001,105296.22,category,BAKLAVA,14,NaiveSeasonalWeekly
+2026-03-11,118801.72,95041.376,142562.06399999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-12,119584.75,95667.8,143501.69999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-13,134553.06,107642.448,161463.672,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-14,161156.82,128925.456,193388.184,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-15,124938.5,99950.8,149926.19999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-16,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-17,87746.85,70197.48000000001,105296.22,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-18,118801.72,95041.376,142562.06399999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-19,119584.75,95667.8,143501.69999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-20,134553.06,107642.448,161463.672,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-21,161156.82,128925.456,193388.184,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-22,124938.5,99950.8,149926.19999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-23,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-24,87746.85,70197.48000000001,105296.22,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-25,118801.72,95041.376,142562.06399999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-26,119584.75,95667.8,143501.69999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-27,134553.06,107642.448,161463.672,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-28,161156.82,128925.456,193388.184,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-29,124938.5,99950.8,149926.19999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-30,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-31,87746.85,70197.48000000001,105296.22,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-01,118801.72,95041.376,142562.06399999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-02,119584.75,95667.8,143501.69999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-03,134553.06,107642.448,161463.672,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-04,161156.82,128925.456,193388.184,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-05,124938.5,99950.8,149926.19999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-06,98522.63500000001,78818.10800000001,118227.16200000001,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-07,87746.85,70197.48000000001,105296.22,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-08,118801.72,95041.376,142562.06399999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-04-09,119584.75,95667.8,143501.69999999998,category,BAKLAVA,30,NaiveSeasonalWeekly
+2026-03-11,97861.96,78289.56800000001,117434.352,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-12,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-13,44850.0,35880.0,53820.0,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-14,62748.0,50198.4,75297.59999999999,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-15,52010.08,41608.064000000006,62412.096,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-16,43730.31,34984.248,52476.371999999996,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-17,51428.03,41142.424,61713.636,category,BEVERAGE,7,NaiveSeasonalWeekly
+2026-03-11,97861.96,78289.56800000001,117434.352,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-12,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-13,44850.0,35880.0,53820.0,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-14,62748.0,50198.4,75297.59999999999,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-15,52010.08,41608.064000000006,62412.096,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-16,43730.31,34984.248,52476.371999999996,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-17,51428.03,41142.424,61713.636,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-18,97861.96,78289.56800000001,117434.352,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-19,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-20,44850.0,35880.0,53820.0,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-21,62748.0,50198.4,75297.59999999999,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-22,52010.08,41608.064000000006,62412.096,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-23,43730.31,34984.248,52476.371999999996,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-24,51428.03,41142.424,61713.636,category,BEVERAGE,14,NaiveSeasonalWeekly
+2026-03-11,97861.96,78289.56800000001,117434.352,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-12,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-13,44850.0,35880.0,53820.0,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-14,62748.0,50198.4,75297.59999999999,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-15,52010.08,41608.064000000006,62412.096,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-16,43730.31,34984.248,52476.371999999996,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-17,51428.03,41142.424,61713.636,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-18,97861.96,78289.56800000001,117434.352,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-19,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-20,44850.0,35880.0,53820.0,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-21,62748.0,50198.4,75297.59999999999,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-22,52010.08,41608.064000000006,62412.096,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-23,43730.31,34984.248,52476.371999999996,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-24,51428.03,41142.424,61713.636,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-25,97861.96,78289.56800000001,117434.352,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-26,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-27,44850.0,35880.0,53820.0,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-28,62748.0,50198.4,75297.59999999999,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-29,52010.08,41608.064000000006,62412.096,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-30,43730.31,34984.248,52476.371999999996,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-31,51428.03,41142.424,61713.636,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-01,97861.96,78289.56800000001,117434.352,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-02,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-03,44850.0,35880.0,53820.0,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-04,62748.0,50198.4,75297.59999999999,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-05,52010.08,41608.064000000006,62412.096,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-06,43730.31,34984.248,52476.371999999996,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-07,51428.03,41142.424,61713.636,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-08,97861.96,78289.56800000001,117434.352,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-04-09,46626.020000000004,37300.816000000006,55951.224,category,BEVERAGE,30,NaiveSeasonalWeekly
+2026-03-11,6783.7,5426.96,8140.44,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-12,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-13,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-14,14895.34,11916.272,17874.408,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-15,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-16,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-17,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,7,NaiveSeasonalWeekly
+2026-03-11,6783.7,5426.96,8140.44,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-12,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-13,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-14,14895.34,11916.272,17874.408,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-15,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-16,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-17,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-18,6783.7,5426.96,8140.44,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-19,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-20,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-21,14895.34,11916.272,17874.408,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-22,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-23,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-24,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,14,NaiveSeasonalWeekly
+2026-03-11,6783.7,5426.96,8140.44,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-12,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-13,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-14,14895.34,11916.272,17874.408,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-15,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-16,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-17,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-18,6783.7,5426.96,8140.44,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-19,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-20,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-21,14895.34,11916.272,17874.408,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-22,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-23,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-24,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-25,6783.7,5426.96,8140.44,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-26,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-27,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-28,14895.34,11916.272,17874.408,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-29,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-30,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-31,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-01,6783.7,5426.96,8140.44,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-02,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-03,9113.32,7290.656,10935.983999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-04,14895.34,11916.272,17874.408,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-05,8259.14,6607.312,9910.967999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-06,9346.900000000001,7477.520000000001,11216.28,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-07,11005.960000000001,8804.768000000002,13207.152,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-08,6783.7,5426.96,8140.44,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-04-09,6213.42,4970.736000000001,7456.103999999999,category,CHOCOLATE,30,NaiveSeasonalWeekly
+2026-03-11,0.0,0.0,0.0,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-12,561.88,449.504,674.256,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-13,0.0,0.0,0.0,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-14,171.42,137.136,205.70399999999998,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-15,390.46,312.368,468.55199999999996,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-16,195.23,156.184,234.27599999999998,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-17,366.65,293.32,439.97999999999996,category,COMBO,7,NaiveSeasonalWeekly
+2026-03-11,0.0,0.0,0.0,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-12,561.88,449.504,674.256,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-13,0.0,0.0,0.0,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-14,171.42,137.136,205.70399999999998,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-15,390.46,312.368,468.55199999999996,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-16,195.23,156.184,234.27599999999998,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-17,366.65,293.32,439.97999999999996,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-18,0.0,0.0,0.0,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-19,561.88,449.504,674.256,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-20,0.0,0.0,0.0,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-21,171.42,137.136,205.70399999999998,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-22,390.46,312.368,468.55199999999996,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-23,195.23,156.184,234.27599999999998,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-24,366.65,293.32,439.97999999999996,category,COMBO,14,NaiveSeasonalWeekly
+2026-03-11,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-12,561.88,449.504,674.256,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-13,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-14,171.42,137.136,205.70399999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-15,390.46,312.368,468.55199999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-16,195.23,156.184,234.27599999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-17,366.65,293.32,439.97999999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-18,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-19,561.88,449.504,674.256,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-20,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-21,171.42,137.136,205.70399999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-22,390.46,312.368,468.55199999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-23,195.23,156.184,234.27599999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-24,366.65,293.32,439.97999999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-25,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-26,561.88,449.504,674.256,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-27,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-28,171.42,137.136,205.70399999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-29,390.46,312.368,468.55199999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-30,195.23,156.184,234.27599999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-31,366.65,293.32,439.97999999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-01,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-02,561.88,449.504,674.256,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-03,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-04,171.42,137.136,205.70399999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-05,390.46,312.368,468.55199999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-06,195.23,156.184,234.27599999999998,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-07,366.65,293.32,439.97999999999996,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-08,0.0,0.0,0.0,category,COMBO,30,NaiveSeasonalWeekly
+2026-04-09,561.88,449.504,674.256,category,COMBO,30,NaiveSeasonalWeekly
+2026-03-11,224314.12,179451.296,269176.94399999996,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-12,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-13,185606.38,148485.10400000002,222727.656,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-14,326058.24,260846.592,391269.888,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-15,250290.94,200232.752,300349.12799999997,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-16,167778.7,134222.96000000002,201334.44,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-17,150544.88,120435.90400000001,180653.856,category,CHAAT,7,NaiveSeasonalWeekly
+2026-03-11,224314.12,179451.296,269176.94399999996,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-12,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-13,185606.38,148485.10400000002,222727.656,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-14,326058.24,260846.592,391269.888,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-15,250290.94,200232.752,300349.12799999997,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-16,167778.7,134222.96000000002,201334.44,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-17,150544.88,120435.90400000001,180653.856,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-18,224314.12,179451.296,269176.94399999996,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-19,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-20,185606.38,148485.10400000002,222727.656,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-21,326058.24,260846.592,391269.888,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-22,250290.94,200232.752,300349.12799999997,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-23,167778.7,134222.96000000002,201334.44,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-24,150544.88,120435.90400000001,180653.856,category,CHAAT,14,NaiveSeasonalWeekly
+2026-03-11,224314.12,179451.296,269176.94399999996,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-12,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-13,185606.38,148485.10400000002,222727.656,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-14,326058.24,260846.592,391269.888,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-15,250290.94,200232.752,300349.12799999997,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-16,167778.7,134222.96000000002,201334.44,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-17,150544.88,120435.90400000001,180653.856,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-18,224314.12,179451.296,269176.94399999996,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-19,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-20,185606.38,148485.10400000002,222727.656,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-21,326058.24,260846.592,391269.888,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-22,250290.94,200232.752,300349.12799999997,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-23,167778.7,134222.96000000002,201334.44,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-24,150544.88,120435.90400000001,180653.856,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-25,224314.12,179451.296,269176.94399999996,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-26,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-27,185606.38,148485.10400000002,222727.656,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-28,326058.24,260846.592,391269.888,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-29,250290.94,200232.752,300349.12799999997,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-30,167778.7,134222.96000000002,201334.44,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-31,150544.88,120435.90400000001,180653.856,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-01,224314.12,179451.296,269176.94399999996,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-02,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-03,185606.38,148485.10400000002,222727.656,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-04,326058.24,260846.592,391269.888,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-05,250290.94,200232.752,300349.12799999997,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-06,167778.7,134222.96000000002,201334.44,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-07,150544.88,120435.90400000001,180653.856,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-08,224314.12,179451.296,269176.94399999996,category,CHAAT,30,NaiveSeasonalWeekly
+2026-04-09,162232.7,129786.16000000002,194679.24000000002,category,CHAAT,30,NaiveSeasonalWeekly
+2026-03-10,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,READY TO COOK,7,NaiveSeasonalWeekly
+2026-03-10,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,READY TO COOK,14,NaiveSeasonalWeekly
+2026-03-10,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,READY TO COOK,30,NaiveSeasonalWeekly
+2026-03-05,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-06,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-07,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-08,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-09,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-10,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,CONSUMABLES,7,NaiveSeasonalWeekly
+2026-03-05,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-06,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-07,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-08,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-09,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-10,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,CONSUMABLES,14,NaiveSeasonalWeekly
+2026-03-05,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-06,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-07,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-08,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-09,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-10,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,CONSUMABLES,30,NaiveSeasonalWeekly
+2026-03-07,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-08,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-09,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-10,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,UNKNOWN,7,NaiveSeasonalWeekly
+2026-03-07,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-08,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-09,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-10,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,UNKNOWN,14,NaiveSeasonalWeekly
+2026-03-07,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-08,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-09,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-10,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,UNKNOWN,30,NaiveSeasonalWeekly
+2026-03-11,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-12,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-13,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-14,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-15,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-16,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-17,,,,category,GROCERY PRODUCTS,7,NaiveSeasonalWeekly
+2026-03-11,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-12,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-13,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-14,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-15,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-16,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-17,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-18,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-19,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-20,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-21,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-22,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-23,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-24,,,,category,GROCERY PRODUCTS,14,NaiveSeasonalWeekly
+2026-03-11,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-12,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-13,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-14,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-15,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-16,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-17,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-18,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-19,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-20,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-21,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-22,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-23,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-24,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-25,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-26,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-27,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-28,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-29,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-30,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-03-31,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-01,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-02,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-03,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-04,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-05,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-06,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-07,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-08,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
+2026-04-09,,,,category,GROCERY PRODUCTS,30,NaiveSeasonalWeekly
