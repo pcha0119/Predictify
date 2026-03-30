@@ -43,6 +43,7 @@ from fastapi import BackgroundTasks, FastAPI, File, HTTPException, Query, Upload
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.responses import Response as StarletteResponse
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -1185,3 +1186,94 @@ async def data_prep_reset() -> dict:
     _prep["history"] = []
     _prep["source"] = None
     return {"status": "reset", "message": "Prep state cleared."}
+
+
+# ── LLM Chat endpoints ──────────────────────────────────────────────────────
+
+@app.post("/chat")
+async def chat_endpoint(body: dict):
+    """
+    Stream an LLM response via Server-Sent Events.
+
+    Body:
+      messages      : list[{role, content}]  — conversation history
+      screen_context: dict (optional) — {currentView, grain, horizon, model, groupValue}
+      persona       : str (optional)  — default | ceo | supply_chain | reasoning
+      provider      : str (optional)  — override active_provider
+      model         : str (optional)  — override active_model
+    """
+    from api.llm_gateway import stream_chat
+
+    messages = body.get("messages", [])
+    if not messages:
+        raise HTTPException(400, "messages list is required.")
+
+    screen_context = body.get("screen_context")
+    persona = body.get("persona", "default")
+    provider = body.get("provider")
+    model = body.get("model")
+
+    async def event_stream():
+        async for chunk in stream_chat(
+            messages=messages,
+            app_state=_state,
+            prep_state=_prep,
+            screen_context=screen_context,
+            persona=persona,
+            provider_override=provider,
+            model_override=model,
+        ):
+            yield chunk
+
+    return StreamingResponse(
+        event_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
+
+@app.get("/llm/config")
+async def llm_config_get() -> dict:
+    """Return current LLM configuration (keys redacted)."""
+    from api.llm_gateway import load_config
+
+    cfg = load_config(force=True)
+    # Redact API keys
+    safe = json.loads(json.dumps(cfg, default=str))
+    for prov in safe.get("providers", {}).values():
+        key = prov.get("api_key", "")
+        if key:
+            prov["api_key"] = key[:4] + "..." + key[-4:] if len(key) > 8 else "***"
+    return safe
+
+
+@app.post("/llm/config")
+async def llm_config_update(body: dict) -> dict:
+    """
+    Update LLM configuration.
+
+    Body (all optional):
+      active_provider: str
+      active_model   : str
+      api_key        : str  — sets key for active_provider
+      provider       : str  — which provider's key to set (if different from active)
+    """
+    from api.llm_gateway import load_config, save_config
+
+    cfg = load_config(force=True)
+
+    if "active_provider" in body:
+        cfg["active_provider"] = body["active_provider"]
+    if "active_model" in body:
+        cfg["active_model"] = body["active_model"]
+    if "api_key" in body:
+        prov = body.get("provider", cfg.get("active_provider", "gemini"))
+        if prov in cfg.get("providers", {}):
+            cfg["providers"][prov]["api_key"] = body["api_key"]
+
+    save_config(cfg)
+    return {"status": "updated", "active_provider": cfg["active_provider"], "active_model": cfg.get("active_model")}

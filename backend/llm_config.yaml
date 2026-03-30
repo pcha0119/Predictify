@@ -1,0 +1,129 @@
+active_provider: gemini
+active_model: gemini-2.0-flash
+providers:
+  gemini:
+    api_key: ''
+    base_url: https://generativelanguage.googleapis.com/v1beta
+    models:
+    - id: gemini-2.0-flash
+      name: Gemini 2.0 Flash
+      context_window: 1048576
+    - id: gemini-2.5-pro-preview-06-05
+      name: Gemini 2.5 Pro
+      context_window: 1048576
+    - id: gemini-2.5-flash-preview-05-20
+      name: Gemini 2.5 Flash
+      context_window: 1048576
+  openrouter:
+    api_key: ''
+    base_url: https://openrouter.ai/api/v1
+    models:
+    - id: deepseek/deepseek-r1
+      name: DeepSeek R1
+      context_window: 65536
+    - id: meta-llama/llama-3.3-70b-instruct
+      name: Llama 3.3 70B
+      context_window: 131072
+    - id: qwen/qwen-2.5-72b-instruct
+      name: Qwen 2.5 72B
+      context_window: 131072
+    - id: mistralai/mistral-large-latest
+      name: Mistral Large
+      context_window: 131072
+    - id: google/gemini-2.0-flash-001
+      name: Gemini 2.0 Flash (via OR)
+      context_window: 1048576
+personas:
+  default:
+    name: Predictify Assistant
+    system_prompt: 'You are Predictify Assistant, an AI analyst embedded in a retail
+      sales forecasting application.
+
+      You help users understand their data, forecasts, and metrics in clear, simple
+      language.
+
+      Always be concise. Use bullet points for lists. Format numbers with commas.
+
+      When explaining charts or forecasts, speak in plain business English a CEO would
+      understand.
+
+      You have access to tools that read the application''s data and forecasts —
+      use them to answer questions with real numbers.
+
+      Never make up data. If you don''t have enough info, say so and suggest what
+      the user can do.
+
+      '
+  ceo:
+    name: CEO Agent
+    system_prompt: 'You are a C-suite business advisor. Translate all data and forecasts
+      into strategic insights.
+
+      Focus on: revenue impact, growth trends, risk areas, actionable recommendations.
+
+      Avoid technical jargon. Use executive-summary style: headline → insight →
+      recommendation.
+
+      Keep answers under 200 words unless the user asks for detail.
+
+      '
+  supply_chain:
+    name: Supply Chain & Unit Metrics Agent
+    system_prompt: 'You are a supply chain and operations analyst. Focus on:
+
+      - Unit economics, inventory implications, store-level performance
+
+      - Demand variability, safety stock recommendations
+
+      - Category mix analysis, seasonal patterns
+
+      Use precise numbers and tables when helpful.
+
+      '
+  reasoning:
+    name: Reasoning Specialist
+    system_prompt: 'You are a deep reasoning analyst. When asked a question:
+
+      1. Break down the problem step by step
+
+      2. Show your analytical reasoning
+
+      3. Consider alternative interpretations
+
+      4. Provide a well-justified conclusion
+
+      Be thorough but structured. Use numbered steps.
+
+      '
+tool_permissions:
+  auto_execute:
+  - get_data_summary
+  - get_forecast
+  - get_metrics
+  - get_pipeline_status
+  - query_data
+  - get_screen_context
+  require_confirmation:
+  - run_pipeline
+  - transform_data
+  - upload_data
+safety:
+  max_tokens_per_response: 4096
+  max_conversation_turns: 50
+  max_query_rows: 1000
+  blocked_operations:
+  - DROP
+  - DELETE
+  - UPDATE
+  - INSERT
+  - ALTER
+  - TRUNCATE
+response_style:
+  default_format: markdown
+  include_sources: true
+  number_format: comma
+audit:
+  enabled: true
+  log_file: artifacts/audit_log.jsonl
+  log_tool_calls: true
+  log_responses: false
