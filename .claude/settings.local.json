@@ -11,7 +11,14 @@
       "Bash(python -c \"import json; d=json.load\\(open\\(''artifacts/reports/summary.json''\\)\\); print\\(''FOUND summary.json''\\)\")",
       "Bash(python run_pipeline.py --grain total store category --horizon 7 14 30 --bootstrap 20)",
       "Bash(curl -s \"http://localhost:8000/categories\")",
-      "Bash(python -c \"import sys,json; print\\(json.load\\(sys.stdin\\)[:10]\\)\" echo \"\" curl -s \"http://localhost:8000/forecasts/category?horizon=7&model=RidgeForecaster&category=SWEET\")"
+      "Bash(python -c \"import sys,json; print\\(json.load\\(sys.stdin\\)[:10]\\)\" echo \"\" curl -s \"http://localhost:8000/forecasts/category?horizon=7&model=RidgeForecaster&category=SWEET\")",
+      "Bash(curl -s http://localhost:8000/health)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(pkill -f \"run_pipeline.py\\\\|uvicorn\")",
+      "Bash(netstat -ano)",
+      "Bash(powershell.exe -Command \"Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object OwningProcess | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }\")",
+      "Bash(taskkill.exe //F //IM python.exe)",
+      "Bash(pkill -9 -f python)"
     ]
   }
 }

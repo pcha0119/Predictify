@@ -1,0 +1,4052 @@
+[
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "total",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 209656.8529,
+    "mean_rmse": 223364.6694,
+    "per_fold_mae": [
+      209656.8529
+    ],
+    "per_fold_rmse": [
+      223364.6694
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 209656.8529,
+    "mean_rmse": 223364.6694,
+    "per_fold_mae": [
+      209656.8529
+    ],
+    "per_fold_rmse": [
+      223364.6694
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 209656.8529,
+    "mean_rmse": 223364.6694,
+    "per_fold_mae": [
+      209656.8529
+    ],
+    "per_fold_rmse": [
+      223364.6694
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 38051.4733,
+    "mean_rmse": 46697.6176,
+    "per_fold_mae": [
+      38051.4733
+    ],
+    "per_fold_rmse": [
+      46697.6176
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 38051.4733,
+    "mean_rmse": 46697.6176,
+    "per_fold_mae": [
+      38051.4733
+    ],
+    "per_fold_rmse": [
+      46697.6176
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 38051.4733,
+    "mean_rmse": 46697.6176,
+    "per_fold_mae": [
+      38051.4733
+    ],
+    "per_fold_rmse": [
+      46697.6176
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 175770.33,
+    "mean_rmse": 200771.7388,
+    "per_fold_mae": [
+      175770.33
+    ],
+    "per_fold_rmse": [
+      200771.7388
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 175770.33,
+    "mean_rmse": 200771.7388,
+    "per_fold_mae": [
+      175770.33
+    ],
+    "per_fold_rmse": [
+      200771.7388
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 175770.33,
+    "mean_rmse": 200771.7388,
+    "per_fold_mae": [
+      175770.33
+    ],
+    "per_fold_rmse": [
+      200771.7388
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 74960.01,
+    "mean_rmse": 77205.8822,
+    "per_fold_mae": [
+      74960.01
+    ],
+    "per_fold_rmse": [
+      77205.8822
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 74960.01,
+    "mean_rmse": 77205.8822,
+    "per_fold_mae": [
+      74960.01
+    ],
+    "per_fold_rmse": [
+      77205.8822
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 74960.01,
+    "mean_rmse": 77205.8822,
+    "per_fold_mae": [
+      74960.01
+    ],
+    "per_fold_rmse": [
+      77205.8822
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 35574.6467,
+    "mean_rmse": 40200.6641,
+    "per_fold_mae": [
+      35574.6467
+    ],
+    "per_fold_rmse": [
+      40200.6641
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 35574.6467,
+    "mean_rmse": 40200.6641,
+    "per_fold_mae": [
+      35574.6467
+    ],
+    "per_fold_rmse": [
+      40200.6641
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 35574.6467,
+    "mean_rmse": 40200.6641,
+    "per_fold_mae": [
+      35574.6467
+    ],
+    "per_fold_rmse": [
+      40200.6641
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 168549.8967,
+    "mean_rmse": 182386.0885,
+    "per_fold_mae": [
+      168549.8967
+    ],
+    "per_fold_rmse": [
+      182386.0885
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 168549.8967,
+    "mean_rmse": 182386.0885,
+    "per_fold_mae": [
+      168549.8967
+    ],
+    "per_fold_rmse": [
+      182386.0885
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 168549.8967,
+    "mean_rmse": 182386.0885,
+    "per_fold_mae": [
+      168549.8967
+    ],
+    "per_fold_rmse": [
+      182386.0885
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 57468.3733,
+    "mean_rmse": 61194.9035,
+    "per_fold_mae": [
+      57468.3733
+    ],
+    "per_fold_rmse": [
+      61194.9035
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 57468.3733,
+    "mean_rmse": 61194.9035,
+    "per_fold_mae": [
+      57468.3733
+    ],
+    "per_fold_rmse": [
+      61194.9035
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 57468.3733,
+    "mean_rmse": 61194.9035,
+    "per_fold_mae": [
+      57468.3733
+    ],
+    "per_fold_rmse": [
+      61194.9035
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 115641.35,
+    "mean_rmse": 131048.9103,
+    "per_fold_mae": [
+      115641.35
+    ],
+    "per_fold_rmse": [
+      131048.9103
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 115641.35,
+    "mean_rmse": 131048.9103,
+    "per_fold_mae": [
+      115641.35
+    ],
+    "per_fold_rmse": [
+      131048.9103
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 115641.35,
+    "mean_rmse": 131048.9103,
+    "per_fold_mae": [
+      115641.35
+    ],
+    "per_fold_rmse": [
+      131048.9103
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 30853.7967,
+    "mean_rmse": 37883.3959,
+    "per_fold_mae": [
+      30853.7967
+    ],
+    "per_fold_rmse": [
+      37883.3959
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 30853.7967,
+    "mean_rmse": 37883.3959,
+    "per_fold_mae": [
+      30853.7967
+    ],
+    "per_fold_rmse": [
+      37883.3959
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 30853.7967,
+    "mean_rmse": 37883.3959,
+    "per_fold_mae": [
+      30853.7967
+    ],
+    "per_fold_rmse": [
+      37883.3959
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 213041.6733,
+    "mean_rmse": 218792.6664,
+    "per_fold_mae": [
+      213041.6733
+    ],
+    "per_fold_rmse": [
+      218792.6664
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 213041.6733,
+    "mean_rmse": 218792.6664,
+    "per_fold_mae": [
+      213041.6733
+    ],
+    "per_fold_rmse": [
+      218792.6664
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 213041.6733,
+    "mean_rmse": 218792.6664,
+    "per_fold_mae": [
+      213041.6733
+    ],
+    "per_fold_rmse": [
+      218792.6664
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 192481.1267,
+    "mean_rmse": 194495.6552,
+    "per_fold_mae": [
+      192481.1267
+    ],
+    "per_fold_rmse": [
+      194495.6552
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 192481.1267,
+    "mean_rmse": 194495.6552,
+    "per_fold_mae": [
+      192481.1267
+    ],
+    "per_fold_rmse": [
+      194495.6552
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 192481.1267,
+    "mean_rmse": 194495.6552,
+    "per_fold_mae": [
+      192481.1267
+    ],
+    "per_fold_rmse": [
+      194495.6552
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 331009.3857,
+    "mean_rmse": 339857.3127,
+    "per_fold_mae": [
+      331009.3857
+    ],
+    "per_fold_rmse": [
+      339857.3127
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 331009.3857,
+    "mean_rmse": 339857.3127,
+    "per_fold_mae": [
+      331009.3857
+    ],
+    "per_fold_rmse": [
+      339857.3127
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 331009.3857,
+    "mean_rmse": 339857.3127,
+    "per_fold_mae": [
+      331009.3857
+    ],
+    "per_fold_rmse": [
+      339857.3127
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 29216.8739,
+    "mean_rmse": 34235.7297,
+    "per_fold_mae": [
+      29216.8739
+    ],
+    "per_fold_rmse": [
+      34235.7297
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 29216.8739,
+    "mean_rmse": 34235.7297,
+    "per_fold_mae": [
+      29216.8739
+    ],
+    "per_fold_rmse": [
+      34235.7297
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 29216.8739,
+    "mean_rmse": 34235.7297,
+    "per_fold_mae": [
+      29216.8739
+    ],
+    "per_fold_rmse": [
+      34235.7297
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 135813.2922,
+    "mean_rmse": 136847.7937,
+    "per_fold_mae": [
+      135813.2922
+    ],
+    "per_fold_rmse": [
+      136847.7937
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 135813.2922,
+    "mean_rmse": 136847.7937,
+    "per_fold_mae": [
+      135813.2922
+    ],
+    "per_fold_rmse": [
+      136847.7937
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 135813.2922,
+    "mean_rmse": 136847.7937,
+    "per_fold_mae": [
+      135813.2922
+    ],
+    "per_fold_rmse": [
+      136847.7937
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 52815.4628,
+    "mean_rmse": 71623.7995,
+    "per_fold_mae": [
+      52815.4628
+    ],
+    "per_fold_rmse": [
+      71623.7995
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 52815.4628,
+    "mean_rmse": 71623.7995,
+    "per_fold_mae": [
+      52815.4628
+    ],
+    "per_fold_rmse": [
+      71623.7995
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 52815.4628,
+    "mean_rmse": 71623.7995,
+    "per_fold_mae": [
+      52815.4628
+    ],
+    "per_fold_rmse": [
+      71623.7995
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 19819.195,
+    "mean_rmse": 27264.2329,
+    "per_fold_mae": [
+      19819.195
+    ],
+    "per_fold_rmse": [
+      27264.2329
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 19819.195,
+    "mean_rmse": 27264.2329,
+    "per_fold_mae": [
+      19819.195
+    ],
+    "per_fold_rmse": [
+      27264.2329
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 19819.195,
+    "mean_rmse": 27264.2329,
+    "per_fold_mae": [
+      19819.195
+    ],
+    "per_fold_rmse": [
+      27264.2329
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 94459.16,
+    "mean_rmse": 117380.3668,
+    "per_fold_mae": [
+      94459.16
+    ],
+    "per_fold_rmse": [
+      117380.3668
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 94459.16,
+    "mean_rmse": 117380.3668,
+    "per_fold_mae": [
+      94459.16
+    ],
+    "per_fold_rmse": [
+      117380.3668
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 94459.16,
+    "mean_rmse": 117380.3668,
+    "per_fold_mae": [
+      94459.16
+    ],
+    "per_fold_rmse": [
+      117380.3668
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 28711.5278,
+    "mean_rmse": 35169.8081,
+    "per_fold_mae": [
+      28711.5278
+    ],
+    "per_fold_rmse": [
+      35169.8081
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 28711.5278,
+    "mean_rmse": 35169.8081,
+    "per_fold_mae": [
+      28711.5278
+    ],
+    "per_fold_rmse": [
+      35169.8081
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 28711.5278,
+    "mean_rmse": 35169.8081,
+    "per_fold_mae": [
+      28711.5278
+    ],
+    "per_fold_rmse": [
+      35169.8081
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 82141.9467,
+    "mean_rmse": 95071.042,
+    "per_fold_mae": [
+      82141.9467
+    ],
+    "per_fold_rmse": [
+      95071.042
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 82141.9467,
+    "mean_rmse": 95071.042,
+    "per_fold_mae": [
+      82141.9467
+    ],
+    "per_fold_rmse": [
+      95071.042
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 82141.9467,
+    "mean_rmse": 95071.042,
+    "per_fold_mae": [
+      82141.9467
+    ],
+    "per_fold_rmse": [
+      95071.042
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 22616.3028,
+    "mean_rmse": 23237.6948,
+    "per_fold_mae": [
+      22616.3028
+    ],
+    "per_fold_rmse": [
+      23237.6948
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 22616.3028,
+    "mean_rmse": 23237.6948,
+    "per_fold_mae": [
+      22616.3028
+    ],
+    "per_fold_rmse": [
+      23237.6948
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 22616.3028,
+    "mean_rmse": 23237.6948,
+    "per_fold_mae": [
+      22616.3028
+    ],
+    "per_fold_rmse": [
+      23237.6948
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 56258.9817,
+    "mean_rmse": 75156.8315,
+    "per_fold_mae": [
+      56258.9817
+    ],
+    "per_fold_rmse": [
+      75156.8315
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 56258.9817,
+    "mean_rmse": 75156.8315,
+    "per_fold_mae": [
+      56258.9817
+    ],
+    "per_fold_rmse": [
+      75156.8315
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 56258.9817,
+    "mean_rmse": 75156.8315,
+    "per_fold_mae": [
+      56258.9817
+    ],
+    "per_fold_rmse": [
+      75156.8315
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 50565.0367,
+    "mean_rmse": 57761.5676,
+    "per_fold_mae": [
+      50565.0367
+    ],
+    "per_fold_rmse": [
+      57761.5676
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 50565.0367,
+    "mean_rmse": 57761.5676,
+    "per_fold_mae": [
+      50565.0367
+    ],
+    "per_fold_rmse": [
+      57761.5676
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 50565.0367,
+    "mean_rmse": 57761.5676,
+    "per_fold_mae": [
+      50565.0367
+    ],
+    "per_fold_rmse": [
+      57761.5676
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 435037.5293,
+    "mean_rmse": 467882.4282,
+    "per_fold_mae": [
+      435037.5293
+    ],
+    "per_fold_rmse": [
+      467882.4282
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 435037.5293,
+    "mean_rmse": 467882.4282,
+    "per_fold_mae": [
+      435037.5293
+    ],
+    "per_fold_rmse": [
+      467882.4282
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 435037.5293,
+    "mean_rmse": 467882.4282,
+    "per_fold_mae": [
+      435037.5293
+    ],
+    "per_fold_rmse": [
+      467882.4282
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 23350.1072,
+    "mean_rmse": 27528.4461,
+    "per_fold_mae": [
+      23350.1072
+    ],
+    "per_fold_rmse": [
+      27528.4461
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 23350.1072,
+    "mean_rmse": 27528.4461,
+    "per_fold_mae": [
+      23350.1072
+    ],
+    "per_fold_rmse": [
+      27528.4461
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 23350.1072,
+    "mean_rmse": 27528.4461,
+    "per_fold_mae": [
+      23350.1072
+    ],
+    "per_fold_rmse": [
+      27528.4461
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 75550.3211,
+    "mean_rmse": 95707.5578,
+    "per_fold_mae": [
+      75550.3211
+    ],
+    "per_fold_rmse": [
+      95707.5578
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 75550.3211,
+    "mean_rmse": 95707.5578,
+    "per_fold_mae": [
+      75550.3211
+    ],
+    "per_fold_rmse": [
+      95707.5578
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 75550.3211,
+    "mean_rmse": 95707.5578,
+    "per_fold_mae": [
+      75550.3211
+    ],
+    "per_fold_rmse": [
+      95707.5578
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 62157.2106,
+    "mean_rmse": 74279.0593,
+    "per_fold_mae": [
+      62157.2106
+    ],
+    "per_fold_rmse": [
+      74279.0593
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 62157.2106,
+    "mean_rmse": 74279.0593,
+    "per_fold_mae": [
+      62157.2106
+    ],
+    "per_fold_rmse": [
+      74279.0593
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 62157.2106,
+    "mean_rmse": 74279.0593,
+    "per_fold_mae": [
+      62157.2106
+    ],
+    "per_fold_rmse": [
+      74279.0593
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 58662.2194,
+    "mean_rmse": 76929.1886,
+    "per_fold_mae": [
+      58662.2194
+    ],
+    "per_fold_rmse": [
+      76929.1886
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 58662.2194,
+    "mean_rmse": 76929.1886,
+    "per_fold_mae": [
+      58662.2194
+    ],
+    "per_fold_rmse": [
+      76929.1886
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 58662.2194,
+    "mean_rmse": 76929.1886,
+    "per_fold_mae": [
+      58662.2194
+    ],
+    "per_fold_rmse": [
+      76929.1886
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 26896.9478,
+    "mean_rmse": 33325.3668,
+    "per_fold_mae": [
+      26896.9478
+    ],
+    "per_fold_rmse": [
+      33325.3668
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 26896.9478,
+    "mean_rmse": 33325.3668,
+    "per_fold_mae": [
+      26896.9478
+    ],
+    "per_fold_rmse": [
+      33325.3668
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 26896.9478,
+    "mean_rmse": 33325.3668,
+    "per_fold_mae": [
+      26896.9478
+    ],
+    "per_fold_rmse": [
+      33325.3668
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 14071.2122,
+    "mean_rmse": 20885.0792,
+    "per_fold_mae": [
+      14071.2122
+    ],
+    "per_fold_rmse": [
+      20885.0792
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 14071.2122,
+    "mean_rmse": 20885.0792,
+    "per_fold_mae": [
+      14071.2122
+    ],
+    "per_fold_rmse": [
+      20885.0792
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 14071.2122,
+    "mean_rmse": 20885.0792,
+    "per_fold_mae": [
+      14071.2122
+    ],
+    "per_fold_rmse": [
+      20885.0792
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 66565.4667,
+    "mean_rmse": 77998.8942,
+    "per_fold_mae": [
+      66565.4667
+    ],
+    "per_fold_rmse": [
+      77998.8942
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 66565.4667,
+    "mean_rmse": 77998.8942,
+    "per_fold_mae": [
+      66565.4667
+    ],
+    "per_fold_rmse": [
+      77998.8942
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 66565.4667,
+    "mean_rmse": 77998.8942,
+    "per_fold_mae": [
+      66565.4667
+    ],
+    "per_fold_rmse": [
+      77998.8942
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 15677.7461,
+    "mean_rmse": 19051.0092,
+    "per_fold_mae": [
+      15677.7461
+    ],
+    "per_fold_rmse": [
+      19051.0092
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 15677.7461,
+    "mean_rmse": 19051.0092,
+    "per_fold_mae": [
+      15677.7461
+    ],
+    "per_fold_rmse": [
+      19051.0092
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 15677.7461,
+    "mean_rmse": 19051.0092,
+    "per_fold_mae": [
+      15677.7461
+    ],
+    "per_fold_rmse": [
+      19051.0092
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 22129.2628,
+    "mean_rmse": 28044.5522,
+    "per_fold_mae": [
+      22129.2628
+    ],
+    "per_fold_rmse": [
+      28044.5522
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 22129.2628,
+    "mean_rmse": 28044.5522,
+    "per_fold_mae": [
+      22129.2628
+    ],
+    "per_fold_rmse": [
+      28044.5522
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 22129.2628,
+    "mean_rmse": 28044.5522,
+    "per_fold_mae": [
+      22129.2628
+    ],
+    "per_fold_rmse": [
+      28044.5522
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 25704.7267,
+    "mean_rmse": 27944.975,
+    "per_fold_mae": [
+      25704.7267
+    ],
+    "per_fold_rmse": [
+      27944.975
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 25704.7267,
+    "mean_rmse": 27944.975,
+    "per_fold_mae": [
+      25704.7267
+    ],
+    "per_fold_rmse": [
+      27944.975
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 25704.7267,
+    "mean_rmse": 27944.975,
+    "per_fold_mae": [
+      25704.7267
+    ],
+    "per_fold_rmse": [
+      27944.975
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 366685.9741,
+    "mean_rmse": 385262.1741,
+    "per_fold_mae": [
+      366685.9741
+    ],
+    "per_fold_rmse": [
+      385262.1741
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 366685.9741,
+    "mean_rmse": 385262.1741,
+    "per_fold_mae": [
+      366685.9741
+    ],
+    "per_fold_rmse": [
+      385262.1741
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 366685.9741,
+    "mean_rmse": 385262.1741,
+    "per_fold_mae": [
+      366685.9741
+    ],
+    "per_fold_rmse": [
+      385262.1741
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 26720.9585,
+    "mean_rmse": 30800.8938,
+    "per_fold_mae": [
+      26720.9585
+    ],
+    "per_fold_rmse": [
+      30800.8938
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 26720.9585,
+    "mean_rmse": 30800.8938,
+    "per_fold_mae": [
+      26720.9585
+    ],
+    "per_fold_rmse": [
+      30800.8938
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 26720.9585,
+    "mean_rmse": 30800.8938,
+    "per_fold_mae": [
+      26720.9585
+    ],
+    "per_fold_rmse": [
+      30800.8938
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 124724.4517,
+    "mean_rmse": 128139.4545,
+    "per_fold_mae": [
+      124724.4517
+    ],
+    "per_fold_rmse": [
+      128139.4545
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 124724.4517,
+    "mean_rmse": 128139.4545,
+    "per_fold_mae": [
+      124724.4517
+    ],
+    "per_fold_rmse": [
+      128139.4545
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 124724.4517,
+    "mean_rmse": 128139.4545,
+    "per_fold_mae": [
+      124724.4517
+    ],
+    "per_fold_rmse": [
+      128139.4545
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 13977.4883,
+    "mean_rmse": 21213.0172,
+    "per_fold_mae": [
+      13977.4883
+    ],
+    "per_fold_rmse": [
+      21213.0172
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 13977.4883,
+    "mean_rmse": 21213.0172,
+    "per_fold_mae": [
+      13977.4883
+    ],
+    "per_fold_rmse": [
+      21213.0172
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 13977.4883,
+    "mean_rmse": 21213.0172,
+    "per_fold_mae": [
+      13977.4883
+    ],
+    "per_fold_rmse": [
+      21213.0172
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 20795.7952,
+    "mean_rmse": 26439.2956,
+    "per_fold_mae": [
+      20795.7952
+    ],
+    "per_fold_rmse": [
+      26439.2956
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 20795.7952,
+    "mean_rmse": 26439.2956,
+    "per_fold_mae": [
+      20795.7952
+    ],
+    "per_fold_rmse": [
+      26439.2956
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 20795.7952,
+    "mean_rmse": 26439.2956,
+    "per_fold_mae": [
+      20795.7952
+    ],
+    "per_fold_rmse": [
+      26439.2956
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 107721.7546,
+    "mean_rmse": 114867.1204,
+    "per_fold_mae": [
+      107721.7546
+    ],
+    "per_fold_rmse": [
+      114867.1204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 107721.7546,
+    "mean_rmse": 114867.1204,
+    "per_fold_mae": [
+      107721.7546
+    ],
+    "per_fold_rmse": [
+      114867.1204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 107721.7546,
+    "mean_rmse": 114867.1204,
+    "per_fold_mae": [
+      107721.7546
+    ],
+    "per_fold_rmse": [
+      114867.1204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 95151.6879,
+    "mean_rmse": 96459.067,
+    "per_fold_mae": [
+      95151.6879
+    ],
+    "per_fold_rmse": [
+      96459.067
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 95151.6879,
+    "mean_rmse": 96459.067,
+    "per_fold_mae": [
+      95151.6879
+    ],
+    "per_fold_rmse": [
+      96459.067
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 95151.6879,
+    "mean_rmse": 96459.067,
+    "per_fold_mae": [
+      95151.6879
+    ],
+    "per_fold_rmse": [
+      96459.067
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 27435.3606,
+    "mean_rmse": 28510.6748,
+    "per_fold_mae": [
+      27435.3606
+    ],
+    "per_fold_rmse": [
+      28510.6748
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 27435.3606,
+    "mean_rmse": 28510.6748,
+    "per_fold_mae": [
+      27435.3606
+    ],
+    "per_fold_rmse": [
+      28510.6748
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 27435.3606,
+    "mean_rmse": 28510.6748,
+    "per_fold_mae": [
+      27435.3606
+    ],
+    "per_fold_rmse": [
+      28510.6748
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 17655.2867,
+    "mean_rmse": 18285.7337,
+    "per_fold_mae": [
+      17655.2867
+    ],
+    "per_fold_rmse": [
+      18285.7337
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 17655.2867,
+    "mean_rmse": 18285.7337,
+    "per_fold_mae": [
+      17655.2867
+    ],
+    "per_fold_rmse": [
+      18285.7337
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 17655.2867,
+    "mean_rmse": 18285.7337,
+    "per_fold_mae": [
+      17655.2867
+    ],
+    "per_fold_rmse": [
+      18285.7337
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 29611.8037,
+    "mean_rmse": 35217.6911,
+    "per_fold_mae": [
+      29611.8037
+    ],
+    "per_fold_rmse": [
+      35217.6911
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 29611.8037,
+    "mean_rmse": 35217.6911,
+    "per_fold_mae": [
+      29611.8037
+    ],
+    "per_fold_rmse": [
+      35217.6911
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 29611.8037,
+    "mean_rmse": 35217.6911,
+    "per_fold_mae": [
+      29611.8037
+    ],
+    "per_fold_rmse": [
+      35217.6911
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 90115.9835,
+    "mean_rmse": 91072.3764,
+    "per_fold_mae": [
+      90115.9835
+    ],
+    "per_fold_rmse": [
+      91072.3764
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 90115.9835,
+    "mean_rmse": 91072.3764,
+    "per_fold_mae": [
+      90115.9835
+    ],
+    "per_fold_rmse": [
+      91072.3764
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 90115.9835,
+    "mean_rmse": 91072.3764,
+    "per_fold_mae": [
+      90115.9835
+    ],
+    "per_fold_rmse": [
+      91072.3764
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 125362.7029,
+    "mean_rmse": 164140.0199,
+    "per_fold_mae": [
+      125362.7029
+    ],
+    "per_fold_rmse": [
+      164140.0199
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 125362.7029,
+    "mean_rmse": 164140.0199,
+    "per_fold_mae": [
+      125362.7029
+    ],
+    "per_fold_rmse": [
+      164140.0199
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 125362.7029,
+    "mean_rmse": 164140.0199,
+    "per_fold_mae": [
+      125362.7029
+    ],
+    "per_fold_rmse": [
+      164140.0199
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 35260.4982,
+    "mean_rmse": 39679.1713,
+    "per_fold_mae": [
+      35260.4982
+    ],
+    "per_fold_rmse": [
+      39679.1713
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 35260.4982,
+    "mean_rmse": 39679.1713,
+    "per_fold_mae": [
+      35260.4982
+    ],
+    "per_fold_rmse": [
+      39679.1713
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 35260.4982,
+    "mean_rmse": 39679.1713,
+    "per_fold_mae": [
+      35260.4982
+    ],
+    "per_fold_rmse": [
+      39679.1713
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 54301.8321,
+    "mean_rmse": 73566.3169,
+    "per_fold_mae": [
+      54301.8321
+    ],
+    "per_fold_rmse": [
+      73566.3169
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 54301.8321,
+    "mean_rmse": 73566.3169,
+    "per_fold_mae": [
+      54301.8321
+    ],
+    "per_fold_rmse": [
+      73566.3169
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 54301.8321,
+    "mean_rmse": 73566.3169,
+    "per_fold_mae": [
+      54301.8321
+    ],
+    "per_fold_rmse": [
+      73566.3169
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 24123.8221,
+    "mean_rmse": 24318.961,
+    "per_fold_mae": [
+      24123.8221
+    ],
+    "per_fold_rmse": [
+      24318.961
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 24123.8221,
+    "mean_rmse": 24318.961,
+    "per_fold_mae": [
+      24123.8221
+    ],
+    "per_fold_rmse": [
+      24318.961
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 24123.8221,
+    "mean_rmse": 24318.961,
+    "per_fold_mae": [
+      24123.8221
+    ],
+    "per_fold_rmse": [
+      24318.961
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 24352.8507,
+    "mean_rmse": 27172.2434,
+    "per_fold_mae": [
+      24352.8507
+    ],
+    "per_fold_rmse": [
+      27172.2434
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 24352.8507,
+    "mean_rmse": 27172.2434,
+    "per_fold_mae": [
+      24352.8507
+    ],
+    "per_fold_rmse": [
+      27172.2434
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 24352.8507,
+    "mean_rmse": 27172.2434,
+    "per_fold_mae": [
+      24352.8507
+    ],
+    "per_fold_rmse": [
+      27172.2434
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 72646.1457,
+    "mean_rmse": 80346.1002,
+    "per_fold_mae": [
+      72646.1457
+    ],
+    "per_fold_rmse": [
+      80346.1002
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 72646.1457,
+    "mean_rmse": 80346.1002,
+    "per_fold_mae": [
+      72646.1457
+    ],
+    "per_fold_rmse": [
+      80346.1002
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 72646.1457,
+    "mean_rmse": 80346.1002,
+    "per_fold_mae": [
+      72646.1457
+    ],
+    "per_fold_rmse": [
+      80346.1002
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 61626.0026,
+    "mean_rmse": 71109.9478,
+    "per_fold_mae": [
+      61626.0026
+    ],
+    "per_fold_rmse": [
+      71109.9478
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 61626.0026,
+    "mean_rmse": 71109.9478,
+    "per_fold_mae": [
+      61626.0026
+    ],
+    "per_fold_rmse": [
+      71109.9478
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 61626.0026,
+    "mean_rmse": 71109.9478,
+    "per_fold_mae": [
+      61626.0026
+    ],
+    "per_fold_rmse": [
+      71109.9478
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 22871.9222,
+    "mean_rmse": 25002.7177,
+    "per_fold_mae": [
+      22871.9222
+    ],
+    "per_fold_rmse": [
+      25002.7177
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 22871.9222,
+    "mean_rmse": 25002.7177,
+    "per_fold_mae": [
+      22871.9222
+    ],
+    "per_fold_rmse": [
+      25002.7177
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 22871.9222,
+    "mean_rmse": 25002.7177,
+    "per_fold_mae": [
+      22871.9222
+    ],
+    "per_fold_rmse": [
+      25002.7177
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 21938.1097,
+    "mean_rmse": 26096.7839,
+    "per_fold_mae": [
+      21938.1097
+    ],
+    "per_fold_rmse": [
+      26096.7839
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 21938.1097,
+    "mean_rmse": 26096.7839,
+    "per_fold_mae": [
+      21938.1097
+    ],
+    "per_fold_rmse": [
+      26096.7839
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 21938.1097,
+    "mean_rmse": 26096.7839,
+    "per_fold_mae": [
+      21938.1097
+    ],
+    "per_fold_rmse": [
+      26096.7839
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 33160.1785,
+    "mean_rmse": 38985.9221,
+    "per_fold_mae": [
+      33160.1785
+    ],
+    "per_fold_rmse": [
+      38985.9221
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 33160.1785,
+    "mean_rmse": 38985.9221,
+    "per_fold_mae": [
+      33160.1785
+    ],
+    "per_fold_rmse": [
+      38985.9221
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 33160.1785,
+    "mean_rmse": 38985.9221,
+    "per_fold_mae": [
+      33160.1785
+    ],
+    "per_fold_rmse": [
+      38985.9221
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 39674.46,
+    "mean_rmse": 48029.726,
+    "per_fold_mae": [
+      39674.46
+    ],
+    "per_fold_rmse": [
+      48029.726
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 39674.46,
+    "mean_rmse": 48029.726,
+    "per_fold_mae": [
+      39674.46
+    ],
+    "per_fold_rmse": [
+      48029.726
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 39674.46,
+    "mean_rmse": 48029.726,
+    "per_fold_mae": [
+      39674.46
+    ],
+    "per_fold_rmse": [
+      48029.726
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 121947.0357,
+    "mean_rmse": 148364.5956,
+    "per_fold_mae": [
+      121947.0357
+    ],
+    "per_fold_rmse": [
+      148364.5956
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 121947.0357,
+    "mean_rmse": 148364.5956,
+    "per_fold_mae": [
+      121947.0357
+    ],
+    "per_fold_rmse": [
+      148364.5956
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 121947.0357,
+    "mean_rmse": 148364.5956,
+    "per_fold_mae": [
+      121947.0357
+    ],
+    "per_fold_rmse": [
+      148364.5956
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 0.0,
+    "mean_rmse": 0.0,
+    "per_fold_mae": [
+      0.0
+    ],
+    "per_fold_rmse": [
+      0.0
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 27375.8135,
+    "mean_rmse": 32276.953,
+    "per_fold_mae": [
+      27375.8135
+    ],
+    "per_fold_rmse": [
+      32276.953
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 27375.8135,
+    "mean_rmse": 32276.953,
+    "per_fold_mae": [
+      27375.8135
+    ],
+    "per_fold_rmse": [
+      32276.953
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 27375.8135,
+    "mean_rmse": 32276.953,
+    "per_fold_mae": [
+      27375.8135
+    ],
+    "per_fold_rmse": [
+      32276.953
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 90704.7655,
+    "mean_rmse": 97956.9766,
+    "per_fold_mae": [
+      90704.7655
+    ],
+    "per_fold_rmse": [
+      97956.9766
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 90704.7655,
+    "mean_rmse": 97956.9766,
+    "per_fold_mae": [
+      90704.7655
+    ],
+    "per_fold_rmse": [
+      97956.9766
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 90704.7655,
+    "mean_rmse": 97956.9766,
+    "per_fold_mae": [
+      90704.7655
+    ],
+    "per_fold_rmse": [
+      97956.9766
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 12951.6204,
+    "mean_rmse": 20657.1192,
+    "per_fold_mae": [
+      12951.6204
+    ],
+    "per_fold_rmse": [
+      20657.1192
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 12951.6204,
+    "mean_rmse": 20657.1192,
+    "per_fold_mae": [
+      12951.6204
+    ],
+    "per_fold_rmse": [
+      20657.1192
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 12951.6204,
+    "mean_rmse": 20657.1192,
+    "per_fold_mae": [
+      12951.6204
+    ],
+    "per_fold_rmse": [
+      20657.1192
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 20028.006,
+    "mean_rmse": 24883.4133,
+    "per_fold_mae": [
+      20028.006
+    ],
+    "per_fold_rmse": [
+      24883.4133
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 20028.006,
+    "mean_rmse": 24883.4133,
+    "per_fold_mae": [
+      20028.006
+    ],
+    "per_fold_rmse": [
+      24883.4133
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 20028.006,
+    "mean_rmse": 24883.4133,
+    "per_fold_mae": [
+      20028.006
+    ],
+    "per_fold_rmse": [
+      24883.4133
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 115402.89,
+    "mean_rmse": 127825.5496,
+    "per_fold_mae": [
+      115402.89
+    ],
+    "per_fold_rmse": [
+      127825.5496
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 115402.89,
+    "mean_rmse": 127825.5496,
+    "per_fold_mae": [
+      115402.89
+    ],
+    "per_fold_rmse": [
+      127825.5496
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 115402.89,
+    "mean_rmse": 127825.5496,
+    "per_fold_mae": [
+      115402.89
+    ],
+    "per_fold_rmse": [
+      127825.5496
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 43361.39,
+    "mean_rmse": 46617.336,
+    "per_fold_mae": [
+      43361.39
+    ],
+    "per_fold_rmse": [
+      46617.336
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 43361.39,
+    "mean_rmse": 46617.336,
+    "per_fold_mae": [
+      43361.39
+    ],
+    "per_fold_rmse": [
+      46617.336
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 43361.39,
+    "mean_rmse": 46617.336,
+    "per_fold_mae": [
+      43361.39
+    ],
+    "per_fold_rmse": [
+      46617.336
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 28578.4051,
+    "mean_rmse": 29653.8359,
+    "per_fold_mae": [
+      28578.4051
+    ],
+    "per_fold_rmse": [
+      29653.8359
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 28578.4051,
+    "mean_rmse": 29653.8359,
+    "per_fold_mae": [
+      28578.4051
+    ],
+    "per_fold_rmse": [
+      29653.8359
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 28578.4051,
+    "mean_rmse": 29653.8359,
+    "per_fold_mae": [
+      28578.4051
+    ],
+    "per_fold_rmse": [
+      29653.8359
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 16006.6138,
+    "mean_rmse": 17177.3208,
+    "per_fold_mae": [
+      16006.6138
+    ],
+    "per_fold_rmse": [
+      17177.3208
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 16006.6138,
+    "mean_rmse": 17177.3208,
+    "per_fold_mae": [
+      16006.6138
+    ],
+    "per_fold_rmse": [
+      17177.3208
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 16006.6138,
+    "mean_rmse": 17177.3208,
+    "per_fold_mae": [
+      16006.6138
+    ],
+    "per_fold_rmse": [
+      17177.3208
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 29768.4663,
+    "mean_rmse": 35168.1882,
+    "per_fold_mae": [
+      29768.4663
+    ],
+    "per_fold_rmse": [
+      35168.1882
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 29768.4663,
+    "mean_rmse": 35168.1882,
+    "per_fold_mae": [
+      29768.4663
+    ],
+    "per_fold_rmse": [
+      35168.1882
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 29768.4663,
+    "mean_rmse": 35168.1882,
+    "per_fold_mae": [
+      29768.4663
+    ],
+    "per_fold_rmse": [
+      35168.1882
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 74673.3769,
+    "mean_rmse": 76814.9698,
+    "per_fold_mae": [
+      74673.3769
+    ],
+    "per_fold_rmse": [
+      76814.9698
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 74673.3769,
+    "mean_rmse": 76814.9698,
+    "per_fold_mae": [
+      74673.3769
+    ],
+    "per_fold_rmse": [
+      76814.9698
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "store",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 74673.3769,
+    "mean_rmse": 76814.9698,
+    "per_fold_mae": [
+      74673.3769
+    ],
+    "per_fold_rmse": [
+      76814.9698
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveLastValue",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveRollingMean(w=7)",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "NaiveSeasonalWeekly",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "RidgeForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "LassoForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 7,
+    "n_folds": 1,
+    "mean_mae": 3201945.1429,
+    "mean_rmse": 3478647.451,
+    "per_fold_mae": [
+      3201945.1429
+    ],
+    "per_fold_rmse": [
+      3478647.451
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 14,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  },
+  {
+    "model_name": "ElasticNetForecaster",
+    "grain": "category",
+    "group_key": "",
+    "horizon": 30,
+    "n_folds": 1,
+    "mean_mae": 3429266.5264,
+    "mean_rmse": 3631602.2204,
+    "per_fold_mae": [
+      3429266.5264
+    ],
+    "per_fold_rmse": [
+      3631602.2204
+    ]
+  }
+]
