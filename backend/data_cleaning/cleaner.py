@@ -258,6 +258,12 @@ def build_fact_sales(
         suffixes=("", "_master"),
     )
 
+    # Prefer Item Master description over Sale Lines description
+    # (Sale Lines often has generic "Imported item" placeholder)
+    if "description_master" in fact.columns:
+        fact["description"] = fact["description_master"].fillna(fact["description"])
+        fact = fact.drop(columns=["description_master"])
+
     # Fill missing category from join
     if "category" in fact.columns:
         fact["category"] = fact["category"].fillna("UNKNOWN").replace("", "UNKNOWN")
@@ -290,13 +296,14 @@ def build_fact_sales(
 
 def aggregate_to_daily(
     fact_sales: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
-    Aggregate the enriched fact table to four canonical daily tables.
+    Aggregate the enriched fact table to five canonical daily tables.
 
     Returns
     -------
     fact_sales_daily    : date × store_id × item_id
+    fact_item_daily     : date × item_id  (summed across stores — for item-level forecasting)
     fact_store_daily    : date × store_id
     fact_category_daily : date × category
     fact_total_daily    : date
@@ -324,6 +331,39 @@ def aggregate_to_daily(
     safe_qty = np.maximum(grp_item["sales_qty"], 0.001)
     grp_item["avg_unit_price"] = (grp_item["sales_value"] / safe_qty).where(
         grp_item["sales_qty"] > 0, np.nan
+    )
+
+    # ── item-day granularity (summed across all stores) ────────────────────────
+    grp_item_agg = fact_sales.groupby(
+        ["date", "item_id"], as_index=False
+    ).agg(
+        category=("category", "first"),
+        brand=("brand", "first") if "brand" in fact_sales.columns else ("item_id", "count"),
+        division=("division", "first") if "division" in fact_sales.columns else ("item_id", "count"),
+        uom=("uom", "first"),
+        sales_qty=("sales_qty", "sum"),
+        sales_value=("sales_value", "sum"),
+        receipt_count=("receipt_no", "nunique"),
+        unique_stores=("store_id", "nunique"),
+    )
+    for col in ["brand", "division"]:
+        if col not in grp_item_agg.columns:
+            grp_item_agg[col] = "UNKNOWN"
+        else:
+            grp_item_agg[col] = grp_item_agg[col].fillna("UNKNOWN")
+
+    # Bring in item description from item_master (via fact_sales if available)
+    if "description" in fact_sales.columns:
+        desc_map = (
+            fact_sales.dropna(subset=["description"])
+            .drop_duplicates(subset=["item_id"])[["item_id", "description"]]
+        )
+        grp_item_agg = grp_item_agg.merge(desc_map, on="item_id", how="left")
+        grp_item_agg["description"] = grp_item_agg["description"].fillna("")
+
+    safe_qty_item = np.maximum(grp_item_agg["sales_qty"], 0.001)
+    grp_item_agg["avg_unit_price"] = (grp_item_agg["sales_value"] / safe_qty_item).where(
+        grp_item_agg["sales_qty"] > 0, np.nan
     )
 
     # ── store-day granularity ─────────────────────────────────────────────────
@@ -359,34 +399,35 @@ def aggregate_to_daily(
         unique_categories=("category", "nunique"),
     )
 
-    for df in [grp_item, grp_store, grp_cat, grp_total]:
+    for df in [grp_item, grp_item_agg, grp_store, grp_cat, grp_total]:
         df.sort_values("date", inplace=True)
         df.reset_index(drop=True, inplace=True)
 
     logger.info(
-        "aggregate_to_daily: item-store-day=%d | store-day=%d | "
+        "aggregate_to_daily: item-store-day=%d | item-day=%d | store-day=%d | "
         "category-day=%d | total-day=%d",
-        len(grp_item), len(grp_store), len(grp_cat), len(grp_total),
+        len(grp_item), len(grp_item_agg), len(grp_store), len(grp_cat), len(grp_total),
     )
-    return grp_item, grp_store, grp_cat, grp_total
+    return grp_item, grp_item_agg, grp_store, grp_cat, grp_total
 
 
 # ── persistence ───────────────────────────────────────────────────────────────
 
 def save_cleaned_data(
     fact_sales_daily: pd.DataFrame,
+    item_daily: pd.DataFrame,
     store_daily: pd.DataFrame,
     category_daily: pd.DataFrame,
     total_daily: pd.DataFrame,
 ) -> None:
     """
-    Save all four canonical tables to DATA_DIR as both .parquet and .csv.
-    Parquet is used by the model pipeline; CSV is for human inspection.
+    Save all five canonical tables to DATA_DIR as CSV.
     """
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     tables = {
         "fact_sales_daily": fact_sales_daily,
+        "fact_item_daily": item_daily,
         "fact_store_daily": store_daily,
         "fact_category_daily": category_daily,
         "fact_total_daily": total_daily,

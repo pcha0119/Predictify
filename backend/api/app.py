@@ -168,11 +168,12 @@ def _run_pipeline_sync() -> None:
         # 3. Build fact table + aggregates
         logger.info("[pipeline] Step 3: Building canonical tables …")
         fact = build_fact_sales(sl_clean, hdr_clean, im_clean)
-        fs_daily, store_daily, cat_daily, total_daily = aggregate_to_daily(fact)
-        save_cleaned_data(fs_daily, store_daily, cat_daily, total_daily)
+        fs_daily, item_daily, store_daily, cat_daily, total_daily = aggregate_to_daily(fact)
+        save_cleaned_data(fs_daily, item_daily, store_daily, cat_daily, total_daily)
 
         # Save summary with data shape info
         summary["fact_rows"] = len(fs_daily)
+        summary["item_daily_rows"] = len(item_daily)
         summary["store_daily_rows"] = len(store_daily)
         summary["category_daily_rows"] = len(cat_daily)
         summary["total_daily_rows"] = len(total_daily)
@@ -192,14 +193,26 @@ def _run_pipeline_sync() -> None:
         }
 
         grains = {
-            "total":    (total_daily, [],           "total"),
-            "store":    (store_daily, ["store_id"], "store_id"),
-            "category": (cat_daily,  ["category"],  "category"),
+            "total":    (total_daily, [],           "total",     "sales_value"),
+            "store":    (store_daily, ["store_id"], "store_id",  "sales_value"),
+            "category": (cat_daily,  ["category"],  "category", "sales_value"),
+            "item":     (item_daily, ["item_id"],   "item_id",  "sales_qty"),
         }
 
         FORECAST_DIR.mkdir(parents=True, exist_ok=True)
 
-        for grain_name, (grain_df, group_cols, group_id_col) in grains.items():
+        for grain_name, (grain_df, group_cols, group_id_col, target_col) in grains.items():
+            # For item grain, filter to items with enough history
+            if grain_name == "item":
+                from config import MIN_ITEM_DAYS
+                item_day_counts = grain_df.groupby("item_id")["date"].nunique()
+                eligible_items = item_day_counts[item_day_counts >= MIN_ITEM_DAYS].index.tolist()
+                grain_df = grain_df[grain_df["item_id"].isin(eligible_items)].copy()
+                logger.info(
+                    "[pipeline] Item grain: %d items have >= %d days of data (out of %d total)",
+                    len(eligible_items), MIN_ITEM_DAYS, len(item_day_counts),
+                )
+
             groups = (
                 grain_df[group_id_col].unique().tolist()
                 if group_id_col in grain_df.columns
@@ -210,7 +223,9 @@ def _run_pipeline_sync() -> None:
                 if isinstance(model_obj, dict):
                     model_instances = model_obj   # baselines dict
                 else:
-                    model_instances = {model_tag: model_obj}
+                    # Use class name (e.g. "RidgeForecaster") not tag ("ridge")
+                    # so file names are consistent with frontend dropdown values
+                    model_instances = {model_obj.get_model_name(): model_obj}
 
                 for m_name, m_instance in model_instances.items():
                     all_fc_records = []
@@ -220,7 +235,7 @@ def _run_pipeline_sync() -> None:
                                 model=m_instance,
                                 grain=grain_name,
                                 group_cols=group_cols,
-                                target_col="sales_value",
+                                target_col=target_col,
                             )
                             try:
                                 result = pipeline.run(
@@ -236,6 +251,15 @@ def _run_pipeline_sync() -> None:
                                 fc_rows["group_key"] = grp_val
                                 fc_rows["horizon"] = horizon
                                 fc_rows["model_name"] = m_name
+                                fc_rows["target_col"] = target_col
+
+                                # For item grain, attach UOM and description metadata
+                                if grain_name == "item":
+                                    item_meta = grain_df[grain_df["item_id"] == grp_val].iloc[0]
+                                    fc_rows["uom"] = item_meta.get("uom", "")
+                                    fc_rows["description"] = item_meta.get("description", "")
+                                    fc_rows["category"] = item_meta.get("category", "")
+
                                 all_fc_records.append(fc_rows)
 
                                 # Collect metrics
@@ -349,6 +373,102 @@ async def list_stores() -> list[str]:
     return sorted(df["store_id"].dropna().unique().tolist())
 
 
+@app.get("/items")
+async def list_items() -> list[dict]:
+    """
+    Return all items with their UOM, description, category, and recent sales stats.
+    Used by the Production Planner to show what items are available for forecasting.
+    """
+    path = DATA_DIR / "fact_item_daily.csv"
+    df = _load_csv_or_404(path)
+
+    # Aggregate per item: total qty sold, avg daily qty, UOM, description
+    items = df.groupby("item_id", as_index=False).agg(
+        description=("description", "first") if "description" in df.columns else ("item_id", "first"),
+        uom=("uom", "first"),
+        category=("category", "first"),
+        total_qty=("sales_qty", "sum"),
+        total_value=("sales_value", "sum"),
+        days_with_sales=("date", "nunique"),
+        avg_daily_qty=("sales_qty", "mean"),
+    )
+    items = items.sort_values("total_value", ascending=False)
+
+    return items.to_dict(orient="records")
+
+
+@app.get("/items/forecast_summary")
+async def item_forecast_summary(
+    horizon: int = Query(7, ge=7, le=30),
+    model: str = Query("RidgeForecaster"),
+) -> dict:
+    """
+    Return a production planning summary: for each item, the forecasted
+    daily qty (NOS pieces or KGS kilos) over the given horizon.
+    This is the core endpoint for sweet shop production decisions.
+    """
+    fc_path = FORECAST_DIR / f"forecast_item_{model}.csv"
+    if not fc_path.exists():
+        available = list(FORECAST_DIR.glob("forecast_item_*.csv"))
+        if not available:
+            raise HTTPException(404, "No item-level forecasts found. Run the pipeline first.")
+        fc_path = available[0]
+        model = fc_path.stem.replace("forecast_item_", "")
+
+    df = pd.read_csv(fc_path, parse_dates=["date"])
+    df = df[df["horizon"] == horizon]
+    if "group_key" in df.columns:
+        df["group_key"] = df["group_key"].astype(str)
+
+    if df.empty:
+        raise HTTPException(404, f"No item forecasts for horizon={horizon}.")
+
+    # Build per-item summary
+    items = []
+    for item_id, grp in df.groupby("group_key"):
+        grp = grp.sort_values("date")
+        uom = grp["uom"].iloc[0] if "uom" in grp.columns else ""
+        desc = grp["description"].iloc[0] if "description" in grp.columns else ""
+        category = grp["category"].iloc[0] if "category" in grp.columns else ""
+        total_forecast_qty = round(grp["forecast"].sum(), 2)
+        avg_daily_qty = round(grp["forecast"].mean(), 2)
+
+        items.append({
+            "item_id": item_id,
+            "description": desc,
+            "uom": uom,
+            "category": category,
+            "total_forecast_qty": total_forecast_qty,
+            "avg_daily_qty": avg_daily_qty,
+            "horizon": horizon,
+            "model": model,
+            "forecast_dates": grp["date"].astype(str).tolist(),
+            "forecast_values": grp["forecast"].round(2).tolist(),
+            "ci_lower": grp["ci_lower"].round(2).tolist() if "ci_lower" in grp.columns else [],
+            "ci_upper": grp["ci_upper"].round(2).tolist() if "ci_upper" in grp.columns else [],
+        })
+
+    # Sort by total forecasted quantity descending
+    items.sort(key=lambda x: x["total_forecast_qty"], reverse=True)
+
+    # Separate into NOS and KGS groups for the production planner
+    nos_items = [i for i in items if i["uom"] == "NOS"]
+    kgs_items = [i for i in items if i["uom"] == "KGS"]
+    other_items = [i for i in items if i["uom"] not in ("NOS", "KGS")]
+
+    return {
+        "model": model,
+        "horizon": horizon,
+        "total_items": len(items),
+        "nos_items": nos_items,
+        "nos_count": len(nos_items),
+        "kgs_items": kgs_items,
+        "kgs_count": len(kgs_items),
+        "other_items": other_items,
+        "all_items": items,
+    }
+
+
 @app.get("/categories")
 async def list_categories() -> list[str]:
     path = DATA_DIR / "fact_category_daily.csv"
@@ -405,17 +525,20 @@ async def get_forecasts(
 
     df = _read_fc_csv(fc_path)
     df = df[df["horizon"] == horizon]
+    # Ensure group_key is string for consistent comparison
+    if "group_key" in df.columns:
+        df["group_key"] = df["group_key"].astype(str)
 
     # Filter by group
     group_key = "total"
     if grain == "store" and store_id:
-        df = df[df["group_key"] == store_id]
+        df = df[df["group_key"] == str(store_id)]
         group_key = store_id
     elif grain == "category" and category:
-        df = df[df["group_key"] == category]
+        df = df[df["group_key"] == str(category)]
         group_key = category
     elif grain == "item" and item_id:
-        df = df[df["group_key"] == item_id]
+        df = df[df["group_key"] == str(item_id)]
         group_key = item_id
     elif "group_key" in df.columns:
         first = df["group_key"].iloc[0] if len(df) > 0 else "total"
@@ -429,22 +552,34 @@ async def get_forecasts(
 
     # Load actuals for context
     actuals_map = {
-        "total":    DATA_DIR / "fact_total_daily.csv",
-        "store":    DATA_DIR / "fact_store_daily.csv",
-        "category": DATA_DIR / "fact_category_daily.csv",
-        "item":     DATA_DIR / "fact_sales_daily.csv",
+        "total":    (DATA_DIR / "fact_total_daily.csv",    "sales_value"),
+        "store":    (DATA_DIR / "fact_store_daily.csv",    "sales_value"),
+        "category": (DATA_DIR / "fact_category_daily.csv", "sales_value"),
+        "item":     (DATA_DIR / "fact_item_daily.csv",     "sales_qty"),
     }
     actuals_df = pd.DataFrame()
-    act_path = actuals_map.get(grain)
+    act_path, act_col = actuals_map.get(grain, (None, "sales_value"))
     if act_path and act_path.exists():
         act = _read_act_csv(act_path)
         if grain == "store" and store_id and "store_id" in act.columns:
             act = act[act["store_id"] == store_id]
         elif grain == "category" and category and "category" in act.columns:
             act = act[act["category"] == category]
-        actuals_df = act[["date", "sales_value"]].rename(
-            columns={"sales_value": "actual"}
+        elif grain == "item" and item_id and "item_id" in act.columns:
+            act = act[act["item_id"] == item_id]
+        actuals_df = act[["date", act_col]].rename(
+            columns={act_col: "actual"}
         ).sort_values("date")
+
+    # For item grain, include UOM and description metadata
+    item_meta = {}
+    if grain == "item" and not df.empty:
+        item_meta = {
+            "uom": df["uom"].iloc[0] if "uom" in df.columns else "",
+            "description": df["description"].iloc[0] if "description" in df.columns else "",
+            "category": df["category"].iloc[0] if "category" in df.columns else "",
+            "target_col": "sales_qty",
+        }
 
     return {
         "grain": grain,
@@ -457,6 +592,7 @@ async def get_forecasts(
         "ci_upper": df["ci_upper"].round(2).tolist() if "ci_upper" in df.columns else [],
         "actuals_dates": actuals_df["date"].astype(str).tolist() if not actuals_df.empty else [],
         "actuals": actuals_df["actual"].round(2).tolist() if not actuals_df.empty else [],
+        **item_meta,
     }
 
 
@@ -549,6 +685,15 @@ async def upload_file(file: UploadFile = File(...)) -> dict:
                     f"Uploaded file is missing required sheets: {missing}. "
                     f"Found: {wb.sheetnames}",
                 )
+            # Read Sale Lines sheet to get row count + columns for UI
+            try:
+                sl_df = pd.read_excel(tmp_path, sheet_name=SHEET_SALE_LINES, nrows=5)
+                sl_row_count = pd.read_excel(tmp_path, sheet_name=SHEET_SALE_LINES).shape[0]
+                sl_columns = list(sl_df.columns)
+                hdr_count = pd.read_excel(tmp_path, sheet_name=SHEET_HEADER).shape[0]
+                im_count = pd.read_excel(tmp_path, sheet_name=SHEET_ITEM_MASTER).shape[0]
+            except Exception:
+                sl_row_count, sl_columns, hdr_count, im_count = 0, [], 0, 0
             # Save as workbook
             WORKBOOK_PATH.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(str(tmp_path), str(WORKBOOK_PATH))
@@ -557,7 +702,14 @@ async def upload_file(file: UploadFile = File(...)) -> dict:
                 "source_type": "excel",
                 "filename": fname,
                 "saved_to": str(WORKBOOK_PATH),
-                "message": "Excel file uploaded. Call POST /pipeline/run to process it.",
+                "row_count": sl_row_count,
+                "columns": sl_columns,
+                "sheets": {
+                    SHEET_SALE_LINES: sl_row_count,
+                    SHEET_HEADER: hdr_count,
+                    SHEET_ITEM_MASTER: im_count,
+                },
+                "message": f"Excel file uploaded ({sl_row_count:,} transactions, {hdr_count:,} receipts, {im_count:,} items).",
             }
         else:
             # Flat file path: CSV / JSON / XML
@@ -1186,6 +1338,113 @@ async def data_prep_reset() -> dict:
     _prep["history"] = []
     _prep["source"] = None
     return {"status": "reset", "message": "Prep state cleared."}
+
+
+# ── Job Persistence endpoints ──────────────────────────────────────────────────
+
+@app.post("/jobs/save")
+async def save_current_job(job_name: str = "untitled") -> dict:
+    """
+    Save the current prep state (DataFrame) to the database for later resumption.
+
+    Args:
+        job_name: Name for this job (defaults to filename if not provided)
+
+    Returns:
+        dict with job_id and status
+    """
+    if _prep["df"] is None:
+        raise HTTPException(400, "No data loaded to save as a job.")
+
+    from job_persistence import save_job
+    import uuid
+
+    job_id = str(uuid.uuid4())[:8]
+    filename = job_name or "job"
+    df = _prep["df"]
+    rows = len(df)
+    cols = len(df.columns)
+
+    success = save_job(
+        job_id=job_id,
+        filename=filename,
+        stage="prepped",
+        df=df,
+        rows=rows,
+        cols=cols,
+        metadata={
+            "source": _prep["source"],
+            "columns": list(df.columns),
+        }
+    )
+
+    if success:
+        return {
+            "status": "saved",
+            "job_id": job_id,
+            "filename": filename,
+            "rows": rows,
+            "cols": cols,
+            "message": f"Job '{filename}' saved successfully.",
+        }
+    else:
+        raise HTTPException(500, "Failed to save job to database.")
+
+
+@app.get("/jobs/list")
+async def list_saved_jobs() -> dict:
+    """List all saved jobs."""
+    from job_persistence import list_jobs
+
+    jobs = list_jobs()
+    return {
+        "status": "success",
+        "count": len(jobs),
+        "jobs": jobs,
+    }
+
+
+@app.post("/jobs/load/{job_id}")
+async def load_saved_job(job_id: str) -> dict:
+    """
+    Load a previously saved job from the database.
+
+    Args:
+        job_id: Job ID to load
+
+    Returns:
+        dict with status and loaded job details
+    """
+    from job_persistence import load_job
+
+    job = load_job(job_id)
+    if not job:
+        raise HTTPException(404, f"Job '{job_id}' not found.")
+
+    # Restore to prep state
+    _prep["df"] = job["df"]
+    _prep["source"] = job["metadata"].get("source", "unknown")
+
+    return {
+        "status": "loaded",
+        "job_id": job_id,
+        "filename": job["filename"],
+        "stage": job["stage"],
+        "rows": job["rows"],
+        "cols": job["cols"],
+        "message": f"Job '{job['filename']}' loaded successfully.",
+    }
+
+
+@app.delete("/jobs/{job_id}")
+async def delete_saved_job(job_id: str) -> dict:
+    """Delete a saved job."""
+    from job_persistence import delete_job
+
+    if delete_job(job_id):
+        return {"status": "deleted", "job_id": job_id}
+    else:
+        raise HTTPException(500, "Failed to delete job.")
 
 
 # ── LLM Chat endpoints ──────────────────────────────────────────────────────

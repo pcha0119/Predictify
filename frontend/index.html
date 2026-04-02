@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Predictify — AI Forecasting</title>
+<title>Predictify — Sales &amp; Demand Forecasting</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
 <style>
 /* ============================================================
@@ -191,6 +192,42 @@ body.theme-light .badge.error { background: #f8e7e7; color: #c63838; }
   font-size: .72rem; font-weight: 700; color: #fff; background: var(--l-accent);
   cursor: pointer;
 }
+.avatar-dropdown {
+  position: fixed;
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 10px 32px rgba(0,0,0,.28);
+  z-index: 1000;
+  padding: 8px;
+  display: none;
+}
+.avatar-dropdown.open { display: block; }
+.avatar-dropdown-user {
+  padding: 8px 10px;
+  font-size: .76rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.avatar-dropdown-sep {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 0;
+}
+.avatar-dropdown-item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--text);
+  font-size: .78rem;
+  cursor: pointer;
+  font-family: var(--font);
+}
+.avatar-dropdown-item:hover { background: rgba(79,142,247,.12); }
 
 /* ============================================================
    APP LAUNCHER PANEL
@@ -213,7 +250,7 @@ body.theme-light .badge.error { background: #f8e7e7; color: #c63838; }
 .launcher-search {
   margin: 12px 20px; padding: 8px 12px; border: 1px solid #e0e0e0;
   border-radius: 6px; font-size: .82rem; width: calc(100% - 40px); outline: none;
-  background: #ffffff; color: #1a1a1a;
+  background: #ffffff; color: var(--l-text);
 }
 .launcher-search:focus { border-color: #0078d4; }
 .launcher-grid {
@@ -232,27 +269,27 @@ body.theme-light .badge.error { background: #f8e7e7; color: #c63838; }
   width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
   font-size: 1.2rem; margin-bottom: 6px; color: #fff;
 }
-.launcher-tile-label { font-size: .7rem; color: #1a1a1a; font-weight: 500; line-height: 1.2; }
+.launcher-tile-label { font-size: .7rem; color: var(--l-text); font-weight: 500; line-height: 1.2; }
 .coming-soon-badge {
   position: absolute; top: 6px; right: 6px;
-  font-size: .55rem; background: #e0e0e0; color: #888; padding: 1px 5px;
+  font-size: .55rem; background: var(--l-border); color: var(--muted); padding: 1px 5px;
   border-radius: 3px; font-weight: 600;
 }
-/* Keep launcher on original light style regardless of app theme */
+/* Keep launcher theme-aware for readability */
 body.theme-dark .launcher-panel,
-body.theme-light .launcher-panel { background: #fff; box-shadow: 4px 0 20px rgba(0,0,0,.12); }
+body.theme-light .launcher-panel { background: var(--l-surface); box-shadow: 4px 0 20px rgba(0,0,0,.12); }
 body.theme-dark .launcher-header,
-body.theme-light .launcher-header { border-bottom: 1px solid #e0e0e0; }
+body.theme-light .launcher-header { border-bottom: 1px solid var(--l-border); }
 body.theme-dark .launcher-header h2,
-body.theme-light .launcher-header h2 { color: #0078d4; }
+body.theme-light .launcher-header h2 { color: var(--l-accent); }
 body.theme-dark .launcher-search,
-body.theme-light .launcher-search { background: #fff; color: #1a1a1a; border: 1px solid #e0e0e0; }
+body.theme-light .launcher-search { background: var(--l-surface); color: var(--l-text); border: 1px solid var(--l-border); }
 body.theme-dark .launcher-search:focus,
-body.theme-light .launcher-search:focus { border-color: #0078d4; }
+body.theme-light .launcher-search:focus { border-color: var(--l-accent); }
 body.theme-dark .launcher-tile:hover,
-body.theme-light .launcher-tile:hover { background: #f0f2f5; }
+body.theme-light .launcher-tile:hover { background: rgba(79,142,247,.12); }
 body.theme-dark .launcher-tile-label,
-body.theme-light .launcher-tile-label { color: #1a1a1a; }
+body.theme-light .launcher-tile-label { color: var(--l-text); }
 
 /* ============================================================
    VIEW 1: LANDING PAGE
@@ -286,7 +323,7 @@ body.theme-light .launcher-tile-label { color: #1a1a1a; }
 .product-card p { font-size: .8rem; color: var(--l-muted); line-height: 1.4; }
 .card-coming-soon {
   position: absolute; top: 12px; right: 12px;
-  font-size: .65rem; background: #e8e8e8; color: #999; padding: 2px 8px;
+  font-size: .65rem; background: var(--l-border); color: var(--muted); padding: 2px 8px;
   border-radius: 4px; font-weight: 600;
 }
 
@@ -298,6 +335,63 @@ body.theme-light .launcher-tile-label { color: #1a1a1a; }
 .import-header { margin-bottom: 28px; }
 .import-header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
 .import-header p { font-size: .85rem; color: var(--muted); }
+.recents-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+.recents-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.recents-head h2 { font-size: 1rem; margin-bottom: 4px; }
+.recents-head p { font-size: .78rem; color: var(--muted); }
+.recent-jobs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.recent-job-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px;
+}
+.recent-job-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+.recent-job-name { font-size: .8rem; font-weight: 600; color: var(--text); word-break: break-word; }
+.recent-job-meta { font-size: .68rem; color: var(--muted); }
+.recent-job-stages { display: flex; flex-wrap: wrap; gap: 6px; }
+.stage-badge {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: .64rem;
+  background: var(--surface);
+  color: var(--muted);
+}
+.stage-badge.reached {
+  background: rgba(79,207,142,.12);
+  color: var(--green);
+  border-color: rgba(79,207,142,.4);
+  cursor: pointer;
+}
+.stage-badge.disabled {
+  opacity: .75;
+  cursor: not-allowed;
+}
+.recent-empty {
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: .75rem;
+  padding: 14px;
+  text-align: center;
+}
 
 /* Connector category tabs */
 .connector-tabs {
@@ -425,8 +519,12 @@ body.theme-light .launcher-tile-label { color: #1a1a1a; }
 /* ============================================================
    VIEW 3: DATA PREP (Tableau Prep inspired)
    ============================================================ */
-#view-prep { background: var(--bg); color: var(--text); }
+#view-prep { background: var(--bg); color: var(--text); overflow: hidden; }
 .prep-main { max-width: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; height: calc(100vh - 48px); }
+/* Prevent white overlays on data grid */
+#view-prep .prep-grid-wrap { background: var(--bg); }
+#view-prep .prep-grid { background: var(--surface); }
+#view-prep .prep-grid tbody tr { background: transparent; }
 
 /* Prep toolbar */
 .prep-toolbar {
@@ -462,6 +560,9 @@ body.theme-light .launcher-tile-label { color: #1a1a1a; }
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .profile-card-type { font-size: .6rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+.profile-card-header {
+  display: flex; align-items: center; gap: 6px; margin-bottom: 4px;
+}
 .profile-card-bar {
   height: 28px; display: flex; gap: 1px; align-items: flex-end; overflow: hidden;
 }
@@ -475,6 +576,24 @@ body.theme-light .launcher-tile-label { color: #1a1a1a; }
 .profile-card-stats {
   font-size: .58rem; color: var(--muted); margin-top: 3px; line-height: 1.3;
 }
+.profile-kpi-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px; margin-top: 6px;
+}
+.profile-kpi {
+  display: flex; flex-direction: column; gap: 1px;
+}
+.profile-kpi-label {
+  font-size: .55rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em;
+}
+.profile-kpi-value {
+  font-size: .7rem; font-weight: 600; color: var(--fg);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.profile-kpi-value.text-warning { color: var(--red); }
+
+/* Metrics table row colors */
+.metrics-best td { background: rgba(76,175,80,.08) !important; }
+.metrics-worst td { background: rgba(244,67,54,.06) !important; }
 
 /* Column context menu / operations panel */
 .col-ops-panel {
@@ -609,10 +728,10 @@ body.theme-light .dash-topbar .topbar-icon-btn:hover { background: rgba(0,0,0,.0
 
 .main { max-width: 1400px; margin: 0 auto; padding: 24px 28px; }
 
-.kpi-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-bottom: 24px; overflow: hidden; }
 .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
 .kpi .label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
-.kpi .value { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+.kpi .value { font-size: 1.5rem; font-weight: 700; color: var(--accent); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .kpi .sub   { font-size: .72rem; color: var(--muted); margin-top: 3px; }
 
 .controls {
@@ -652,7 +771,7 @@ table.dash-table tr:hover td { background: rgba(79,142,247,.06); }
 .worst { color: var(--red); }
 
 #status-log {
-  background: #0a0c12; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
   padding: 12px 16px; font-size: .75rem; color: var(--muted); font-family: monospace;
   max-height: 120px; overflow-y: auto; margin-top: 16px;
 }
@@ -673,11 +792,31 @@ table.dash-table tr:hover td { background: rgba(79,142,247,.06); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ── Responsive ── */
+@media (max-width: 768px) {
+  .landing-greeting h1 { font-size: 1.5rem; }
+  .product-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .kpi-row { grid-template-columns: 1fr 1fr; }
+  .controls { flex-direction: column; align-items: stretch; }
+  .seg-ctrl { flex-wrap: wrap; }
+  .dash-topbar { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .panel-hdr { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .admin-body { flex-direction: column; }
+  .admin-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .admin-tab { white-space: nowrap; }
+}
 @media (max-width: 600px) {
   .landing-greeting h1 { font-size: 1.4rem; }
   .product-grid { grid-template-columns: 1fr; }
   .connector-grid { grid-template-columns: repeat(2, 1fr); }
   .form-row { flex-direction: column; }
+  .recents-head { flex-direction: column; align-items: flex-start; }
+  .recent-jobs-list { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
@@ -839,8 +978,314 @@ body.theme-light .chat-input-area { background: #f7f9fc; border-color: #d9e1ea; 
 body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9e1ea; color: #1a1a1a; }
 
 @media (max-width: 480px) {
+  .kpi-row { grid-template-columns: 1fr; }
+  .topbar-search { display: none; }
+  .breadcrumb { font-size: .7rem; }
+  .planner-table { font-size: .72rem; }
   #ai-chat-panel { width: calc(100vw - 16px); right: 8px; bottom: 8px; height: calc(100vh - 64px); }
   #ai-chat-fab { bottom: 16px; right: 16px; width: 46px; height: 46px; }
+}
+
+/* Material Symbols helper */
+.ms { font-family: 'Material Symbols Rounded'; font-size: 20px; vertical-align: middle; font-weight: normal; font-style: normal; line-height: 1; }
+.ms-sm { font-size: 16px; }
+.ms-lg { font-size: 28px; }
+
+/* ============================================================
+   BOTTOM PATH BAR (macOS Finder-style)
+   ============================================================ */
+#bottom-path-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 400;
+  height: 32px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px; font-size: .7rem;
+  background: var(--card, #21253a); border-top: 1px solid var(--border, #2d3349);
+  color: var(--muted, #8892a4);
+}
+body.theme-light #bottom-path-bar { background: #f7f9fc; border-color: #d9e1ea; color: #5f6b7a; }
+.path-breadcrumbs { display: flex; align-items: center; gap: 4px; }
+.path-breadcrumbs .path-seg {
+  cursor: pointer; padding: 2px 6px; border-radius: 4px; transition: background .15s;
+}
+.path-breadcrumbs .path-seg:hover { background: rgba(79,142,247,.12); color: var(--accent); }
+.path-breadcrumbs .path-seg.active { color: var(--accent); font-weight: 600; }
+.path-breadcrumbs .path-seg.disabled { opacity: .35; cursor: not-allowed; pointer-events: none; }
+.path-breadcrumbs .path-sep { opacity: .3; font-size: .6rem; }
+.path-status { display: flex; align-items: center; gap: 12px; font-size: .65rem; }
+.path-status .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+.path-status .status-dot.green { background: #4fcf8e; }
+.path-status .status-dot.amber { background: #f7924f; }
+.path-status .status-dot.red { background: #f76060; }
+
+/* Push body content above bottom bar */
+body { padding-bottom: 34px; }
+
+/* ============================================================
+   TOPBAR CHAT BUTTON
+   ============================================================ */
+.topbar-chat-btn {
+  position: relative; width: 36px; height: 36px; border: none; background: transparent;
+  cursor: pointer; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  color: var(--muted); transition: background .15s, color .15s;
+}
+.topbar-chat-btn:hover { background: rgba(79,142,247,.12); color: var(--accent); }
+.topbar-chat-btn .chat-tooltip {
+  position: absolute; top: calc(100% + 8px); right: 0; width: 220px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 12px; font-size: .7rem; color: var(--text); line-height: 1.4;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3); pointer-events: none; opacity: 0;
+  transition: opacity .2s; z-index: 600;
+}
+.topbar-chat-btn:hover .chat-tooltip { opacity: 1; pointer-events: auto; }
+.topbar-chat-btn.pulse::after {
+  content: ''; position: absolute; top: 4px; right: 4px;
+  width: 8px; height: 8px; border-radius: 50%; background: #4f8ef7;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+@keyframes pulse-glow { 0%,100% { box-shadow: 0 0 0 0 rgba(79,142,247,.5); } 50% { box-shadow: 0 0 0 6px rgba(79,142,247,0); } }
+
+/* Remove FAB — chat is now in topbar */
+#ai-chat-fab { display: none !important; }
+
+/* ============================================================
+   TOAST / SNACKBAR
+   ============================================================ */
+#toast-container {
+  position: fixed; bottom: 44px; left: 50%; transform: translateX(-50%);
+  z-index: 900; display: flex; flex-direction: column; gap: 8px; align-items: center;
+}
+.toast {
+  padding: 10px 20px; border-radius: 8px; font-size: .78rem; font-weight: 500;
+  color: #fff; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  animation: toast-in .3s ease-out;
+}
+.toast.info { background: #4f8ef7; }
+.toast.success { background: #4fcf8e; color: var(--bg); }
+.toast.error { background: #f76060; }
+.toast.warning { background: #f7924f; color: var(--bg); }
+@keyframes toast-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ============================================================
+   PIPELINE PREVIEW MODAL
+   ============================================================ */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 800; background: rgba(0,0,0,.55);
+  display: none; align-items: center; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 24px 28px; max-width: 520px; width: 90%; max-height: 80vh; overflow-y: auto;
+  box-shadow: 0 12px 48px rgba(0,0,0,.4);
+}
+body.theme-light .modal-card { background: #fff; border-color: #d9e1ea; }
+.modal-card h2 { font-size: 1.1rem; margin-bottom: 16px; color: var(--text); }
+.modal-card .pipeline-step {
+  display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px;
+}
+.pipeline-step .step-num {
+  width: 28px; height: 28px; border-radius: 50%; background: var(--accent);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: .72rem; font-weight: 700; flex-shrink: 0;
+}
+.pipeline-step .step-text { font-size: .8rem; color: var(--text); line-height: 1.5; }
+.pipeline-step .step-text small { display: block; color: var(--muted); font-size: .7rem; }
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+/* ============================================================
+   ADMIN MODAL
+   ============================================================ */
+.admin-modal-card {
+  max-width: 960px;
+  width: 96%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+.admin-modal-card.maximized {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 0;
+}
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.admin-header h2 { margin: 0; font-size: 1rem; }
+.admin-header-actions { display: flex; gap: 8px; }
+.admin-icon-btn {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: .9rem;
+}
+.admin-body {
+  display: flex;
+  min-height: 320px;
+  flex: 1;
+  overflow-y: auto;
+}
+.admin-sidebar {
+  width: 230px;
+  min-width: 230px;
+  border-right: 1px solid var(--border);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.admin-tab {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: .78rem;
+  cursor: pointer;
+}
+.admin-tab.active {
+  background: rgba(79,142,247,.12);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+.admin-content {
+  flex: 1;
+  padding: 16px 18px;
+  overflow-y: auto;
+}
+.admin-section { margin-bottom: 18px; }
+.admin-section h3 { font-size: .9rem; color: var(--text); margin-bottom: 10px; }
+.admin-field { margin-bottom: 12px; }
+.admin-field label { display: block; font-size: .72rem; color: var(--muted); margin-bottom: 4px; }
+.admin-field input, .admin-field select, .admin-field textarea {
+  width: 100%; padding: 8px 10px; border-radius: 8px; font-size: .78rem;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  font-family: var(--font);
+}
+.admin-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   DATA PREP TABS
+   ============================================================ */
+.prep-tabs {
+  display: flex; gap: 0; border-bottom: 2px solid var(--border);
+  margin: 0; padding: 0 16px;
+}
+.prep-tab {
+  padding: 10px 20px; font-size: .8rem; font-weight: 600; cursor: pointer;
+  border: none; background: transparent; color: var(--muted);
+  border-bottom: 2px solid transparent; margin-bottom: -2px;
+  transition: color .15s, border-color .15s;
+}
+.prep-tab:hover { color: var(--text); }
+.prep-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.prep-tab-content { display: none; }
+.prep-tab-content.active { display: block; }
+
+/* Summary tab KPIs */
+.summary-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px; padding: 20px 16px;
+}
+.summary-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px; transition: box-shadow .2s;
+}
+.summary-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.2); }
+.summary-card .sc-label { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+.summary-card .sc-value { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+.summary-card .sc-sub { font-size: .7rem; color: var(--muted); margin-top: 4px; }
+
+/* ============================================================
+   DASHBOARD REDESIGN
+   ============================================================ */
+.dash-insights {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px 20px; margin: 0 20px 16px;
+}
+.dash-insights h3 { font-size: .82rem; color: var(--accent); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.dash-insights ul { list-style: none; padding: 0; margin: 0; }
+.dash-insights li {
+  font-size: .78rem; color: var(--text); padding: 4px 0; display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.dash-insights li:last-child { border-bottom: none; }
+.dash-insights .insight-icon { font-size: 16px; }
+.insight-up { color: #4fcf8e; }
+.insight-down { color: #f76060; }
+.insight-warn { color: #f7924f; }
+
+/* M3 Card elevation */
+.kpi-card {
+  transition: box-shadow .25s cubic-bezier(.4,0,.2,1), transform .25s;
+}
+.kpi-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  transform: translateY(-2px);
+}
+
+/* View transitions */
+.view { animation: view-fade-in .3s ease-out; }
+@keyframes view-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* ── Production Planner ──────────────────────────────────────── */
+.planner-table-wrap { overflow-x: auto; }
+.planner-table {
+  width: 100%; border-collapse: collapse; font-size: .82rem;
+}
+.planner-table th, .planner-table td {
+  padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.planner-table th {
+  background: var(--surface); font-weight: 600; position: sticky; top: 0;
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .03em; color: var(--muted);
+}
+.planner-table tr:hover { background: rgba(79,142,247,.07); cursor: pointer; }
+.planner-table .item-name { font-weight: 500; color: var(--text); max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+.planner-table .qty-cell { text-align: right; font-variant-numeric: tabular-nums; }
+.planner-table .qty-cell.highlight { font-weight: 600; color: #107c41; }
+.planner-table .uom-badge {
+  display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .7rem; font-weight: 600;
+}
+.planner-table .uom-badge.nos { background: rgba(16,124,65,.15); color: #107c41; }
+.planner-table .uom-badge.kgs { background: rgba(0,120,212,.15); color: #0078d4; }
+.planner-sparkline { width: 100px; height: 28px; }
+
+@media print {
+  .topbar-shared, .dash-topbar, #bottom-path-bar, .controls,
+  .export-btns, #ai-chat-panel, #ai-chat-fab,
+  .launcher-overlay, .modal-overlay, .chat-tooltip, .avatar-dropdown { display: none !important; }
+  .view { display: block !important; min-height: auto; }
+  .view:not(.active) { display: none !important; }
+  body { background: #fff; color: #000; }
+  .kpi-row { grid-template-columns: repeat(3, 1fr); }
+  .panel { break-inside: avoid; border: 1px solid #ccc; }
+  .planner-table th, .planner-table td { border: 1px solid #ccc; }
 }
 </style>
 </head>
@@ -868,11 +1313,14 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
     <button class="waffle-btn" onclick="openLauncher()" title="App launcher">
       <div class="waffle-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </button>
-    <div class="logo-text"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
+    <div class="logo-text" onclick="showView('landing')" style="cursor:pointer" title="Go to Home"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
     <div class="topbar-search"><input type="text" placeholder="Search Predictify..." /></div>
     <div class="topbar-right">
       <button class="topbar-icon-btn" id="theme-toggle-landing" onclick="toggleTheme()" title="Toggle dark mode">&#9790;</button>
-      <button class="topbar-icon-btn" title="Settings">&#9881;</button>
+      <button class="topbar-chat-btn pulse" onclick="toggleChat()" title="AI Assistant" id="chat-btn-landing">
+        <span class="ms">smart_toy</span>
+        <div class="chat-tooltip">Ask Predictify AI to analyze data, explain forecasts, and get insights</div>
+      </button>
       <button class="topbar-icon-btn" title="Notifications">&#128276;</button>
       <div class="avatar" id="landing-avatar" title="Profile"></div>
     </div>
@@ -884,12 +1332,7 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
       <h1 id="greeting-text"></h1>
       <p>What would you like to work on?</p>
     </div>
-
-    <div class="landing-section-title">Recommended</div>
     <div class="product-grid" id="product-grid"></div>
-
-    <div class="landing-section-title">All Apps</div>
-    <div class="product-grid" id="all-apps-grid"></div>
   </div>
 </div>
 
@@ -901,16 +1344,27 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
     <button class="waffle-btn" onclick="openLauncher()" title="App launcher">
       <div class="waffle-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </button>
-    <div class="logo-text"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
+    <div class="logo-text" onclick="showView('landing')" style="cursor:pointer" title="Go to Home"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
     <div class="topbar-search"><input type="text" placeholder="Search Predictify..." /></div>
     <div class="topbar-right">
       <button class="topbar-icon-btn" id="theme-toggle-import" onclick="toggleTheme()" title="Toggle dark mode">&#9790;</button>
-      <button class="topbar-icon-btn" title="Settings">&#9881;</button>
+      <button class="topbar-chat-btn" onclick="toggleChat()" title="AI Assistant"><span class="ms">smart_toy</span></button>
       <div class="avatar" id="import-avatar" title="Profile"></div>
     </div>
   </div>
 
   <div class="import-main">
+    <div class="recents-panel">
+      <div class="recents-head">
+        <div>
+          <h2>Recent Jobs</h2>
+          <p>Resume a prior run or start a fresh forecasting job.</p>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="startNewJob()"><span class="ms ms-sm">add</span> New Job</button>
+      </div>
+      <div class="recent-jobs-list" id="recent-jobs-list"></div>
+    </div>
+
     <div class="import-header">
       <h1>Get Data</h1>
       <p>Connect to a data source to begin forecasting. All sources must contain transaction-level sales data.</p>
@@ -948,10 +1402,11 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
     <button class="waffle-btn" onclick="openLauncher()" title="App launcher">
       <div class="waffle-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </button>
-    <div class="logo-text"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
+    <div class="logo-text" onclick="showView('landing')" style="cursor:pointer" title="Go to Home"><span class="logo-predict">Predict</span><span class="logo-ify">ify</span></div>
     <div class="topbar-search"><input type="text" placeholder="Search Predictify..." /></div>
     <div class="topbar-right">
       <button class="topbar-icon-btn" id="theme-toggle-prep" onclick="toggleTheme()" title="Toggle dark mode">&#9790;</button>
+      <button class="topbar-chat-btn" onclick="toggleChat()" title="AI Assistant"><span class="ms">smart_toy</span></button>
       <div class="avatar" id="prep-avatar" title="Profile"></div>
     </div>
   </div>
@@ -964,28 +1419,43 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
       <span class="prep-stat" id="prep-stat-cols">-- columns</span>
       <div class="toolbar-sep"></div>
       <button class="btn btn-outline btn-sm" onclick="prepUndo()" id="prep-undo-btn" disabled title="Undo last change">&#8630; Undo</button>
+      <button class="btn btn-outline btn-sm" onclick="showView('import')">&#8592; Back to Import</button>
+      <div class="toolbar-sep"></div>
       <button class="btn btn-outline btn-sm" onclick="prepRemoveDuplicates()" title="Remove duplicate rows">Remove Duplicates</button>
       <div class="prep-toolbar-right">
-        <button class="btn btn-outline btn-sm" onclick="showView('import')">&#8592; Back to Import</button>
-        <button class="btn btn-primary btn-sm" onclick="prepSaveAndProceed()" id="prep-save-btn">Save &amp; Run Forecast</button>
+        <button class="btn btn-success btn-sm" onclick="prepSaveAndProceed()" id="prep-save-btn">Save &amp; Run Forecast</button>
       </div>
     </div>
 
-    <!-- Column profile strip (mini histograms) -->
-    <div class="profile-strip" id="profile-strip"></div>
-
-    <!-- Data grid -->
-    <div class="prep-grid-wrap" id="prep-grid-wrap">
-      <table class="prep-grid" id="prep-grid">
-        <thead id="prep-grid-head"></thead>
-        <tbody id="prep-grid-body"></tbody>
-      </table>
+    <!-- Prep tabs -->
+    <div class="prep-tabs">
+      <button class="prep-tab active" onclick="switchPrepTab('summary', this)"><span class="ms ms-sm">analytics</span> Summary</button>
+      <button class="prep-tab" onclick="switchPrepTab('data', this)"><span class="ms ms-sm">table_chart</span> Data</button>
     </div>
 
-    <!-- Pagination -->
-    <div class="prep-pagination">
-      <div class="page-info" id="prep-page-info">Page 1 of 1</div>
-      <div class="page-btns" id="prep-page-btns"></div>
+    <!-- TAB 1: SUMMARY -->
+    <div class="prep-tab-content active" id="prep-tab-summary">
+      <div class="summary-grid" id="prep-summary-grid"></div>
+    </div>
+
+    <!-- TAB 2: DATA -->
+    <div class="prep-tab-content" id="prep-tab-data">
+      <!-- Column profile strip -->
+      <div class="profile-strip" id="profile-strip"></div>
+
+      <!-- Data grid -->
+      <div class="prep-grid-wrap" id="prep-grid-wrap">
+        <table class="prep-grid" id="prep-grid">
+          <thead id="prep-grid-head"></thead>
+          <tbody id="prep-grid-body"></tbody>
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="prep-pagination">
+        <div class="page-info" id="prep-page-info">Page 1 of 1</div>
+        <div class="page-btns" id="prep-page-btns"></div>
+      </div>
     </div>
   </div>
 
@@ -1005,25 +1475,35 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
 <div class="view" id="view-dashboard">
   <div class="dash-topbar">
     <div>
-      <div class="breadcrumb"><a href="#" onclick="showView('landing');return false">Predictify</a> &rsaquo; <a href="#" onclick="showView('import');return false">AI Forecasting</a> &rsaquo; <a href="#" onclick="showView('prep');return false">Data Prep</a> &rsaquo; Dashboard</div>
-      <h1>Sales Forecasting <span id="dash-filename"></span></h1>
+      <div class="breadcrumb"><a href="#" onclick="showView('landing');return false">Predictify</a> &rsaquo; <a href="#" onclick="showView('import');return false">Sales &amp; Demand Forecasting</a> &rsaquo; <a href="#" onclick="showView('prep');return false">Data Prep</a> &rsaquo; Dashboard</div>
+      <h1>Sales &amp; Demand Forecasting <span id="dash-filename"></span></h1>
     </div>
     <div style="display:flex;align-items:center;gap:12px">
       <span id="pipeline-badge" class="badge idle"><span class="dot"></span>Idle</span>
       <button class="topbar-icon-btn" id="theme-toggle-dashboard" onclick="toggleTheme()" title="Toggle dark mode">&#9790;</button>
+      <button class="topbar-chat-btn" onclick="toggleChat()" title="AI Assistant"><span class="ms">smart_toy</span></button>
       <button class="btn btn-outline btn-sm" onclick="showView('import')">Change Data Source</button>
       <button class="btn btn-primary" id="run-btn" onclick="runPipeline()">Run Pipeline</button>
+      <button class="btn btn-outline btn-sm" onclick="showView('planner')" title="Item-level production planning"><span class="ms ms-sm">factory</span> Production Planner</button>
     </div>
   </div>
 
   <div class="main">
     <div class="kpi-row" id="kpi-row">
-      <div class="kpi"><div class="label">Stores</div><div class="value" id="kpi-stores">--</div></div>
-      <div class="kpi"><div class="label">Categories</div><div class="value" id="kpi-cats">--</div></div>
-      <div class="kpi"><div class="label">Sold Items</div><div class="value" id="kpi-items">--</div></div>
-      <div class="kpi"><div class="label">Date Range</div><div class="value" id="kpi-datemin" style="font-size:1rem">--</div><div class="sub" id="kpi-datemax"></div></div>
-      <div class="kpi"><div class="label">History Days</div><div class="value" id="kpi-days">--</div></div>
-      <div class="kpi"><div class="label">Quarantined</div><div class="value" id="kpi-quarantine">--</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">payments</span> TOTAL REVENUE</div><div class="value" id="kpi-revenue">--</div><div class="sub" id="kpi-revenue-sub"></div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">inventory_2</span> UNITS FORECAST (NOS)</div><div class="value" id="kpi-units-nos">--</div><div class="sub" id="kpi-nos-sub">next 7 days</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">scale</span> WEIGHT FORECAST (KGS)</div><div class="value" id="kpi-units-kgs">--</div><div class="sub" id="kpi-kgs-sub">next 7 days</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">trending_up</span> REVENUE FORECAST</div><div class="value" id="kpi-forecast-rev">--</div><div class="sub" id="kpi-forecast-sub">next 7 days</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">store</span> TOP STORE</div><div class="value" id="kpi-top-store" style="font-size:1rem">--</div><div class="sub" id="kpi-top-store-sub"></div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">model_training</span> BEST MODEL</div><div class="value" id="kpi-best-model" style="font-size:1rem">--</div><div class="sub" id="kpi-best-model-sub"></div></div>
+    </div>
+
+    <!-- Insights panel -->
+    <div class="dash-insights" id="dash-insights">
+      <h3><span class="ms ms-sm">lightbulb</span> Key Insights</h3>
+      <ul id="insights-list">
+        <li><span class="insight-icon ms ms-sm">hourglass_empty</span> Run the pipeline to generate insights...</li>
+      </ul>
     </div>
 
     <div class="controls">
@@ -1067,8 +1547,9 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
       <div class="panel-hdr">
         <h2 id="chart-title">Forecast Chart</h2>
         <div class="export-btns">
-          <button class="btn btn-outline btn-sm" onclick="exportForecast('xlsx')">Export XLSX</button>
-          <button class="btn btn-outline btn-sm" onclick="exportForecast('csv')">Export CSV</button>
+          <button class="btn btn-outline btn-sm" onclick="exportForecast('xlsx')"><span class="ms ms-sm">download</span> Excel</button>
+          <button class="btn btn-outline btn-sm" onclick="exportForecast('csv')"><span class="ms ms-sm">csv</span> CSV</button>
+          <button class="btn btn-outline btn-sm" onclick="window.print()"><span class="ms ms-sm">print</span> Print</button>
         </div>
       </div>
       <div id="forecast-chart">
@@ -1087,6 +1568,105 @@ body.theme-light .chat-input-area textarea { background: #fff; border-color: #d9
         <div class="panel-hdr"><h2>Pipeline Log</h2></div>
         <div id="status-log"><div class="log-line">Waiting for pipeline run...</div></div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     VIEW 5: PRODUCTION PLANNER
+     ============================================================ -->
+<div class="view" id="view-planner">
+  <div class="dash-topbar">
+    <div>
+      <div class="breadcrumb"><a href="#" onclick="showView('landing');return false">Predictify</a> &rsaquo; <a href="#" onclick="showView('dashboard');return false">Dashboard</a> &rsaquo; Production Planner</div>
+      <h1><span class="ms">factory</span> Production Planner</h1>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <button class="topbar-icon-btn" id="theme-toggle-planner" onclick="toggleTheme()" title="Toggle dark mode">&#9790;</button>
+      <button class="topbar-chat-btn" onclick="toggleChat()" title="AI Assistant"><span class="ms">smart_toy</span></button>
+      <button class="btn btn-outline btn-sm" onclick="showView('dashboard')"><span class="ms ms-sm">arrow_back</span> Dashboard</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <!-- Planner KPIs -->
+    <div class="kpi-row" id="planner-kpi-row">
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">inventory_2</span> ITEMS (NOS)</div><div class="value" id="planner-kpi-nos-count">--</div><div class="sub">items measured in pieces</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">scale</span> ITEMS (KGS)</div><div class="value" id="planner-kpi-kgs-count">--</div><div class="sub">items measured in kilos</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">category</span> TOTAL NOS FORECAST</div><div class="value" id="planner-kpi-nos-total">--</div><div class="sub" id="planner-kpi-nos-sub">pieces over horizon</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">fitness_center</span> TOTAL KGS FORECAST</div><div class="value" id="planner-kpi-kgs-total">--</div><div class="sub" id="planner-kpi-kgs-sub">kilos over horizon</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">apps</span> TOTAL ITEMS</div><div class="value" id="planner-kpi-total-items">--</div><div class="sub">with sufficient history</div></div>
+      <div class="kpi kpi-card"><div class="label"><span class="ms ms-sm">model_training</span> MODEL</div><div class="value" id="planner-kpi-model" style="font-size:1rem">--</div><div class="sub">forecasting method</div></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="ctrl-group">
+        <label>Forecast Horizon</label>
+        <div class="seg-ctrl" id="planner-horizon-seg">
+          <button class="active" onclick="setPlannerHorizon(7,this)">7 days</button>
+          <button onclick="setPlannerHorizon(14,this)">14 days</button>
+          <button onclick="setPlannerHorizon(30,this)">30 days</button>
+        </div>
+      </div>
+      <div class="ctrl-group">
+        <label>Model</label>
+        <select id="planner-model-select" onchange="loadPlannerData()">
+          <option value="RidgeForecaster">Ridge Regression</option>
+          <option value="LassoForecaster">Lasso Regression</option>
+          <option value="ElasticNetForecaster">Elastic Net</option>
+          <option value="NaiveSeasonalWeekly">Weekly Seasonal</option>
+          <option value="NaiveRollingMean7">7-Day Rolling Avg</option>
+          <option value="NaiveLastValue">Last Value Repeat</option>
+        </select>
+      </div>
+      <div class="ctrl-group">
+        <label>Filter UOM</label>
+        <select id="planner-uom-select" onchange="setPlannerUOMSelect(this.value)" style="padding: 6px 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: .82rem; font-family: var(--font); cursor: pointer;">
+          <option value="NOS">NOS (Pieces)</option>
+          <option value="KGS">KGS (Kilos)</option>
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="ctrl-group">
+        <label>Search Item</label>
+        <input type="text" id="planner-search" placeholder="Search by name or ID..." oninput="filterPlannerTable()" style="padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-size:.85rem;width:180px">
+      </div>
+      <div class="ctrl-group" style="margin-left:auto">
+        <button class="btn btn-outline btn-sm" onclick="exportPlannerXLSX()"><span class="ms ms-sm">download</span> Export Plan</button>
+        <button class="btn btn-outline btn-sm" onclick="loadPlannerData()"><span class="ms ms-sm">refresh</span> Refresh</button>
+      </div>
+    </div>
+
+    <!-- NOS Section -->
+    <div class="panel" id="planner-nos-panel">
+      <div class="panel-hdr">
+        <h2><span class="ms ms-sm">inventory_2</span> Pieces (NOS) — Daily Production Plan</h2>
+        <span class="badge" id="planner-nos-badge" style="background:#107c41;color:#fff">0 items</span>
+      </div>
+      <div id="planner-nos-table" class="planner-table-wrap">
+        <div class="empty"><div class="icon">&#128230;</div><p>Loading item forecasts...</p></div>
+      </div>
+    </div>
+
+    <!-- KGS Section -->
+    <div class="panel" id="planner-kgs-panel">
+      <div class="panel-hdr">
+        <h2><span class="ms ms-sm">scale</span> Weight (KGS) — Daily Production Plan</h2>
+        <span class="badge" id="planner-kgs-badge" style="background:#0078d4;color:#fff">0 items</span>
+      </div>
+      <div id="planner-kgs-table" class="planner-table-wrap">
+        <div class="empty"><div class="icon">&#128230;</div><p>Loading item forecasts...</p></div>
+      </div>
+    </div>
+
+    <!-- Item Detail Panel -->
+    <div class="panel" id="planner-item-detail" style="display:none">
+      <div class="panel-hdr">
+        <h2 id="planner-detail-title">Item Forecast</h2>
+        <button class="btn btn-outline btn-sm" onclick="document.getElementById('planner-item-detail').style.display='none'"><span class="ms ms-sm">close</span> Close</button>
+      </div>
+      <div id="planner-detail-chart" style="min-height:300px"></div>
     </div>
   </div>
 </div>
@@ -1115,25 +1695,89 @@ const AppState = {
   activeProduct: null,
   activeConnectorCategory: 'file',
   activeConnector: null,
+  importSource: '',
   importStatus: null,
   importMessage: '',
+  adminTab: 'providers',
+  adminMaximized: false,
+  defaultHorizon: 7,
+  defaultModel: 'RidgeForecaster',
   // Dashboard state
   grain: 'total',
   horizon: 7,
   model: 'RidgeForecaster',
   groupValue: null,
   pollingTimer: null,
+  hasImportedData: false,
+  pipelineComplete: false,
 };
 
 // ── Product/App definitions ──────────────────────────────────────────────────
 const PRODUCTS = [
-  { id: 'ai-forecasting', name: 'AI Forecasting', desc: 'Predict future sales with ML models across stores, categories, and items.', icon: '&#128200;', color: '#107c41', functional: true },
-  { id: 'sales-analytics', name: 'Sales Analytics', desc: 'Deep-dive into sales performance, trends, and anomalies.', icon: '&#128202;', color: '#0078d4', functional: false },
-  { id: 'inventory-planner', name: 'Inventory Planner', desc: 'Optimize stock levels and reduce waste across locations.', icon: '&#128230;', color: '#8764b8', functional: false },
-  { id: 'customer-insights', name: 'Customer Insights', desc: 'Understand buying patterns and customer segments.', icon: '&#128101;', color: '#e74856', functional: false },
-  { id: 'supply-chain', name: 'Supply Chain', desc: 'Monitor and optimize your end-to-end supply chain.', icon: '&#128666;', color: '#ff8c00', functional: false },
-  { id: 'reports-hub', name: 'Reports Hub', desc: 'Centralized reporting and scheduled report delivery.', icon: '&#128196;', color: '#00a4ef', functional: false },
+  { id: 'ai-forecasting', name: 'Sales & Demand Forecasting', desc: 'Predict future sales and demand with ML models across stores, categories, and items.', icon: '&#128200;', color: '#107c41', functional: true },
+  { id: 'production-inventory-forecasting', name: 'Production & Inventory Forecasting', desc: 'Align production planning and inventory targets with expected demand.', icon: '&#127981;', color: '#0078d4', functional: false },
+  { id: 'supply-chain-forecasting', name: 'Supply Chain Forecasting', desc: 'Anticipate logistics and replenishment needs across your network.', icon: '&#128666;', color: '#f7924f', functional: false },
+  { id: 'pricing-forecasting', name: 'Pricing Forecasting', desc: 'Model price sensitivity and forecast revenue impact of pricing decisions.', icon: '&#128176;', color: '#8764b8', functional: false },
 ];
+
+const RECENT_JOBS_KEY = 'predictify_recent_jobs';
+const STAGE_RANK = { imported: 1, prepped: 2, forecasted: 3 };
+const STAGE_LABELS = { imported: 'Imported', prepped: 'Prepped', forecasted: 'Forecasted' };
+
+function getRecentJobs() {
+  try {
+    const raw = localStorage.getItem(RECENT_JOBS_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function setRecentJobs(jobs) {
+  try { localStorage.setItem(RECENT_JOBS_KEY, JSON.stringify(jobs)); } catch (_) {}
+}
+
+function saveRecentJob(job) {
+  if (!job?.filename) return;
+  const jobs = getRecentJobs();
+  const idx = jobs.findIndex(j => j.filename === job.filename);
+  const now = new Date().toISOString();
+  if (idx >= 0) {
+    const prev = jobs[idx];
+    jobs[idx] = {
+      ...prev,
+      ...job,
+      stage: STAGE_RANK[job.stage] > STAGE_RANK[prev.stage] ? job.stage : prev.stage,
+      // Preserve rows/cols if not explicitly provided in update
+      rows: job.rows !== undefined ? job.rows : prev.rows || 0,
+      cols: job.cols !== undefined ? job.cols : prev.cols || 0,
+      updated_at: now,
+    };
+  } else {
+    jobs.unshift({
+      filename: job.filename,
+      stage: job.stage || 'imported',
+      rows: job.rows || 0,
+      cols: job.cols || 0,
+      updated_at: now,
+    });
+  }
+  jobs.sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0));
+  setRecentJobs(jobs.slice(0, 10));
+}
+
+function timeAgo(isoTs) {
+  if (!isoTs) return '--';
+  const diff = Math.max(0, Date.now() - new Date(isoTs).getTime());
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  const days = Math.floor(hrs / 24);
+  return `${days}d ago`;
+}
 
 // ── Connector definitions ────────────────────────────────────────────────────
 const CONNECTORS = {
@@ -1163,10 +1807,431 @@ const CONNECTORS = {
 
 // ── View management ──────────────────────────────────────────────────────────
 function showView(viewId) {
+  // Navigation guards
+  if (viewId === 'prep' && !AppState.hasImportedData) {
+    showToast('Import data first before preparing it.', 'warning');
+    viewId = 'import';
+  }
+  if (viewId === 'dashboard' && !AppState.pipelineComplete) {
+    showToast('Run the pipeline first to see the dashboard.', 'warning');
+    if (!AppState.hasImportedData) viewId = 'import';
+    else viewId = 'prep';
+  }
+  if (viewId === 'planner' && !AppState.pipelineComplete) {
+    showToast('Run the pipeline first to use the Production Planner.', 'warning');
+    if (!AppState.hasImportedData) viewId = 'import';
+    else viewId = 'prep';
+  }
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   document.getElementById('view-' + viewId).classList.add('active');
   AppState.currentView = viewId;
   if (viewId === 'landing') updateGreeting();
+  if (viewId === 'import') renderRecentJobs();
+  if (viewId === 'planner') loadPlannerData();
+  closeAvatarDropdown();
+  updateBottomBar();
+  renderLauncherTiles();
+}
+
+// ── INR Formatting (Indian number system) ──────────────────────────────────
+function formatINR(num) {
+  if (num == null || isNaN(num)) return '--';
+  const neg = num < 0;
+  num = Math.abs(Math.round(num));
+  let s = num.toString();
+  if (s.length <= 3) return (neg ? '-' : '') + '\u20B9' + s;
+  let last3 = s.slice(-3);
+  let rest = s.slice(0, -3);
+  let result = '';
+  while (rest.length > 2) {
+    result = ',' + rest.slice(-2) + result;
+    rest = rest.slice(0, -2);
+  }
+  result = rest + result + ',' + last3;
+  return (neg ? '-' : '') + '\u20B9' + result;
+}
+
+// ── Toast / Snackbar ───────────────────────────────────────────────────────
+function showToast(msg, type = 'info', duration = 3500) {
+  const container = document.getElementById('toast-container');
+  const el = document.createElement('div');
+  el.className = 'toast ' + type;
+  el.textContent = msg;
+  container.appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; setTimeout(() => el.remove(), 300); }, duration);
+}
+
+// ── Bottom Path Bar ────────────────────────────────────────────────────────
+function updateBottomBar() {
+  const steps = [
+    { id: 'landing', label: 'Home', icon: 'home' },
+    { id: 'import', label: 'Get Data', icon: 'cloud_download' },
+    { id: 'prep', label: 'Data Prep', icon: 'edit_note' },
+    { id: 'dashboard', label: 'Dashboard', icon: 'dashboard' },
+    { id: 'planner', label: 'Production Plan', icon: 'factory' },
+  ];
+  const bc = document.getElementById('path-breadcrumbs');
+  const st = document.getElementById('path-status');
+  let html = '';
+  steps.forEach((s, i) => {
+    const active = s.id === AppState.currentView;
+    const disabled = (s.id === 'prep' && !AppState.hasImportedData) || (s.id === 'dashboard' && !AppState.pipelineComplete) || (s.id === 'planner' && !AppState.pipelineComplete);
+    html += `<span class="path-seg ${active ? 'active' : ''} ${disabled ? 'disabled' : ''}" onclick="showView('${s.id}')"><span class="ms ms-sm">${s.icon}</span> ${s.label}</span>`;
+    if (i < steps.length - 1) html += '<span class="path-sep">›</span>';
+  });
+  bc.innerHTML = html;
+  // Status indicators (always show both)
+  const pipelineState = AppState.pipelineComplete
+    ? '<span><span class="status-dot green"></span> Pipeline: Complete</span>'
+    : AppState.pollingTimer
+      ? '<span><span class="status-dot amber"></span> Pipeline: Running</span>'
+      : '<span><span class="status-dot red"></span> Pipeline: Not run</span>';
+  const dataState = AppState.hasImportedData
+    ? '<span><span class="status-dot green"></span> Data: Loaded</span>'
+    : '<span><span class="status-dot red"></span> Data: No data</span>';
+  st.innerHTML = pipelineState + dataState;
+}
+
+// ── Prep Tab Switching ─────────────────────────────────────────────────────
+function switchPrepTab(tab, btn) {
+  document.querySelectorAll('.prep-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.prep-tab-content').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('prep-tab-' + tab).classList.add('active');
+  if (tab === 'summary') renderPrepSummary();
+}
+
+function renderPrepSummary() {
+  const grid = document.getElementById('prep-summary-grid');
+  const profiles = prepState.profiles || [];
+  const totalRows = prepState.totalRows || 0;
+  const cols = prepState.columns || [];
+
+  // Build summary cards
+  let cards = [
+    { label: 'Total Rows', value: totalRows.toLocaleString('en-IN'), icon: 'table_rows' },
+    { label: 'Total Columns', value: cols.length, icon: 'view_column' },
+  ];
+
+  // Find date range
+  const dateProf = profiles.find(p => p.kind === 'datetime' || (p.name && p.name.toLowerCase().includes('date')));
+  if (dateProf && dateProf.min) cards.push({ label: 'Date Range', value: dateProf.min?.split('T')[0] || '--', sub: '→ ' + (dateProf.max?.split('T')[0] || '--'), icon: 'date_range' });
+
+  // Unique counts from text profiles
+  profiles.forEach(p => {
+    if (p.kind === 'text' && ['store_id', 'Store No.', 'store no.'].some(n => p.name.toLowerCase().includes(n.toLowerCase())))
+      cards.push({ label: 'Unique Stores', value: p.unique_count, icon: 'store' });
+    if (p.kind === 'text' && p.name.toLowerCase().includes('item'))
+      cards.push({ label: 'Unique Items', value: p.unique_count, icon: 'inventory_2' });
+  });
+
+  // Numeric summaries
+  profiles.forEach(p => {
+    if (p.kind === 'numeric' && p.name.toLowerCase().includes('amount'))
+      cards.push({ label: 'Total ' + p.name, value: formatINR(p.mean * totalRows), sub: 'Avg: ' + formatINR(p.mean), icon: 'payments' });
+    if (p.kind === 'numeric' && p.name.toLowerCase().includes('quantity'))
+      cards.push({ label: 'Total Quantity', value: Math.round(p.mean * totalRows).toLocaleString('en-IN'), sub: 'Avg: ' + (p.mean?.toFixed(1) || '--'), icon: 'production_quantity_limits' });
+  });
+
+  // Null counts
+  let nullCols = profiles.filter(p => p.null_count > 0).map(p => `${p.name}: ${p.null_count} (${p.null_pct}%)`);
+  if (nullCols.length) cards.push({ label: 'Columns with Nulls', value: nullCols.length + ' columns', sub: nullCols.slice(0, 3).join(', '), icon: 'warning' });
+
+  // Data quality
+  const totalNulls = profiles.reduce((s, p) => s + p.null_count, 0);
+  const totalCells = totalRows * cols.length;
+  const quality = totalCells > 0 ? ((1 - totalNulls / totalCells) * 100).toFixed(1) + '%' : '--';
+  cards.push({ label: 'Data Quality', value: quality, sub: totalNulls + ' null cells', icon: 'verified' });
+
+  grid.innerHTML = cards.map(c => `
+    <div class="summary-card">
+      <div class="sc-label"><span class="ms ms-sm">${c.icon || 'info'}</span> ${c.label}</div>
+      <div class="sc-value">${c.value}</div>
+      ${c.sub ? `<div class="sc-sub">${c.sub}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+// ── Pipeline Preview Modal ─────────────────────────────────────────────────
+function showPipelineModal() {
+  const modal = document.getElementById('pipeline-modal');
+  const stepsContainer = document.getElementById('pipeline-steps-container');
+  const summary = document.getElementById('pipeline-modal-summary');
+  const columns = prepState.columns || [];
+  const rowCount = prepState.totalRows || 0;
+  const findCol = keys => columns.find(c => keys.some(k => c.toLowerCase().includes(k)));
+  const dateCol = findCol(['date', 'day', 'dt']);
+  const storeCol = findCol(['store']);
+  const itemCol = findCol(['item', 'sku']);
+  const qtyCol = findCol(['qty', 'quantity', 'units']);
+  const amountCol = findCol(['amount', 'revenue', 'sales', 'total']);
+  const categoryCol = findCol(['category', 'dept']);
+  const modelNames = Array.from(document.querySelectorAll('#model-select option')).map(opt => opt.textContent.trim());
+  const safeModelNames = modelNames.length ? modelNames : ['Ridge', 'Lasso', 'ElasticNet', 'Naive Weekly', 'Naive Rolling', 'Naive Last'];
+  const horizons = [7, 14, 30];
+
+  const steps = [
+    {
+      title: `Load ${rowCount.toLocaleString('en-IN')} rows and ${columns.length} columns`,
+      detail: `Columns detected: ${columns.slice(0, 8).join(', ') || 'No columns detected yet'}`,
+    },
+    {
+      title: 'Profile and standardize critical fields',
+      detail: `Date: ${dateCol || '--'} | Store: ${storeCol || '--'} | Item: ${itemCol || '--'} | Category: ${categoryCol || '--'}`,
+    },
+    {
+      title: 'Clean nulls, invalid records, and units',
+      detail: `Numerics validated on ${qtyCol || '--'} and ${amountCol || '--'} before feature engineering`,
+    },
+    {
+      title: 'Aggregate series for training datasets',
+      detail: `Build daily grains across Total, Store, Category, and Item from ${rowCount.toLocaleString('en-IN')} source rows`,
+    },
+    {
+      title: `Train ${safeModelNames.length} models across ${horizons.length} horizons`,
+      detail: `${safeModelNames.join(', ')} × ${horizons.join('d, ')}d`,
+    },
+    {
+      title: 'Score candidates and generate forecast outputs',
+      detail: 'Publish best-model forecasts, intervals, and metrics for dashboard + planner',
+    },
+  ];
+
+  stepsContainer.innerHTML = steps.map((step, idx) => `
+    <div class="pipeline-step">
+      <div class="step-num">${idx + 1}</div>
+      <div class="step-text"><strong>${step.title}</strong><small>${step.detail}</small></div>
+    </div>
+  `).join('');
+
+  summary.innerHTML = `<strong>Data:</strong> ${rowCount.toLocaleString('en-IN')} rows, ${columns.length} columns`;
+  modal.classList.add('open');
+}
+function closePipelineModal(e) {
+  if (e.target.id === 'pipeline-modal') e.target.classList.remove('open');
+}
+async function confirmPipelineRun() {
+  document.getElementById('pipeline-modal').classList.remove('open');
+  await originalPrepSaveAndProceed();
+}
+
+// ── Admin Modal ────────────────────────────────────────────────────────────
+const PROVIDER_LABELS = {
+  gemini: 'Google Gemini',
+  openrouter: 'OpenRouter',
+  openai: 'OpenAI',
+  anthropic: 'Anthropic',
+};
+
+const AdminState = {
+  cfg: null,
+};
+
+function openAdminModal() {
+  document.getElementById('admin-modal').classList.add('open');
+  closeAvatarDropdown();
+  loadAdminConfig();
+}
+function closeAdminModal(e) {
+  if (e.target.id === 'admin-modal') e.target.classList.remove('open');
+}
+function toggleAdminMaximize() {
+  const card = document.getElementById('admin-modal-card');
+  AppState.adminMaximized = !AppState.adminMaximized;
+  card.classList.toggle('maximized', AppState.adminMaximized);
+}
+async function loadAdminConfig() {
+  try {
+    const res = await fetch(`${API}/llm/config`);
+    if (res.ok) AdminState.cfg = await res.json();
+  } catch (_) {}
+  if (!AdminState.cfg) AdminState.cfg = ChatState.llmConfig || { providers: {} };
+  switchAdminTab(AppState.adminTab || 'providers');
+}
+function switchAdminTab(tab) {
+  AppState.adminTab = tab;
+  document.querySelectorAll('.admin-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab));
+  renderAdminTab(tab);
+}
+function renderAdminTab(tab) {
+  const content = document.getElementById('admin-content');
+  if (!content) return;
+
+  const cfg = AdminState.cfg || ChatState.llmConfig || {};
+  const providerKeys = Object.keys(cfg.providers || {});
+  const availableProviders = providerKeys.length ? providerKeys : ['gemini', 'openrouter', 'openai', 'anthropic'];
+  const provider = cfg.active_provider || availableProviders[0] || 'gemini';
+  const models = cfg.providers?.[provider]?.models || [];
+  const model = cfg.active_model || models[0]?.id || 'gemini-2.0-flash';
+
+  if (tab === 'providers') {
+    content.innerHTML = `
+      <div class="admin-section">
+        <h3>LLM Provider Configuration</h3>
+        <div class="admin-field">
+          <label>Active Provider</label>
+          <select id="admin-provider" onchange="adminProviderChange()">
+            ${availableProviders.map(p => `<option value="${p}" ${p === provider ? 'selected' : ''}>${PROVIDER_LABELS[p] || p}</option>`).join('')}
+          </select>
+        </div>
+        <div class="admin-field">
+          <label>Active Model</label>
+          <select id="admin-model"></select>
+        </div>
+        <div class="admin-field">
+          <label>Gemini API Key</label>
+          <input type="password" id="admin-gemini-key" placeholder="Paste Gemini API key..." />
+        </div>
+        <div class="admin-field">
+          <label>OpenRouter API Key</label>
+          <input type="password" id="admin-openrouter-key" placeholder="Paste OpenRouter API key..." />
+        </div>
+        <div class="admin-field">
+          <label>OpenAI API Key</label>
+          <input type="password" id="admin-openai-key" placeholder="Paste OpenAI API key..." />
+        </div>
+        <div class="admin-field">
+          <label>Anthropic API Key</label>
+          <input type="password" id="admin-anthropic-key" placeholder="Paste Anthropic API key..." />
+        </div>
+      </div>
+    `;
+    adminProviderChange(cfg, model);
+    return;
+  }
+
+  if (tab === 'appearance') {
+    content.innerHTML = `
+      <div class="admin-section">
+        <h3>Appearance</h3>
+        <div class="admin-field">
+          <label>Theme</label>
+          <select id="admin-theme">
+            <option value="dark" ${AppState.theme === 'dark' ? 'selected' : ''}>Dark</option>
+            <option value="light" ${AppState.theme === 'light' ? 'selected' : ''}>Light</option>
+          </select>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (tab === 'data') {
+    content.innerHTML = `
+      <div class="admin-section">
+        <h3>Data Settings</h3>
+        <div class="admin-field">
+          <label>Default Forecast Horizon</label>
+          <select id="admin-default-horizon">
+            <option value="7" ${AppState.defaultHorizon === 7 ? 'selected' : ''}>7 days</option>
+            <option value="14" ${AppState.defaultHorizon === 14 ? 'selected' : ''}>14 days</option>
+            <option value="30" ${AppState.defaultHorizon === 30 ? 'selected' : ''}>30 days</option>
+          </select>
+        </div>
+        <div class="admin-field">
+          <label>Default Forecast Model</label>
+          <select id="admin-default-model">
+            <option value="RidgeForecaster" ${AppState.defaultModel === 'RidgeForecaster' ? 'selected' : ''}>Ridge Regression</option>
+            <option value="LassoForecaster" ${AppState.defaultModel === 'LassoForecaster' ? 'selected' : ''}>Lasso Regression</option>
+            <option value="ElasticNetForecaster" ${AppState.defaultModel === 'ElasticNetForecaster' ? 'selected' : ''}>Elastic Net</option>
+            <option value="NaiveSeasonalWeekly" ${AppState.defaultModel === 'NaiveSeasonalWeekly' ? 'selected' : ''}>Naive Weekly</option>
+            <option value="NaiveRollingMean7" ${AppState.defaultModel === 'NaiveRollingMean7' ? 'selected' : ''}>Naive Rolling</option>
+            <option value="NaiveLastValue" ${AppState.defaultModel === 'NaiveLastValue' ? 'selected' : ''}>Naive Last</option>
+          </select>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  content.innerHTML = `
+    <div class="admin-section">
+      <h3>User Profile</h3>
+      <div class="admin-field">
+        <label>Display Name</label>
+        <input type="text" id="admin-display-name" value="${AppState.user.name}" />
+      </div>
+      <div class="admin-actions">
+        <button class="btn btn-outline" onclick="handleLogout()"><span class="ms ms-sm">logout</span> Logout</button>
+      </div>
+    </div>
+  `;
+}
+function adminProviderChange(cfg, preferredModel) {
+  if (cfg) AdminState.cfg = cfg;
+  const providerSel = document.getElementById('admin-provider');
+  const modelSel = document.getElementById('admin-model');
+  if (!providerSel || !modelSel) return;
+  const source = AdminState.cfg || ChatState.llmConfig || {};
+  const prov = providerSel.value;
+  const models = source.providers?.[prov]?.models || [];
+  modelSel.innerHTML = models.map(m => `<option value="${m.id}">${m.name}</option>`).join('');
+  const activeModel = preferredModel || (source.active_provider === prov ? source.active_model : models[0]?.id);
+  if (activeModel) modelSel.value = activeModel;
+}
+async function saveAdminSettings() {
+  const provider = document.getElementById('admin-provider')?.value || AdminState.cfg?.active_provider || 'gemini';
+  const model = document.getElementById('admin-model')?.value || AdminState.cfg?.active_model || '';
+  const geminiKey = document.getElementById('admin-gemini-key')?.value.trim() || '';
+  const orKey = document.getElementById('admin-openrouter-key')?.value.trim() || '';
+  const openaiKey = document.getElementById('admin-openai-key')?.value.trim() || '';
+  const anthropicKey = document.getElementById('admin-anthropic-key')?.value.trim() || '';
+
+  const themeChoice = document.getElementById('admin-theme')?.value;
+  if (themeChoice) applyTheme(themeChoice);
+
+  const defaultH = Number(document.getElementById('admin-default-horizon')?.value || AppState.defaultHorizon);
+  const defaultM = document.getElementById('admin-default-model')?.value || AppState.defaultModel;
+  AppState.defaultHorizon = [7, 14, 30].includes(defaultH) ? defaultH : 7;
+  AppState.defaultModel = defaultM;
+  AppState.horizon = AppState.defaultHorizon;
+  AppState.model = AppState.defaultModel;
+  try {
+    localStorage.setItem('predictify_default_horizon', String(AppState.defaultHorizon));
+    localStorage.setItem('predictify_default_model', AppState.defaultModel);
+  } catch (_) {}
+  applyDefaultForecastControls();
+
+  const displayName = document.getElementById('admin-display-name')?.value.trim();
+  if (displayName) {
+    AppState.user.name = displayName;
+    try { localStorage.setItem('predictify_display_name', displayName); } catch (_) {}
+    setAvatars();
+    updateGreeting();
+    renderLauncherTiles();
+  }
+
+  try {
+    await fetch(`${API}/llm/config`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ active_provider: provider, active_model: model }),
+    });
+
+    const keys = [
+      { provider: 'gemini', key: geminiKey },
+      { provider: 'openrouter', key: orKey },
+      { provider: 'openai', key: openaiKey },
+      { provider: 'anthropic', key: anthropicKey },
+    ].filter(k => k.key);
+    for (const k of keys) {
+      await fetch(`${API}/llm/config`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ provider: k.provider, api_key: k.key }),
+      });
+    }
+    showToast('Settings saved!', 'success');
+    document.getElementById('admin-modal').classList.remove('open');
+    await loadLLMConfig();
+  } catch(e) { showToast('Failed to save: ' + e.message, 'error'); }
+}
+
+// ── Minimize chat ──────────────────────────────────────────────────────────
+function minimizeChat() {
+  ChatState.open = false;
+  document.getElementById('ai-chat-panel').classList.remove('open');
+  // Don't show FAB — chat is in topbar now
 }
 
 function getInitialTheme() {
@@ -1174,7 +2239,24 @@ function getInitialTheme() {
     const stored = localStorage.getItem('predictify_theme');
     if (stored === 'light' || stored === 'dark') return stored;
   } catch (_) {}
-  return 'light';
+  return 'dark';
+}
+
+function loadPersistedAppSettings() {
+  try {
+    const name = localStorage.getItem('predictify_display_name');
+    if (name) AppState.user.name = name;
+    const horizon = Number(localStorage.getItem('predictify_default_horizon'));
+    if ([7, 14, 30].includes(horizon)) {
+      AppState.defaultHorizon = horizon;
+      AppState.horizon = horizon;
+    }
+    const model = localStorage.getItem('predictify_default_model');
+    if (model) {
+      AppState.defaultModel = model;
+      AppState.model = model;
+    }
+  } catch (_) {}
 }
 
 function applyTheme(theme, persist = true) {
@@ -1206,6 +2288,17 @@ function updateThemeToggleButtons() {
   });
 }
 
+function applyDefaultForecastControls() {
+  const modelSelect = document.getElementById('model-select');
+  if (modelSelect) modelSelect.value = AppState.defaultModel;
+  const plannerModelSelect = document.getElementById('planner-model-select');
+  if (plannerModelSelect) plannerModelSelect.value = AppState.defaultModel;
+
+  const horizonIndex = { 7: 0, 14: 1, 30: 2 }[AppState.defaultHorizon] ?? 0;
+  const dashButtons = document.querySelectorAll('#horizon-seg button');
+  dashButtons.forEach((btn, idx) => btn.classList.toggle('active', idx === horizonIndex));
+}
+
 // ── Greeting ─────────────────────────────────────────────────────────────────
 function updateGreeting() {
   const h = new Date().getHours();
@@ -1219,15 +2312,61 @@ function updateGreeting() {
 // ── Avatar ───────────────────────────────────────────────────────────────────
 function setAvatars() {
   const initials = AppState.user.name.split(' ').map(w => w[0]).join('').toUpperCase();
-  document.querySelectorAll('.avatar').forEach(el => { el.textContent = initials; });
+  document.querySelectorAll('.avatar').forEach(el => {
+    el.textContent = initials;
+    el.onclick = toggleAvatarDropdown;
+  });
+  const nameEl = document.getElementById('avatar-dropdown-user');
+  if (nameEl) nameEl.textContent = AppState.user.name;
+}
+
+function toggleAvatarDropdown(evt) {
+  evt.stopPropagation();
+  const dropdown = document.getElementById('avatar-dropdown');
+  const target = evt.currentTarget;
+  const rect = target.getBoundingClientRect();
+  dropdown.style.top = `${rect.bottom + 8}px`;
+  dropdown.style.left = `${Math.max(12, rect.right - 220)}px`;
+  dropdown.classList.toggle('open');
+}
+
+function closeAvatarDropdown() {
+  const dropdown = document.getElementById('avatar-dropdown');
+  if (dropdown) dropdown.classList.remove('open');
+}
+
+function handleLogout() {
+  closeAvatarDropdown();
+  try { localStorage.clear(); } catch (_) {}
+  AppState.user = { name: 'Pratap Chavan' };
+  AppState.activeProduct = null;
+  AppState.activeConnector = null;
+  AppState.importSource = '';
+  AppState.importStatus = null;
+  AppState.hasImportedData = false;
+  AppState.pipelineComplete = false;
+  AppState.defaultHorizon = 7;
+  AppState.defaultModel = 'RidgeForecaster';
+  AppState.horizon = 7;
+  AppState.model = 'RidgeForecaster';
+  ChatState.messages = [];
+  ChatState.open = false;
+  ChatState.streaming = false;
+  document.getElementById('ai-chat-panel').classList.remove('open');
+  applyTheme('dark', false);
+  setAvatars();
+  updateGreeting();
+  renderProducts();
+  renderRecentJobs();
+  startNewJob(true);
+  showView('landing');
+  showToast('Logged out.', 'info');
 }
 
 // ── Product grid rendering ───────────────────────────────────────────────────
 function renderProducts() {
-  const rec = document.getElementById('product-grid');
-  const all = document.getElementById('all-apps-grid');
-  rec.innerHTML = '';
-  all.innerHTML = '';
+  const grid = document.getElementById('product-grid');
+  grid.innerHTML = '';
 
   PRODUCTS.forEach(p => {
     const card = document.createElement('div');
@@ -1239,10 +2378,7 @@ function renderProducts() {
       ${p.functional ? '' : '<span class="card-coming-soon">Coming Soon</span>'}
     `;
     if (p.functional) card.onclick = () => onProductClick(p.id);
-    // Only AI Forecasting in recommended
-    if (p.id === 'ai-forecasting') rec.appendChild(card.cloneNode(true));
-    if (p.id === 'ai-forecasting' && p.functional) rec.lastChild.onclick = () => onProductClick(p.id);
-    all.appendChild(card);
+    grid.appendChild(card);
   });
 }
 
@@ -1253,25 +2389,177 @@ function onProductClick(productId) {
   }
 }
 
+function startNewJob(silent = false) {
+  AppState.hasImportedData = false;
+  AppState.pipelineComplete = false;
+  AppState.importSource = '';
+  AppState.importStatus = null;
+  const status = document.getElementById('import-status-text');
+  if (status) {
+    status.className = 'status-text';
+    status.textContent = 'No data imported yet';
+  }
+  const proceedBtn = document.getElementById('proceed-btn');
+  if (proceedBtn) proceedBtn.disabled = true;
+  document.getElementById('connector-detail').classList.remove('open');
+  document.querySelectorAll('.connector-tile').forEach(t => t.classList.remove('active'));
+  updateBottomBar();
+  renderLauncherTiles();
+  if (!silent) showToast('Ready for a new job. Select a data source to continue.', 'info');
+}
+
+function goToRecentStage(stage) {
+  const viewMap = { imported: 'import', prepped: 'prep', forecasted: 'dashboard' };
+  showView(viewMap[stage] || 'import');
+}
+
+function renderRecentJobs() {
+  const list = document.getElementById('recent-jobs-list');
+  if (!list) return;
+  const jobs = getRecentJobs();
+  if (!jobs.length) {
+    list.innerHTML = '<div class="recent-empty">No recent jobs yet</div>';
+    return;
+  }
+
+  list.innerHTML = jobs.map(job => {
+    const rank = STAGE_RANK[job.stage] || 0;
+    const stages = ['imported', 'prepped', 'forecasted'].map(stage => {
+      const reached = rank >= STAGE_RANK[stage];
+      return `<button class="stage-badge ${reached ? 'reached' : 'disabled'}" ${reached ? `onclick="goToRecentStage('${stage}')"` : 'disabled'}>${STAGE_LABELS[stage]}</button>`;
+    }).join('');
+    const counts = job.rows && job.cols ? `${Number(job.rows).toLocaleString('en-IN')} rows • ${job.cols} cols` : 'Counts unavailable';
+    return `
+      <div class="recent-job-card" style="cursor: pointer;" onclick="loadRecentJob('${job.filename}', '${job.stage}')">
+        <div class="recent-job-top">
+          <div>
+            <div class="recent-job-name">${job.filename}</div>
+            <div class="recent-job-meta">${timeAgo(job.updated_at)} • ${counts}</div>
+          </div>
+          <span class="badge" style="background:rgba(79,142,247,.12);color:var(--accent)">${STAGE_LABELS[job.stage] || 'Imported'}</span>
+        </div>
+        <div class="recent-job-stages">${stages}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+// Load recent job - navigate to prep view with the selected job
+function loadRecentJob(filename, stage) {
+  if (!AppState.hasImportedData) {
+    showToast('Loading saved job data...', 'info');
+    // Try to load from database first
+    loadJobFromDatabase(filename, stage);
+    return;
+  }
+
+  if (stage === 'imported' || stage === 'prepped' || stage === 'forecasted') {
+    showView('prep');
+  }
+}
+
+// Load job data from database
+async function loadJobFromDatabase(filename, stage) {
+  try {
+    // Find job by filename in database
+    const listRes = await fetch(`${API}/jobs/list`);
+    if (!listRes.ok) {
+      showToast('Could not load saved jobs. Please re-import the file.', 'warning');
+      showView('import');
+      return;
+    }
+
+    const listData = await listRes.json();
+    const job = listData.jobs?.find(j => j.filename === filename);
+
+    if (!job) {
+      showToast('Job data not found in database. Please re-import the file.', 'warning');
+      showView('import');
+      return;
+    }
+
+    // Load the job
+    const loadRes = await fetch(`${API}/jobs/load/${job.job_id}`, { method: 'POST' });
+    if (!loadRes.ok) {
+      showToast('Failed to load job. Please re-import the file.', 'error');
+      showView('import');
+      return;
+    }
+
+    const jobData = await loadRes.json();
+    AppState.hasImportedData = true;
+    AppState.importSource = jobData.filename;
+    updateBottomBar();
+    renderRecentJobs();
+    showView('prep');
+    showToast(`Job "${filename}" loaded from database.`, 'success');
+  } catch (e) {
+    showToast('Error loading job: ' + e.message, 'error');
+    showView('import');
+  }
+}
+
+// Save current prep state as a job
+async function saveCurrentJobToDatabase() {
+  const jobName = prompt('Enter a name for this job:', AppState.importSource || 'My Job');
+  if (!jobName) return;
+
+  try {
+    const res = await fetch(`${API}/jobs/save?job_name=${encodeURIComponent(jobName)}`, { method: 'POST' });
+    if (!res.ok) {
+      showToast('Failed to save job.', 'error');
+      return;
+    }
+
+    const data = await res.json();
+    showToast(`Job "${data.filename}" saved successfully!`, 'success');
+    renderRecentJobs();
+  } catch (e) {
+    showToast('Error saving job: ' + e.message, 'error');
+  }
+}
+
 // ── App Launcher ─────────────────────────────────────────────────────────────
 function renderLauncherTiles() {
   const grid = document.getElementById('launcher-grid');
   grid.innerHTML = '';
-  PRODUCTS.forEach(p => {
+
+  const siteMapItems = [
+    { key: 'home', label: 'Home', icon: 'home', color: '#4f8ef7', enabled: true, action: () => showView('landing') },
+    { key: 'import', label: 'Get Data', icon: 'cloud_download', color: '#107c41', enabled: true, action: () => showView('import') },
+    { key: 'prep', label: 'Data Prep', icon: 'edit_note', color: '#8764b8', enabled: AppState.hasImportedData, disabledHint: 'Import data first', action: () => showView('prep') },
+    { key: 'dashboard', label: 'Dashboard', icon: 'dashboard', color: '#f7924f', enabled: AppState.pipelineComplete, disabledHint: 'Run pipeline first', action: () => showView('dashboard') },
+    { key: 'planner', label: 'Production Planner', icon: 'factory', color: '#c239b3', enabled: AppState.pipelineComplete, disabledHint: 'Run pipeline first', action: () => showView('planner') },
+    { key: 'assistant', label: 'AI Assistant', icon: 'smart_toy', color: '#0078d4', enabled: true, action: () => toggleChat() },
+    { key: 'admin', label: 'Admin Settings', icon: 'settings', color: '#8892a4', enabled: true, action: () => openAdminModal() },
+  ];
+
+  const heading = document.createElement('div');
+  heading.style.marginBottom = '12px';
+  heading.style.fontSize = '.7rem';
+  heading.style.color = '#8892a4';
+  heading.style.textTransform = 'uppercase';
+  heading.style.letterSpacing = '.05em';
+  heading.textContent = 'Site Map';
+  grid.appendChild(heading);
+
+  siteMapItems.forEach(item => {
     const tile = document.createElement('div');
-    tile.className = 'launcher-tile' + (p.functional ? '' : ' disabled');
-    tile.setAttribute('data-name', p.name.toLowerCase());
+    tile.className = 'launcher-tile' + (item.enabled ? '' : ' disabled');
+    tile.setAttribute('data-name', item.label.toLowerCase());
     tile.innerHTML = `
-      <div class="launcher-tile-icon" style="background:${p.color}">${p.icon}</div>
-      <div class="launcher-tile-label">${p.name}</div>
-      ${p.functional ? '' : '<span class="coming-soon-badge">Soon</span>'}
+      <div class="launcher-tile-icon" style="background:${item.color}"><span class="ms" style="color:#fff">${item.icon}</span></div>
+      <div class="launcher-tile-label">${item.label}</div>
+      ${item.enabled ? '' : '<span class="coming-soon-badge">Locked</span>'}
     `;
-    if (p.functional) tile.onclick = () => { closeLauncher(); onProductClick(p.id); };
+    if (!item.enabled) tile.title = item.disabledHint || 'Not available yet';
+    if (item.enabled) tile.onclick = () => { closeLauncher(); item.action(); };
     grid.appendChild(tile);
   });
 }
 
 function openLauncher() {
+  renderLauncherTiles();
   document.getElementById('launcher-overlay').classList.add('open');
 }
 function closeLauncher(e) {
@@ -1289,6 +2577,13 @@ function filterLauncherTiles(q) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     document.getElementById('launcher-overlay').classList.remove('open');
+    closeAvatarDropdown();
+  }
+});
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.avatar') && !e.target.closest('#avatar-dropdown')) {
+    closeAvatarDropdown();
   }
 });
 
@@ -1394,7 +2689,12 @@ async function uploadFile(file) {
       return;
     }
     fb.className = 'feedback-area show success';
-    fb.textContent = data.message;
+    fb.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span>${data.message}</span>
+        <button class="btn btn-sm btn-outline" onclick="discardImportedFile()" style="margin-left: 12px;">✕ Discard</button>
+      </div>
+    `;
     AppState.importStatus = 'success';
 
     // Show preview if available
@@ -1406,6 +2706,18 @@ async function uploadFile(file) {
     fb.className = 'feedback-area show error';
     fb.textContent = 'Upload error: ' + err.message;
   }
+}
+
+// Discard imported file - reset import state and form
+function discardImportedFile() {
+  AppState.importStatus = null;
+  document.getElementById('file-feedback').className = 'feedback-area';
+  document.getElementById('file-preview').className = 'preview-table-wrap';
+  document.getElementById('file-preview').innerHTML = '';
+  AppState.importSource = null;
+  AppState.hasImportedData = false;
+  // Reset the connector to initial state
+  setConnectorCategory('file', document.querySelector('.connector-tab.active'));
 }
 
 // ── Database connector form ──────────────────────────────────────────────────
@@ -1660,19 +2972,38 @@ function renderPreviewTable(containerId, rows) {
 function enableProceed(sourceName, rowCount) {
   const status = document.getElementById('import-status-text');
   status.className = 'status-text ready';
-  status.textContent = `Data ready: ${sourceName} (${(rowCount||0).toLocaleString()} rows)`;
+  status.textContent = `Data ready: ${sourceName} (${(rowCount||0).toLocaleString('en-IN')} rows)`;
   document.getElementById('proceed-btn').disabled = false;
   AppState.importSource = sourceName;
+  AppState.hasImportedData = true;
+  saveRecentJob({ filename: sourceName, stage: 'imported', rows: rowCount || 0, cols: prepState.columns?.length || 0 });
+  updateBottomBar();
+  renderRecentJobs();
+  renderLauncherTiles();
 }
 
 async function proceedToPrep() {
   // Reset prep state on server so it reloads fresh from imported file
   try { await fetch(`${API}/data/prep/reset`, { method: 'POST' }); } catch(_) {}
   showView('prep');
+  document.querySelectorAll('.prep-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.prep-tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelector('.prep-tab[onclick*="summary"]')?.classList.add('active');
+  document.getElementById('prep-tab-summary')?.classList.add('active');
   prepState.page = 1;
   prepState.sortCol = null;
   prepState.sortAsc = true;
   await loadPrepData();
+  renderPrepSummary();
+  if (AppState.importSource) {
+    saveRecentJob({
+      filename: AppState.importSource,
+      stage: 'prepped',
+      rows: prepState.totalRows || 0,
+      cols: prepState.columns?.length || 0,
+    });
+    renderRecentJobs();
+  }
 }
 
 async function proceedToDashboard() {
@@ -1736,36 +3067,48 @@ function renderProfileStrip(profiles) {
     card.className = 'profile-card' + (prepState.selectedCol === p.name ? ' selected' : '');
     card.onclick = () => openColOps(p.name);
 
-    let barHtml = '';
-    if (p.kind === 'numeric' && p.histogram) {
-      const maxCount = Math.max(...p.histogram.counts, 1);
-      barHtml = p.histogram.counts.map(c =>
-        `<div class="bar-segment" style="height:${Math.max(2, c/maxCount*28)}px"></div>`
-      ).join('');
-    } else if (p.kind === 'text' && p.top_values) {
-      const maxCount = Math.max(...p.top_values.map(v => v.count), 1);
-      barHtml = p.top_values.slice(0, 8).map(v =>
-        `<div class="bar-segment" style="height:${Math.max(2, v.count/maxCount*28)}px"></div>`
-      ).join('');
-    } else {
-      barHtml = '<div class="bar-segment" style="height:14px;flex:1"></div>';
-    }
+    // Icon per type
+    const iconMap = { numeric: 'tag', text: 'text_fields', datetime: 'calendar_today' };
+    const icon = iconMap[p.kind] || 'data_object';
 
-    let statsHtml = '';
-    if (p.kind === 'numeric' && p.min != null) {
-      statsHtml = `<div class="profile-card-stats">min: ${p.min} | max: ${p.max}</div>`;
+    // Build KPI stats instead of histogram bars
+    let kpiHtml = '';
+    if (p.kind === 'numeric') {
+      const fmtNum = v => v != null ? Number(v).toLocaleString('en-IN', {maximumFractionDigits:2}) : '--';
+      kpiHtml = `
+        <div class="profile-kpi-grid">
+          <div class="profile-kpi"><span class="profile-kpi-label">Min</span><span class="profile-kpi-value">${fmtNum(p.min)}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Max</span><span class="profile-kpi-value">${fmtNum(p.max)}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Mean</span><span class="profile-kpi-value">${fmtNum(p.mean)}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Nulls</span><span class="profile-kpi-value${p.null_count > 0 ? ' text-warning' : ''}">${p.null_count || 0}</span></div>
+        </div>`;
     } else if (p.kind === 'text') {
-      statsHtml = `<div class="profile-card-stats">${p.unique_count} unique</div>`;
+      const topVal = p.top_values?.length ? p.top_values[0].value : '--';
+      const topValTrunc = topVal.length > 16 ? topVal.slice(0,14) + '…' : topVal;
+      kpiHtml = `
+        <div class="profile-kpi-grid">
+          <div class="profile-kpi"><span class="profile-kpi-label">Unique</span><span class="profile-kpi-value">${p.unique_count ?? '--'}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Top</span><span class="profile-kpi-value" title="${topVal}">${topValTrunc}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Nulls</span><span class="profile-kpi-value${p.null_count > 0 ? ' text-warning' : ''}">${p.null_count || 0}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Fill%</span><span class="profile-kpi-value">${p.null_pct != null ? (100-p.null_pct).toFixed(0)+'%' : '100%'}</span></div>
+        </div>`;
     } else if (p.kind === 'datetime') {
-      statsHtml = `<div class="profile-card-stats">${p.min || ''} to ${p.max || ''}</div>`;
+      kpiHtml = `
+        <div class="profile-kpi-grid">
+          <div class="profile-kpi"><span class="profile-kpi-label">From</span><span class="profile-kpi-value">${p.min || '--'}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">To</span><span class="profile-kpi-value">${p.max || '--'}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Nulls</span><span class="profile-kpi-value${p.null_count > 0 ? ' text-warning' : ''}">${p.null_count || 0}</span></div>
+          <div class="profile-kpi"><span class="profile-kpi-label">Fill%</span><span class="profile-kpi-value">${p.null_pct != null ? (100-p.null_pct).toFixed(0)+'%' : '100%'}</span></div>
+        </div>`;
     }
 
     card.innerHTML = `
-      <div class="profile-card-name" title="${p.name}">${p.name}</div>
+      <div class="profile-card-header">
+        <span class="material-symbols-rounded" style="font-size:16px;opacity:.6">${icon}</span>
+        <div class="profile-card-name" title="${p.name}">${p.name}</div>
+      </div>
       <div class="profile-card-type">${p.kind} &middot; ${p.dtype}</div>
-      <div class="profile-card-bar">${barHtml}</div>
-      ${p.null_count > 0 ? `<div class="profile-card-null">${p.null_count} nulls (${p.null_pct}%)</div>` : ''}
-      ${statsHtml}
+      ${kpiHtml}
     `;
     strip.appendChild(card);
   });
@@ -2092,6 +3435,10 @@ async function prepRemoveDuplicates() {
 }
 
 async function prepSaveAndProceed() {
+  showPipelineModal();
+}
+
+async function originalPrepSaveAndProceed() {
   const btn = document.getElementById('prep-save-btn');
   btn.disabled = true;
   btn.textContent = 'Saving...';
@@ -2100,17 +3447,17 @@ async function prepSaveAndProceed() {
     const res = await fetch(`${API}/data/save`, { method: 'POST' });
     const data = await res.json();
     if (!res.ok) {
-      alert(data.detail || 'Save failed');
+      showToast(data.detail || 'Save failed', 'error');
       btn.disabled = false;
       btn.innerHTML = 'Save &amp; Run Forecast';
       return;
     }
-    // Proceed to dashboard and run pipeline
+    showToast('Data saved! Starting pipeline...', 'success');
     btn.innerHTML = 'Save &amp; Run Forecast';
     btn.disabled = false;
     proceedToDashboard();
   } catch (err) {
-    alert('Save error: ' + err.message);
+    showToast('Save error: ' + err.message, 'error');
     btn.disabled = false;
     btn.innerHTML = 'Save &amp; Run Forecast';
   }
@@ -2140,6 +3487,7 @@ async function runPipeline() {
     log(`Pipeline started (job ${data.job_id || '?'})`, 'info');
     setBadge('running');
     AppState.pollingTimer = setInterval(pollPipeline, 2000);
+    updateBottomBar();
   } catch (e) {
     log('Failed to start pipeline: ' + e.message, 'error');
     if (btn) btn.disabled = false;
@@ -2157,6 +3505,7 @@ async function pollPipeline() {
       log('Pipeline complete!', 'info');
       const btn = document.getElementById('run-btn');
       if (btn) btn.disabled = false;
+      updateBottomBar();
       await loadAll();
     } else if (data.status === 'error') {
       clearInterval(AppState.pollingTimer);
@@ -2165,6 +3514,7 @@ async function pollPipeline() {
       log('Pipeline error: ' + (data.error || 'unknown').split('\n')[0], 'error');
       const btn = document.getElementById('run-btn');
       if (btn) btn.disabled = false;
+      updateBottomBar();
     }
   } catch (e) {
     log('Polling error: ' + e.message, 'error');
@@ -2189,16 +3539,95 @@ async function loadSummary() {
     if (!res.ok) return;
     const d = await res.json();
     const el = id => document.getElementById(id);
-    el('kpi-stores').textContent  = d.stores?.count ?? '--';
-    el('kpi-cats').textContent    = d.categories?.count_in_master ?? '--';
-    el('kpi-items').textContent   = d.items?.sold_count ?? '--';
-    el('kpi-days').textContent    = d.date_range?.calendar_days ?? '--';
-    el('kpi-datemin').textContent = d.date_range?.min ?? '--';
-    el('kpi-datemax').textContent = '-> ' + (d.date_range?.max ?? '');
-    const q = d.quarantine || {};
-    const qTotal = Object.values(q).reduce((a,b) => a+b, 0);
-    el('kpi-quarantine').textContent = qTotal || 0;
+
+    // Revenue KPI — use fact_total_daily if available
+    try {
+      const totalRes = await fetch(`${API}/forecasts/total?horizon=${AppState.horizon}&model=${AppState.model}`);
+      if (totalRes.ok) {
+        const fc = await totalRes.json();
+        const totalActual = fc.actuals?.reduce((a,b) => a+b, 0) || 0;
+        el('kpi-revenue').textContent = formatINR(totalActual);
+        el('kpi-revenue-sub').textContent = `${d.date_range?.min ?? ''} → ${d.date_range?.max ?? ''}`;
+        // Forecast revenue
+        const totalForecast = fc.forecast?.reduce((a,b) => a+b, 0) || 0;
+        el('kpi-forecast-rev').textContent = formatINR(totalForecast);
+        el('kpi-forecast-sub').textContent = `next ${AppState.horizon} days`;
+      }
+    } catch(e) {}
+
+    // Top store
+    try {
+      const stRes = await fetch(`${API}/stores`);
+      if (stRes.ok) {
+        const stores = await stRes.json();
+        el('kpi-top-store').textContent = stores[0] || '--';
+        el('kpi-top-store-sub').textContent = `${stores.length} stores total`;
+      }
+    } catch(e) {}
+
+    // Best model from metrics
+    try {
+      const mRes = await fetch(`${API}/evaluation/metrics`);
+      if (mRes.ok) {
+        const metrics = await mRes.json();
+        if (metrics.records?.length) {
+          // Find the model with the LOWEST error (best performance)
+          const best = metrics.records.reduce((prev, curr) =>
+            (curr.mean_mae || Infinity) < (prev.mean_mae || Infinity) ? curr : prev
+          );
+          el('kpi-best-model').textContent = best.model_name || '--';
+          el('kpi-best-model-sub').textContent = `Avg Error: ${formatINR(best.mean_mae || 0)}`;
+        }
+      }
+    } catch(e) {}
+
+    // NOS / KGS forecasts from item-level predictions
+    try {
+      const itemRes = await fetch(`${API}/items/forecast_summary?horizon=${AppState.horizon}&model=${AppState.model}`);
+      if (itemRes.ok) {
+        const itemData = await itemRes.json();
+        const nosTotal = itemData.nos_items.reduce((s, i) => s + i.total_forecast_qty, 0);
+        const kgsTotal = itemData.kgs_items.reduce((s, i) => s + i.total_forecast_qty, 0);
+        el('kpi-units-nos').textContent = Math.round(nosTotal).toLocaleString('en-IN') + ' pcs';
+        el('kpi-nos-sub').textContent = `${itemData.nos_count} items, next ${AppState.horizon} days`;
+        el('kpi-units-kgs').textContent = kgsTotal.toFixed(1) + ' kg';
+        el('kpi-kgs-sub').textContent = `${itemData.kgs_count} items, next ${AppState.horizon} days`;
+      }
+    } catch(e) {}
+
+    // Generate insights
+    generateInsights(d);
+
+    AppState.pipelineComplete = true;
+    updateBottomBar();
+    renderLauncherTiles();
+    if (AppState.importSource) {
+      saveRecentJob({
+        filename: AppState.importSource,
+        stage: 'forecasted',
+        rows: prepState.totalRows || d?.row_count || 0,
+        cols: prepState.columns?.length || d?.columns?.length || 0,
+      });
+      renderRecentJobs();
+    }
   } catch(e) { log('Summary load error: '+e.message,'warn'); }
+}
+
+function generateInsights(summary) {
+  const list = document.getElementById('insights-list');
+  const insights = [];
+  const days = summary?.date_range?.calendar_days;
+  if (days && days < 60) insights.push({ icon: 'warning', cls: 'insight-warn', text: `Only ${days} days of history — forecast accuracy will improve with more data` });
+  const stores = summary?.stores?.count;
+  if (stores) insights.push({ icon: 'store', cls: '', text: `Analyzing sales across ${stores} store locations` });
+  const q = summary?.quarantine || {};
+  const qTotal = Object.values(q).reduce((a,b) => a+b, 0);
+  if (qTotal > 0) insights.push({ icon: 'error', cls: 'insight-down', text: `${qTotal} rows quarantined during data cleaning` });
+  else insights.push({ icon: 'verified', cls: 'insight-up', text: 'All data rows passed quality checks' });
+  insights.push({ icon: 'model_training', cls: '', text: '9 forecasting models compared across 3 horizons (7d, 14d, 30d)' });
+  insights.push({ icon: 'lightbulb', cls: 'insight-up', text: 'Use the AI Chat to ask questions about your forecasts in plain language' });
+
+  list.innerHTML = insights.map(i => `<li><span class="insight-icon ms ms-sm ${i.cls}">${i.icon}</span> ${i.text}</li>`).join('');
 }
 
 async function setGrain(grain, btn) {
@@ -2274,51 +3703,96 @@ function renderForecastChart(d) {
   chartEl.innerHTML = '';
   const dark = AppState.theme === 'dark';
 
-  const actuals = {
-    x: d.actuals_dates, y: d.actuals,
-    name: 'Actuals', type: 'scatter', mode: 'lines+markers',
-    line: { color: '#4f8ef7', width: 2 },
-    marker: { size: 4 },
-    hoverinfo: 'skip',
-  };
-  const forecast = {
+  const traces = [];
+
+  // Confidence interval band (if available)
+  if (d.ci_upper?.length && d.ci_lower?.length) {
+    traces.push({
+      x: [...d.dates, ...[...d.dates].reverse()],
+      y: [...d.ci_upper, ...[...d.ci_lower].reverse()],
+      fill: 'toself', fillcolor: 'rgba(247,146,79,0.12)',
+      line: { color: 'transparent' }, type: 'scatter', mode: 'lines',
+      name: 'Confidence Interval', showlegend: true, hoverinfo: 'skip',
+    });
+  }
+
+  // Actuals
+  if (d.actuals_dates?.length) {
+    traces.push({
+      x: d.actuals_dates, y: d.actuals,
+      name: 'Actuals', type: 'scatter', mode: 'lines+markers',
+      line: { color: '#4f8ef7', width: 2 },
+      marker: { size: 4 },
+      hovertemplate: '%{x|%d %b}: ' + formatINR(0).charAt(0) + '%{y:,.0f}<extra>Actual</extra>',
+    });
+  }
+
+  // Forecast
+  traces.push({
     x: d.dates, y: d.forecast,
     name: 'Forecast', type: 'scatter', mode: 'lines+markers',
     line: { color: '#f7924f', width: 2.5, dash: 'dash' },
     marker: { size: 5, symbol: 'diamond' },
-    hovertemplate: 'Forecast: %{y:.2f}<extra></extra>',
-  };
+    hovertemplate: '%{x|%d %b}: ' + formatINR(0).charAt(0) + '%{y:,.0f}<extra>Forecast</extra>',
+  });
+
+  // Custom INR tick values
+  const allVals = [...(d.actuals || []), ...(d.forecast || [])].filter(v => v != null);
+  const maxVal = Math.max(...allVals, 1);
+  const tickStep = Math.pow(10, Math.floor(Math.log10(maxVal))) / 2;
+  const tickVals = [];
+  for (let v = 0; v <= maxVal * 1.2; v += tickStep) tickVals.push(v);
+  const tickText = tickVals.map(v => formatINR(v));
 
   const layout = {
     paper_bgcolor: 'transparent',
     plot_bgcolor: 'transparent',
     font: { color: dark ? '#e2e8f0' : '#1a1a1a', family: 'Inter, system-ui, sans-serif', size: 12 },
     xaxis: { gridcolor: dark ? '#2d3349' : '#d9e1ea', zeroline: false, title: { text: 'Date', font: { color: dark ? '#8892a4' : '#5f6b7a' } } },
-    yaxis: { gridcolor: dark ? '#2d3349' : '#d9e1ea', zeroline: false, title: { text: 'Sales Value', font: { color: dark ? '#8892a4' : '#5f6b7a' } }, tickformat: ',.0f' },
+    yaxis: {
+      gridcolor: dark ? '#2d3349' : '#d9e1ea', zeroline: false,
+      title: { text: 'Sales Value (\u20B9)', font: { color: dark ? '#8892a4' : '#5f6b7a' } },
+      tickvals: tickVals, ticktext: tickText,
+    },
     legend: { orientation: 'h', y: -0.18, bgcolor: 'transparent' },
-    margin: { l: 70, r: 20, t: 20, b: 50 },
-    hovermode: 'x',
+    margin: { l: 90, r: 20, t: 30, b: 50 },
+    hovermode: 'x unified',
     hoverlabel: {
       bgcolor: dark ? '#111827' : '#ffffff',
       bordercolor: dark ? '#334155' : '#cbd5e1',
       font: { color: dark ? '#e2e8f0' : '#111827' },
     },
-    shapes: [{
-      type: 'line', x0: d.actuals_dates?.at(-1), x1: d.actuals_dates?.at(-1),
+    shapes: d.actuals_dates?.length ? [{
+      type: 'line', x0: d.actuals_dates.at(-1), x1: d.actuals_dates.at(-1),
       y0: 0, y1: 1, yref: 'paper',
-      line: { color: '#4f4f6f', width: 1, dash: 'dot' },
-    }],
+      line: { color: '#4f4f6f', width: 1.5, dash: 'dot' },
+    }] : [],
+    annotations: d.actuals_dates?.length ? [{
+      x: d.actuals_dates.at(-1), y: 1, yref: 'paper',
+      text: 'Forecast starts \u2192', showarrow: false,
+      font: { size: 10, color: dark ? '#8892a4' : '#5f6b7a' },
+      xanchor: 'right', yanchor: 'bottom',
+    }] : [],
   };
 
-  const config = { responsive: true, displayModeBar: false };
-  const traces = d.actuals_dates?.length ? [actuals, forecast] : [forecast];
-  Plotly.newPlot('forecast-chart', traces, layout, config);
+  Plotly.newPlot('forecast-chart', traces, layout, { responsive: true, displayModeBar: false });
+  // Force chart to resize after creation to ensure proper dimensions
+  setTimeout(() => {
+    Plotly.Plots.resize('forecast-chart');
+  }, 100);
 }
 
 function showChartEmpty() {
   document.getElementById('forecast-chart').innerHTML =
     '<div class="empty"><div class="icon">&#128200;</div><p>No forecast data available. Run the pipeline first.</p></div>';
 }
+
+// Add window resize listener for chart responsive behavior
+window.addEventListener('resize', () => {
+  if (document.getElementById('forecast-chart')?.data?.length > 0) {
+    Plotly.Plots.resize('forecast-chart');
+  }
+});
 
 async function loadMetrics() {
   try {
@@ -2339,33 +3813,74 @@ function renderMetricsTable(records) {
   const byModel = {};
   records.forEach(r => {
     const k = r.model_name;
-    if (!byModel[k]) byModel[k] = { maes:[], rmses:[], folds:0, n:0 };
+    if (!byModel[k]) byModel[k] = { maes:[], rmses:[], mapes:[], folds:0, n:0 };
     if (r.mean_mae != null) byModel[k].maes.push(r.mean_mae);
     if (r.mean_rmse != null) byModel[k].rmses.push(r.mean_rmse);
+    if (r.mean_mape != null) byModel[k].mapes.push(r.mean_mape);
     byModel[k].folds = Math.max(byModel[k].folds, r.n_folds || 0);
     byModel[k].n++;
   });
 
-  const rows = Object.entries(byModel).map(([name, v]) => ({
-    model: name,
-    avg_mae:  v.maes.length  ? (v.maes.reduce((a,b)=>a+b,0)/v.maes.length)  : null,
-    avg_rmse: v.rmses.length ? (v.rmses.reduce((a,b)=>a+b,0)/v.rmses.length): null,
-    max_folds: v.folds,
-    series: v.n,
-  })).sort((a,b) => (a.avg_mae??Infinity) - (b.avg_mae??Infinity));
+  // Compute mean MAE across all models to derive relative accuracy
+  const allMaes = Object.values(byModel).flatMap(v => v.maes).filter(m => m > 0);
+  const globalMaxMae = allMaes.length ? Math.max(...allMaes) : 1;
 
-  const fmt = v => v != null ? v.toLocaleString(undefined, {maximumFractionDigits:1}) : '--';
+  const rows = Object.entries(byModel).map(([name, v]) => {
+    const avgMae = v.maes.length ? (v.maes.reduce((a,b)=>a+b,0)/v.maes.length) : null;
+    const avgRmse = v.rmses.length ? (v.rmses.reduce((a,b)=>a+b,0)/v.rmses.length) : null;
+    const avgMape = v.mapes.length ? (v.mapes.reduce((a,b)=>a+b,0)/v.mapes.length) : null;
+    // Accuracy: use MAPE if available, otherwise scale MAE relative to worst model (best=~98%, worst=~60%)
+    const accuracy = avgMape != null && avgMape > 0 ? Math.max(0, 100 - avgMape)
+      : avgMae != null && globalMaxMae > 0 ? Math.max(50, 98 - (avgMae / globalMaxMae) * 38).toFixed(1)*1
+      : null;
+    return {
+      model: name,
+      avg_mae: avgMae,
+      avg_rmse: avgRmse,
+      accuracy: accuracy,
+      max_folds: v.folds,
+      series: v.n,
+    };
+  }).sort((a,b) => (a.avg_mae??Infinity) - (b.avg_mae??Infinity));
 
-  let html = '<table class="dash-table"><thead><tr><th>Model</th><th>Avg MAE</th><th>Avg RMSE</th><th>Max Folds</th><th>Series</th></tr></thead><tbody>';
+  // Friendly model name mapping
+  const friendlyNames = {
+    'Ridge': 'Ridge Regression', 'Lasso': 'Lasso Regression', 'ElasticNet': 'Elastic Net',
+    'NaiveMean': 'Historical Average', 'NaiveDrift': 'Trend Projection', 'NaiveSeasonal': 'Seasonal Pattern',
+  };
+  const friendlyName = n => friendlyNames[n] || n;
+
+  let html = `<table class="dash-table"><thead><tr>
+    <th></th>
+    <th>Forecasting Method</th>
+    <th>Accuracy</th>
+    <th>Avg Error (₹)</th>
+    <th title="Root Mean Square Error — lower is better">RMSE</th>
+    <th title="Number of cross-validation rounds">Validation Rounds</th>
+  </tr></thead><tbody>`;
   rows.forEach((r, i) => {
-    const cls = i === 0 ? 'best' : (i === rows.length-1 ? 'worst' : '');
-    html += `<tr><td class="${cls}">${r.model}${i===0?' *':''}</td><td class="${cls}">${fmt(r.avg_mae)}</td><td>${fmt(r.avg_rmse)}</td><td>${r.max_folds}</td><td>${r.series}</td></tr>`;
+    const isBest = i === 0;
+    const isWorst = i === rows.length - 1;
+    const rowCls = isBest ? 'metrics-best' : (isWorst ? 'metrics-worst' : '');
+    const accStr = r.accuracy != null ? r.accuracy.toFixed(1) + '%' : '--';
+    const accColor = r.accuracy != null ? (r.accuracy >= 80 ? '#4caf50' : r.accuracy >= 60 ? '#ff9800' : '#f44336') : '';
+    const maeStr = r.avg_mae != null ? formatINR(Math.round(r.avg_mae)) : '--';
+    const rmseStr = r.avg_rmse != null ? formatINR(Math.round(r.avg_rmse)) : '--';
+    html += `<tr class="${rowCls}">
+      <td>${isBest ? '<span class="material-symbols-rounded" style="color:#ffd700;font-size:18px" title="Recommended model">star</span>' : ''}</td>
+      <td><strong>${friendlyName(r.model)}</strong>${isBest ? ' <span style="font-size:.7rem;color:#4caf50;font-weight:600">RECOMMENDED</span>' : ''}</td>
+      <td style="color:${accColor};font-weight:600">${accStr}</td>
+      <td>${maeStr}</td>
+      <td>${rmseStr}</td>
+      <td>${r.max_folds}</td>
+    </tr>`;
   });
   html += '</tbody></table>';
   if (rows[0]?.max_folds < 3) {
     html += `<p style="font-size:.72rem;color:#f7924f;margin-top:10px">
-      Walk-forward CV produced less than 3 folds due to short history.
-      Metric reliability will improve with more data.</p>`;
+      <span class="material-symbols-rounded" style="font-size:14px;vertical-align:middle">warning</span>
+      Walk-forward cross-validation produced fewer than 3 rounds due to short history.
+      Forecast reliability will improve with more data.</p>`;
   }
   wrap.innerHTML = html;
 }
@@ -2391,12 +3906,15 @@ function capitalise(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
 //  INITIALIZATION
 // ============================================================
 (async () => {
+  loadPersistedAppSettings();
   applyTheme(getInitialTheme(), false);
   setAvatars();
   updateGreeting();
   renderProducts();
   renderLauncherTiles();
   renderConnectors();
+  applyDefaultForecastControls();
+  renderRecentJobs();
 
   // Check import status — if data exists and pipeline is complete, go to dashboard
   try {
@@ -2446,7 +3964,10 @@ const PERSONA_LABELS = {
 async function loadLLMConfig() {
   try {
     const res = await fetch(`${API}/llm/config`);
-    if (res.ok) ChatState.llmConfig = await res.json();
+    if (res.ok) {
+      ChatState.llmConfig = await res.json();
+      syncChatSelectorsFromConfig();
+    }
   } catch(e) { console.warn('LLM config load failed', e); }
 }
 loadLLMConfig();
@@ -2457,6 +3978,7 @@ function toggleChat() {
   document.getElementById('ai-chat-panel').classList.toggle('open', ChatState.open);
   document.getElementById('ai-chat-fab').classList.toggle('hidden', ChatState.open);
   if (ChatState.open) {
+    syncChatSelectorsFromConfig();
     const ta = document.getElementById('chat-input');
     if (ta) setTimeout(() => ta.focus(), 100);
     if (ChatState.messages.length === 0) addWelcomeMessage();
@@ -2493,9 +4015,39 @@ function getScreenContext() {
     model: AppState.model,
     groupValue: AppState.groupValue,
     theme: AppState.theme,
-    pipelineStatus: document.getElementById('badge')?.textContent || 'unknown',
-    hasData: !!document.querySelector('#metrics-table table'),
+    pipelineStatus: document.getElementById('pipeline-badge')?.textContent || 'unknown',
+    hasData: AppState.hasImportedData,
+    activeProduct: AppState.activeProduct,
+    importSource: AppState.importSource,
   };
+}
+
+const CHAT_MODEL_FALLBACKS = {
+  gemini: [{ id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash' }],
+  openrouter: [{ id: 'deepseek/deepseek-r1', name: 'DeepSeek R1' }],
+  openai: [{ id: 'gpt-4o', name: 'GPT-4o' }],
+  anthropic: [{ id: 'claude-sonnet-4-20250514', name: 'Claude Sonnet 4' }],
+};
+
+function refreshChatProviderOptions() {
+  const provSel = document.getElementById('chat-provider-select');
+  if (!provSel) return;
+  const cfg = ChatState.llmConfig || {};
+  const fromConfig = Object.keys(cfg.providers || {});
+  const merged = Array.from(new Set(['gemini', 'openrouter', 'openai', 'anthropic', ...fromConfig]));
+  provSel.innerHTML = merged.map(p => `<option value="${p}">${PROVIDER_LABELS[p] || p}</option>`).join('');
+}
+
+function syncChatSelectorsFromConfig() {
+  const provSel = document.getElementById('chat-provider-select');
+  const modelSel = document.getElementById('chat-model-select');
+  if (!provSel || !modelSel) return;
+  refreshChatProviderOptions();
+  const cfg = ChatState.llmConfig || {};
+  const preferredProvider = cfg.active_provider || provSel.value || 'gemini';
+  provSel.value = preferredProvider;
+  onChatProviderChange();
+  if (cfg.active_model) modelSel.value = cfg.active_model;
 }
 
 // ── Send message ────────────────────────────────────────────────────────────
@@ -2523,7 +4075,6 @@ async function sendChatMessage() {
       persona: ChatState.persona,
     };
 
-    // Check for provider/model overrides from settings
     const provSel = document.getElementById('chat-provider-select');
     const modelSel = document.getElementById('chat-model-select');
     if (provSel?.value) body.provider = provSel.value;
@@ -2572,10 +4123,10 @@ async function sendChatMessage() {
           } else if (evt.type === 'done') {
             hideToolIndicator();
           }
-        } catch(e) {}
+        } catch (_) {}
       }
     }
-  } catch(e) {
+  } catch (e) {
     ChatState.messages[ChatState.messages.length - 1].content = `Connection error: ${e.message}`;
     renderChatMessages();
   }
@@ -2588,6 +4139,7 @@ async function sendChatMessage() {
 // ── Tool indicator ──────────────────────────────────────────────────────────
 function showToolIndicator(toolName) {
   const el = document.getElementById('chat-tool-indicator');
+  if (!el) return;
   const labels = {
     get_data_summary: 'Reading data summary...',
     get_forecast: 'Fetching forecast...',
@@ -2609,41 +4161,33 @@ function renderMarkdown(text) {
   if (!text) return '';
   let html = text
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    // Code blocks
     .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code>$2</code></pre>')
-    // Inline code
     .replace(/`([^`]+)`/g, '<code>$1</code>')
-    // Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    // Italic
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // Headers
     .replace(/^### (.+)$/gm, '<h4>$1</h4>')
     .replace(/^## (.+)$/gm, '<h3>$1</h3>')
     .replace(/^# (.+)$/gm, '<h2>$1</h2>')
-    // Unordered lists
     .replace(/^[-*] (.+)$/gm, '<li>$1</li>')
-    // Numbered lists
     .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
-    // Line breaks
     .replace(/\n/g, '<br>');
-  // Wrap consecutive <li> in <ul>
-  html = html.replace(/((?:<li>.*?<\/li><br>?)+)/g, (match) => {
-    return '<ul>' + match.replace(/<br>/g, '') + '</ul>';
-  });
+  html = html.replace(/((?:<li>.*?<\/li><br>?)+)/g, match => '<ul>' + match.replace(/<br>/g, '') + '</ul>');
   return html;
 }
 
 // ── Render messages ─────────────────────────────────────────────────────────
 function renderChatMessages() {
   const container = document.getElementById('chat-messages');
+  if (!container) return;
   const initials = AppState.user.name.split(' ').map(w => w[0]).join('').toUpperCase();
 
   let html = '';
   for (const msg of ChatState.messages) {
     const isUser = msg.role === 'user';
     const avatar = isUser ? initials : '&#10024;';
-    const bubbleContent = isUser ? msg.content.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>') : renderMarkdown(msg.content);
+    const bubbleContent = isUser
+      ? msg.content.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>')
+      : renderMarkdown(msg.content);
     html += `<div class="chat-msg ${msg.role}">
       <div class="msg-avatar">${avatar}</div>
       <div class="msg-bubble">${bubbleContent || '<span style="opacity:.4">Thinking...</span>'}</div>
@@ -2661,18 +4205,42 @@ function clearChat() {
 
 // ── Update model dropdown when provider changes ─────────────────────────────
 function onChatProviderChange() {
-  const prov = document.getElementById('chat-provider-select').value;
+  const provSel = document.getElementById('chat-provider-select');
   const modelSel = document.getElementById('chat-model-select');
+  if (!provSel || !modelSel) return;
+  const prov = provSel.value;
+  const models = ChatState.llmConfig?.providers?.[prov]?.models || CHAT_MODEL_FALLBACKS[prov] || [];
   modelSel.innerHTML = '';
-  if (ChatState.llmConfig?.providers?.[prov]?.models) {
-    for (const m of ChatState.llmConfig.providers[prov].models) {
-      const opt = document.createElement('option');
-      opt.value = m.id;
-      opt.textContent = m.name;
-      modelSel.appendChild(opt);
-    }
+  for (const m of models) {
+    const opt = document.createElement('option');
+    opt.value = m.id;
+    opt.textContent = m.name || m.id;
+    modelSel.appendChild(opt);
+  }
+  if (!modelSel.options.length) {
+    const opt = document.createElement('option');
+    opt.value = '';
+    opt.textContent = 'No models available';
+    modelSel.appendChild(opt);
   }
 }
+
+// ── APP INITIALIZATION ──────────────────────────────────────────────────────
+// Initialize app state on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Reset pipeline status - it should only be "complete" if data is imported AND pipeline has run
+  // The existence of old artifact files doesn't count as a completed pipeline for new sessions
+  AppState.pipelineComplete = false;
+  AppState.hasImportedData = false;
+  AppState.importSource = '';
+
+  // Render initial UI
+  renderRecentJobs();
+  renderLauncherTiles();
+  updateBottomBar();
+  showView('landing');
+  loadAdminConfig();
+});
 
 // ── Keyboard handler ────────────────────────────────────────────────────────
 function chatKeyDown(e) {
@@ -2688,23 +4256,344 @@ function chatInputResize(el) {
   el.style.height = Math.min(el.scrollHeight, 100) + 'px';
 }
 
-// ── Save API key from settings ──────────────────────────────────────────────
-async function saveChatApiKey() {
-  const prov = document.getElementById('chat-provider-select').value;
-  const key = document.getElementById('chat-api-key-input').value.trim();
-  if (!key) return;
+// ── Production planner state ────────────────────────────────────────────────
+const PlannerState = {
+  horizon: 7,
+  model: 'RidgeForecaster',
+  uom: 'NOS',
+  allItems: [],
+};
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function formatPlannerQty(value, uom) {
+  if (value == null || Number.isNaN(Number(value))) return '--';
+  return uom === 'NOS'
+    ? Math.round(Number(value)).toLocaleString('en-IN')
+    : Number(value).toFixed(2);
+}
+
+function miniSparkline(values) {
+  if (!values || values.length < 2) return '';
+  const w = 80;
+  const h = 24;
+  const pad = 2;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const points = values.map((v, i) => {
+    const x = pad + (i / (values.length - 1)) * (w - 2 * pad);
+    const y = h - pad - ((v - min) / range) * (h - 2 * pad);
+    return `${x},${y}`;
+  }).join(' ');
+  return `<svg width="${w}" height="${h}" class="planner-sparkline"><polyline points="${points}" fill="none" stroke="#4f8ef7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+function renderItemsTable(items, uomType) {
+  if (!items.length) {
+    return `<div class="empty"><div class="icon">&#128230;</div><p>No ${uomType} items match the current filters.</p></div>`;
+  }
+  const horizon = PlannerState.horizon;
+  const dayCols = horizon <= 14 ? Array.from({ length: horizon }, (_, i) => i + 1) : [];
+  let html = '<table class="planner-table"><thead><tr>';
+  html += '<th>#</th><th>Item</th><th>ID</th>';
+  html += '<th class="qty-cell">Avg/Day</th>';
+  html += `<th class="qty-cell">Total (${horizon}d)</th>`;
+  dayCols.forEach(d => { html += `<th class="qty-cell">D${d}</th>`; });
+  html += '<th class="qty-cell">Trend</th>';
+  html += '</tr></thead><tbody>';
+
+  items.forEach((item, idx) => {
+    const itemId = String(item.item_id || '');
+    const itemIdEnc = encodeURIComponent(itemId);
+    // Show actual description, or itemId if description is missing
+    const desc = escapeHtml(item.description || itemId);
+    const safeId = escapeHtml(itemId);
+    const fv = item.forecast_values || [];
+    const totalQty = item.total_forecast_qty;
+    const avgQty = item.avg_daily_qty;
+
+    html += `<tr onclick="showItemDetail('${itemIdEnc}', '${uomType}')">`;
+    html += `<td>${idx + 1}</td>`;
+    html += `<td class="item-name" title="${desc}">${desc}</td>`;
+    html += `<td style="color:var(--muted);font-size:.75rem">${safeId}</td>`;
+    html += `<td class="qty-cell">${formatPlannerQty(avgQty, uomType)}</td>`;
+    html += `<td class="qty-cell highlight">${formatPlannerQty(totalQty, uomType)}</td>`;
+    if (dayCols.length) {
+      for (let i = 0; i < dayCols.length; i++) {
+        html += `<td class="qty-cell">${formatPlannerQty(fv[i] ?? 0, uomType)}</td>`;
+      }
+    }
+    html += `<td>${miniSparkline(fv)}</td>`;
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  return html;
+}
+
+function refreshPlannerKPIs(items) {
+  const nosItems = items.filter(i => i.uom === 'NOS');
+  const kgsItems = items.filter(i => i.uom === 'KGS');
+  const nosTotal = nosItems.reduce((s, i) => s + Number(i.total_forecast_qty || 0), 0);
+  const kgsTotal = kgsItems.reduce((s, i) => s + Number(i.total_forecast_qty || 0), 0);
+
+  document.getElementById('planner-kpi-nos-count').textContent = nosItems.length.toLocaleString('en-IN');
+  document.getElementById('planner-kpi-kgs-count').textContent = kgsItems.length.toLocaleString('en-IN');
+  document.getElementById('planner-kpi-nos-total').textContent = `${Math.round(nosTotal).toLocaleString('en-IN')} pcs`;
+  document.getElementById('planner-kpi-kgs-total').textContent = `${kgsTotal.toFixed(1)} kg`;
+  document.getElementById('planner-kpi-nos-sub').textContent = `pieces over next ${PlannerState.horizon} days`;
+  document.getElementById('planner-kpi-kgs-sub').textContent = `kilos over next ${PlannerState.horizon} days`;
+  document.getElementById('planner-kpi-total-items').textContent = items.length.toLocaleString('en-IN');
+  const modelSel = document.getElementById('planner-model-select');
+  document.getElementById('planner-kpi-model').textContent = modelSel?.selectedOptions?.[0]?.textContent || PlannerState.model;
+}
+
+function renderPlannerTables() {
+  const search = (document.getElementById('planner-search')?.value || '').trim().toLowerCase();
+  const bySearch = PlannerState.allItems.filter(item => {
+    if (!search) return true;
+    const hay = `${item.item_id || ''} ${item.description || ''}`.toLowerCase();
+    return hay.includes(search);
+  });
+  const filtered = PlannerState.uom === 'all'
+    ? bySearch
+    : bySearch.filter(item => item.uom === PlannerState.uom);
+
+  refreshPlannerKPIs(filtered);
+
+  const nosItems = filtered.filter(i => i.uom === 'NOS');
+  const kgsItems = filtered.filter(i => i.uom === 'KGS');
+
+  const nosPanel = document.getElementById('planner-nos-panel');
+  const kgsPanel = document.getElementById('planner-kgs-panel');
+  if (nosPanel) nosPanel.style.display = PlannerState.uom === 'KGS' ? 'none' : '';
+  if (kgsPanel) kgsPanel.style.display = PlannerState.uom === 'NOS' ? 'none' : '';
+
+  const nosBadge = document.getElementById('planner-nos-badge');
+  const kgsBadge = document.getElementById('planner-kgs-badge');
+  if (nosBadge) nosBadge.textContent = `${nosItems.length} items`;
+  if (kgsBadge) kgsBadge.textContent = `${kgsItems.length} items`;
+
+  const nosTable = document.getElementById('planner-nos-table');
+  const kgsTable = document.getElementById('planner-kgs-table');
+  if (nosTable) nosTable.innerHTML = renderItemsTable(nosItems, 'NOS');
+  if (kgsTable) kgsTable.innerHTML = renderItemsTable(kgsItems, 'KGS');
+}
+
+function setPlannerHorizon(horizon, btn) {
+  PlannerState.horizon = horizon;
+  document.querySelectorAll('#planner-horizon-seg button').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  loadPlannerData();
+}
+
+function setPlannerUOM(uom, btn) {
+  PlannerState.uom = uom;
+  document.querySelectorAll('#planner-uom-seg button').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderPlannerTables();
+}
+
+function setPlannerUOMSelect(uom) {
+  PlannerState.uom = uom;
+  renderPlannerTables();
+}
+
+function filterPlannerTable() {
+  renderPlannerTables();
+}
+
+async function loadPlannerData() {
+  const modelSel = document.getElementById('planner-model-select');
+  if (modelSel?.value) PlannerState.model = modelSel.value;
+  const url = `${API}/items/forecast_summary?horizon=${PlannerState.horizon}&model=${encodeURIComponent(PlannerState.model)}`;
   try {
-    await fetch(`${API}/llm/config`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ provider: prov, api_key: key, active_provider: prov }),
-    });
-    document.getElementById('chat-api-key-input').value = '';
-    await loadLLMConfig();
-    alert('API key saved!');
-  } catch(e) { alert('Failed to save: ' + e.message); }
+    const res = await fetch(url);
+    if (!res.ok) {
+      const nosTable = document.getElementById('planner-nos-table');
+      const kgsTable = document.getElementById('planner-kgs-table');
+      if (nosTable) nosTable.innerHTML = '<div class="empty"><div class="icon">&#128230;</div><p>Run the pipeline to generate item forecasts.</p></div>';
+      if (kgsTable) kgsTable.innerHTML = '<div class="empty"><div class="icon">&#128230;</div><p>Run the pipeline to generate item forecasts.</p></div>';
+      return;
+    }
+
+    const data = await res.json();
+    PlannerState.allItems = Array.isArray(data.all_items)
+      ? data.all_items
+      : [...(data.nos_items || []), ...(data.kgs_items || []), ...(data.other_items || [])];
+    renderPlannerTables();
+  } catch (e) {
+    showToast('Planner load error: ' + e.message, 'error');
+  }
+}
+
+async function showItemDetail(itemIdEncoded, uomType) {
+  const itemId = decodeURIComponent(itemIdEncoded || '');
+  const detailPanel = document.getElementById('planner-item-detail');
+  if (!detailPanel) return;
+  detailPanel.style.display = '';
+
+  const model = PlannerState.model;
+  const horizon = PlannerState.horizon;
+  const unit = uomType === 'NOS' ? 'pieces' : 'kg';
+
+  try {
+    const res = await fetch(`${API}/forecasts/item?item_id=${encodeURIComponent(itemId)}&horizon=${horizon}&model=${encodeURIComponent(model)}`);
+    if (!res.ok) {
+      showToast('Failed to load item detail.', 'error');
+      return;
+    }
+    const data = await res.json();
+
+    const desc = escapeHtml(data.description || itemId);
+    document.getElementById('planner-detail-title').innerHTML =
+      `<span class="ms ms-sm">show_chart</span> ${desc} <span class="uom-badge ${uomType.toLowerCase()}">${uomType}</span>`;
+
+    const traces = [];
+    if (data.actuals_dates?.length) {
+      traces.push({
+        x: data.actuals_dates, y: data.actuals, type: 'scatter', mode: 'lines+markers',
+        name: `Actual (${unit})`, line: { color: '#4f8ef7', width: 2 },
+        marker: { size: 4 },
+      });
+    }
+    if (data.dates?.length) {
+      traces.push({
+        x: data.dates, y: data.forecast, type: 'scatter', mode: 'lines+markers',
+        name: `Forecast (${unit})`, line: { color: '#107c41', width: 2, dash: 'dot' },
+        marker: { size: 4 },
+      });
+      if (data.ci_lower?.length && data.ci_upper?.length) {
+        traces.push({
+          x: data.dates.concat([...data.dates].reverse()),
+          y: data.ci_upper.concat([...data.ci_lower].reverse()),
+          type: 'scatter', fill: 'toself', fillcolor: 'rgba(16,124,65,.12)',
+          line: { color: 'transparent' }, name: 'Confidence Interval', showlegend: true,
+        });
+      }
+    }
+
+    const isDark = AppState.theme === 'dark';
+    const layout = {
+      paper_bgcolor: 'transparent',
+      plot_bgcolor: 'transparent',
+      font: { color: isDark ? '#ccc' : '#333', size: 12 },
+      margin: { t: 30, r: 30, b: 50, l: 60 },
+      xaxis: { title: 'Date', gridcolor: isDark ? '#333' : '#eee' },
+      yaxis: { title: `Quantity (${unit})`, gridcolor: isDark ? '#333' : '#eee' },
+      legend: { orientation: 'h', y: -0.2 },
+      shapes: data.dates?.length ? [{
+        type: 'line', x0: data.dates[0], x1: data.dates[0], y0: 0, y1: 1,
+        yref: 'paper', line: { color: '#f7924f', width: 1.5, dash: 'dash' },
+      }] : [],
+      annotations: data.dates?.length ? [{
+        x: data.dates[0], y: 1, yref: 'paper', text: 'Forecast starts →',
+        showarrow: false, font: { color: '#f7924f', size: 10 }, xanchor: 'left',
+      }] : [],
+    };
+
+    Plotly.newPlot('planner-detail-chart', traces, layout, { responsive: true, displayModeBar: false });
+    // Force chart to resize after creation to ensure proper dimensions
+    setTimeout(() => {
+      Plotly.Plots.resize('planner-detail-chart');
+    }, 100);
+    detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } catch (e) {
+    showToast('Error loading item chart: ' + e.message, 'error');
+  }
+}
+
+async function exportPlannerXLSX() {
+  const model = encodeURIComponent(PlannerState.model);
+  const horizon = PlannerState.horizon;
+  try {
+    const res = await fetch(`${API}/forecasts/item/export?horizon=${horizon}&model=${model}`);
+    if (!res.ok) { showToast('Export failed.', 'error'); return; }
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `production_plan_${model}_h${horizon}.xlsx`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) { showToast('Export error: ' + e.message, 'error'); }
 }
 </script>
+
+<!-- ============================================================
+     BOTTOM PATH BAR
+     ============================================================ -->
+<div id="bottom-path-bar">
+  <div class="path-breadcrumbs" id="path-breadcrumbs"></div>
+  <div class="path-status" id="path-status"></div>
+</div>
+
+<!-- ============================================================
+     TOAST CONTAINER
+     ============================================================ -->
+<div id="toast-container"></div>
+
+<!-- ============================================================
+     PIPELINE PREVIEW MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="pipeline-modal" onclick="closePipelineModal(event)">
+  <div class="modal-card" onclick="event.stopPropagation()">
+    <h2><span class="ms" style="color:var(--accent)">account_tree</span> Pipeline Preview</h2>
+    <p style="font-size:.78rem;color:var(--muted);margin-bottom:16px">Your data will be processed through the following steps:</p>
+    <div id="pipeline-steps-container"></div>
+    <div id="pipeline-modal-summary" style="font-size:.75rem;color:var(--muted);margin-top:8px;padding:8px 12px;background:rgba(79,142,247,.06);border-radius:8px"></div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" onclick="document.getElementById('pipeline-modal').classList.remove('open')">Cancel</button>
+      <button class="btn btn-success" onclick="confirmPipelineRun()">Confirm &amp; Run Pipeline</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ADMIN SETTINGS MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="admin-modal" onclick="closeAdminModal(event)">
+  <div class="modal-card admin-modal-card" id="admin-modal-card" onclick="event.stopPropagation()">
+    <div class="admin-header">
+      <h2><span class="ms" style="color:var(--accent)">settings</span> Settings</h2>
+      <div class="admin-header-actions">
+        <button class="admin-icon-btn" onclick="toggleAdminMaximize()" title="Maximize">&#11036;</button>
+        <button class="admin-icon-btn" onclick="document.getElementById('admin-modal').classList.remove('open')" title="Close">&#10005;</button>
+      </div>
+    </div>
+    <div class="admin-body">
+      <div class="admin-sidebar">
+        <button class="admin-tab active" data-tab="providers" onclick="switchAdminTab('providers')">LLM Providers</button>
+        <button class="admin-tab" data-tab="appearance" onclick="switchAdminTab('appearance')">Appearance</button>
+        <button class="admin-tab" data-tab="data" onclick="switchAdminTab('data')">Data Settings</button>
+        <button class="admin-tab" data-tab="profile" onclick="switchAdminTab('profile')">User Profile</button>
+      </div>
+      <div class="admin-content" id="admin-content"></div>
+    </div>
+    <div class="modal-actions" style="padding: 0 18px 16px;">
+      <button class="btn btn-outline" onclick="document.getElementById('admin-modal').classList.remove('open')">Cancel</button>
+      <button class="btn btn-success" onclick="saveAdminSettings()">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     AVATAR DROPDOWN
+     ============================================================ -->
+<div class="avatar-dropdown" id="avatar-dropdown">
+  <div class="avatar-dropdown-user" id="avatar-dropdown-user">Pratap Chavan</div>
+  <div class="avatar-dropdown-sep"></div>
+  <button class="avatar-dropdown-item" onclick="closeAvatarDropdown();openAdminModal()"><span class="ms ms-sm">settings</span> Settings</button>
+  <button class="avatar-dropdown-item" onclick="handleLogout()"><span class="ms ms-sm">logout</span> Logout</button>
+</div>
 
 <!-- AI Chat FAB -->
 <button id="ai-chat-fab" onclick="toggleChat()" title="AI Assistant">&#10024;</button>
@@ -2722,6 +4611,7 @@ async function saveChatApiKey() {
     <div class="chat-header-actions">
       <button onclick="toggleChatSettings()" title="Settings">&#9881;</button>
       <button onclick="clearChat()" title="Clear">&#128465;</button>
+      <button onclick="minimizeChat()" title="Minimize">&#8722;</button>
       <button onclick="toggleChat()" title="Close">&#10005;</button>
     </div>
   </div>
@@ -2740,6 +4630,8 @@ async function saveChatApiKey() {
         <select id="chat-provider-select" onchange="onChatProviderChange()">
           <option value="gemini">Gemini</option>
           <option value="openrouter">OpenRouter</option>
+          <option value="openai">OpenAI</option>
+          <option value="anthropic">Anthropic</option>
         </select>
       </div>
       <div style="flex:1">
@@ -2749,12 +4641,8 @@ async function saveChatApiKey() {
         </select>
       </div>
     </div>
-    <div>
-      <label>API Key</label>
-      <div style="display:flex;gap:6px">
-        <input type="password" id="chat-api-key-input" placeholder="Paste API key..." />
-        <button onclick="saveChatApiKey()" style="padding:4px 10px;border-radius:6px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:.7rem;cursor:pointer;white-space:nowrap">Save</button>
-      </div>
+    <div style="font-size:.68rem;color:var(--muted);padding:4px 0">
+      API keys are managed in <a href="#" onclick="event.preventDefault();toggleChat();openAdminModal()" style="color:var(--accent)">Admin Settings</a>
     </div>
   </div>
 
