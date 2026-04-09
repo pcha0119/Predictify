@@ -11,8 +11,8 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Dict, Any
 
-# Database path
-DB_DIR = Path(__file__).parent.parent / "backend" / "artifacts"
+# Database path: services/ -> backend/ -> artifacts/
+DB_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 DB_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH = DB_DIR / "jobs.db"
 

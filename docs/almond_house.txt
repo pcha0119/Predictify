@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+=== PAGE 1 ===
+ 
+  
+Version: 1 
+Commercial Proposal 
+Sales Forecasting POC 
+Submitted to 
+For 
+Almond House Pvt Ltd 
+Submitted by 
+Appify Consulting Pvt Ltd 
+
+
+=== PAGE 2 ===
+  File "<string>", line 8, in <module>
+    print(t)
+    ~~~~~^^^
+  File "C:\Users\prata\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u01af' in position 1298: character maps to <undefined>

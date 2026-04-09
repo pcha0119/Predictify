@@ -14,7 +14,7 @@ REPORT_DIR = BASE_DIR / "artifacts" / "reports"
 FORECAST_DIR = BASE_DIR / "artifacts" / "forecasts"
 
 WORKBOOK_NAME = "AI Forecasting Data.xlsx"
-WORKBOOK_PATH_RAW = BASE_DIR / WORKBOOK_NAME          # raw xlsx at project root
+WORKBOOK_PATH_RAW = BASE_DIR.parent / "data" / "raw" / WORKBOOK_NAME  # source data
 WORKBOOK_PATH = BASE_DIR / "artifacts" / WORKBOOK_NAME  # uploaded/copied version
 
 # ─── Sheet names ─────────────────────────────────────────────────────────────
